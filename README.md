@@ -1,1 +1,3 @@
-# 1_ios
+# ios
+
+This repo contains WolfBeacon's IOS Mobile development progress.
