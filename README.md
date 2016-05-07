@@ -1,3 +1,3 @@
 # ios
 
-This repo contains WolfBeacon's IOS Mobile development progress.
+This repository contains WolfBeacon's IOS Mobile development progress.
