@@ -1,0 +1,628 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		591C57ED1CEE1FDE003C245E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591C57EC1CEE1FDE003C245E /* AppDelegate.swift */; };
+		591C57F21CEE1FDE003C245E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 591C57F01CEE1FDE003C245E /* Main.storyboard */; };
+		591C57F51CEE1FDE003C245E /* Wolf_Beacon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 591C57F31CEE1FDE003C245E /* Wolf_Beacon.xcdatamodeld */; };
+		591C57F71CEE1FDE003C245E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 591C57F61CEE1FDE003C245E /* Assets.xcassets */; };
+		591C57FA1CEE1FDE003C245E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 591C57F81CEE1FDE003C245E /* LaunchScreen.storyboard */; };
+		591C58051CEE1FDE003C245E /* Wolf_BeaconTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591C58041CEE1FDE003C245E /* Wolf_BeaconTests.swift */; };
+		591C58101CEE1FDE003C245E /* Wolf_BeaconUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591C580F1CEE1FDE003C245E /* Wolf_BeaconUITests.swift */; };
+		591C58271CEE20DF003C245E /* bsg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 591C58231CEE20DF003C245E /* bsg.jpg */; };
+		591C58281CEE20DF003C245E /* falls.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 591C58241CEE20DF003C245E /* falls.jpg */; };
+		591C58291CEE20DF003C245E /* me gusta.png in Resources */ = {isa = PBXBuildFile; fileRef = 591C58251CEE20DF003C245E /* me gusta.png */; };
+		591C582A1CEE20DF003C245E /* minions.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 591C58261CEE20DF003C245E /* minions.jpg */; };
+		591C582E1CEE212E003C245E /* PrefixHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591C582D1CEE212E003C245E /* PrefixHeader.swift */; };
+		591C58301CEE2145003C245E /* VectorImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591C582F1CEE2145003C245E /* VectorImages.swift */; };
+		591C58341CEE23D6003C245E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591C58331CEE23D6003C245E /* HomeViewController.swift */; };
+		591C58371CEE23F7003C245E /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591C58361CEE23F7003C245E /* EventTableViewCell.swift */; };
+		591C58391CEE240B003C245E /* FeaturedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591C58381CEE240B003C245E /* FeaturedCollectionViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		591C58011CEE1FDE003C245E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 591C57E11CEE1FDE003C245E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 591C57E81CEE1FDE003C245E;
+			remoteInfo = "Wolf Beacon";
+		};
+		591C580C1CEE1FDE003C245E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 591C57E11CEE1FDE003C245E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 591C57E81CEE1FDE003C245E;
+			remoteInfo = "Wolf Beacon";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		591C57E91CEE1FDE003C245E /* Wolf Beacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wolf Beacon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		591C57EC1CEE1FDE003C245E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		591C57F11CEE1FDE003C245E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		591C57F41CEE1FDE003C245E /* Wolf_Beacon.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Wolf_Beacon.xcdatamodel; sourceTree = "<group>"; };
+		591C57F61CEE1FDE003C245E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		591C57F91CEE1FDE003C245E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		591C57FB1CEE1FDE003C245E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		591C58001CEE1FDE003C245E /* Wolf BeaconTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wolf BeaconTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		591C58041CEE1FDE003C245E /* Wolf_BeaconTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wolf_BeaconTests.swift; sourceTree = "<group>"; };
+		591C58061CEE1FDE003C245E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		591C580B1CEE1FDE003C245E /* Wolf BeaconUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wolf BeaconUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		591C580F1CEE1FDE003C245E /* Wolf_BeaconUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wolf_BeaconUITests.swift; sourceTree = "<group>"; };
+		591C58111CEE1FDE003C245E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		591C58231CEE20DF003C245E /* bsg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bsg.jpg; path = Images/bsg.jpg; sourceTree = "<group>"; };
+		591C58241CEE20DF003C245E /* falls.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = falls.jpg; path = Images/falls.jpg; sourceTree = "<group>"; };
+		591C58251CEE20DF003C245E /* me gusta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "me gusta.png"; path = "Images/me gusta.png"; sourceTree = "<group>"; };
+		591C58261CEE20DF003C245E /* minions.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = minions.jpg; path = Images/minions.jpg; sourceTree = "<group>"; };
+		591C582D1CEE212E003C245E /* PrefixHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PrefixHeader.swift; path = "Supporting Files/PrefixHeader.swift"; sourceTree = "<group>"; };
+		591C582F1CEE2145003C245E /* VectorImages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VectorImages.swift; path = "Supporting Files/VectorImages.swift"; sourceTree = "<group>"; };
+		591C58331CEE23D6003C245E /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Controllers/HomeViewController.swift; sourceTree = "<group>"; };
+		591C58361CEE23F7003C245E /* EventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventTableViewCell.swift; path = Views/Cells/EventTableViewCell.swift; sourceTree = "<group>"; };
+		591C58381CEE240B003C245E /* FeaturedCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeaturedCollectionViewCell.swift; path = Views/Cells/FeaturedCollectionViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		591C57E61CEE1FDE003C245E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		591C57FD1CEE1FDE003C245E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		591C58081CEE1FDE003C245E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		591C57E01CEE1FDE003C245E = {
+			isa = PBXGroup;
+			children = (
+				591C57EB1CEE1FDE003C245E /* Wolf Beacon */,
+				591C58031CEE1FDE003C245E /* Wolf BeaconTests */,
+				591C580E1CEE1FDE003C245E /* Wolf BeaconUITests */,
+				591C57EA1CEE1FDE003C245E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		591C57EA1CEE1FDE003C245E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				591C57E91CEE1FDE003C245E /* Wolf Beacon.app */,
+				591C58001CEE1FDE003C245E /* Wolf BeaconTests.xctest */,
+				591C580B1CEE1FDE003C245E /* Wolf BeaconUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		591C57EB1CEE1FDE003C245E /* Wolf Beacon */ = {
+			isa = PBXGroup;
+			children = (
+				591C57F61CEE1FDE003C245E /* Assets.xcassets */,
+				591C582B1CEE20FA003C245E /* App Delegate */,
+				591C58221CEE20B9003C245E /* Models */,
+				591C58211CEE20B7003C245E /* Views */,
+				591C581D1CEE2004003C245E /* Controllers */,
+				591C581E1CEE200F003C245E /* Supporting Files */,
+				591C57FB1CEE1FDE003C245E /* Info.plist */,
+			);
+			path = "Wolf Beacon";
+			sourceTree = "<group>";
+		};
+		591C58031CEE1FDE003C245E /* Wolf BeaconTests */ = {
+			isa = PBXGroup;
+			children = (
+				591C58041CEE1FDE003C245E /* Wolf_BeaconTests.swift */,
+				591C58061CEE1FDE003C245E /* Info.plist */,
+			);
+			path = "Wolf BeaconTests";
+			sourceTree = "<group>";
+		};
+		591C580E1CEE1FDE003C245E /* Wolf BeaconUITests */ = {
+			isa = PBXGroup;
+			children = (
+				591C580F1CEE1FDE003C245E /* Wolf_BeaconUITests.swift */,
+				591C58111CEE1FDE003C245E /* Info.plist */,
+			);
+			path = "Wolf BeaconUITests";
+			sourceTree = "<group>";
+		};
+		591C581D1CEE2004003C245E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				591C58331CEE23D6003C245E /* HomeViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		591C581E1CEE200F003C245E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				591C582D1CEE212E003C245E /* PrefixHeader.swift */,
+				591C58201CEE201D003C245E /* Images */,
+				591C581F1CEE2016003C245E /* Utilities */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		591C581F1CEE2016003C245E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				591C582F1CEE2145003C245E /* VectorImages.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		591C58201CEE201D003C245E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				591C58231CEE20DF003C245E /* bsg.jpg */,
+				591C58241CEE20DF003C245E /* falls.jpg */,
+				591C58251CEE20DF003C245E /* me gusta.png */,
+				591C58261CEE20DF003C245E /* minions.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		591C58211CEE20B7003C245E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				591C58351CEE23E2003C245E /* Cells */,
+				591C582C1CEE210A003C245E /* Launch */,
+				591C57F01CEE1FDE003C245E /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		591C58221CEE20B9003C245E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				591C57F31CEE1FDE003C245E /* Wolf_Beacon.xcdatamodeld */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		591C582B1CEE20FA003C245E /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				591C57EC1CEE1FDE003C245E /* AppDelegate.swift */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		591C582C1CEE210A003C245E /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				591C57F81CEE1FDE003C245E /* LaunchScreen.storyboard */,
+			);
+			name = Launch;
+			sourceTree = "<group>";
+		};
+		591C58351CEE23E2003C245E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				591C58361CEE23F7003C245E /* EventTableViewCell.swift */,
+				591C58381CEE240B003C245E /* FeaturedCollectionViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		591C57E81CEE1FDE003C245E /* Wolf Beacon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 591C58141CEE1FDE003C245E /* Build configuration list for PBXNativeTarget "Wolf Beacon" */;
+			buildPhases = (
+				591C57E51CEE1FDE003C245E /* Sources */,
+				591C57E61CEE1FDE003C245E /* Frameworks */,
+				591C57E71CEE1FDE003C245E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Wolf Beacon";
+			productName = "Wolf Beacon";
+			productReference = 591C57E91CEE1FDE003C245E /* Wolf Beacon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		591C57FF1CEE1FDE003C245E /* Wolf BeaconTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 591C58171CEE1FDE003C245E /* Build configuration list for PBXNativeTarget "Wolf BeaconTests" */;
+			buildPhases = (
+				591C57FC1CEE1FDE003C245E /* Sources */,
+				591C57FD1CEE1FDE003C245E /* Frameworks */,
+				591C57FE1CEE1FDE003C245E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				591C58021CEE1FDE003C245E /* PBXTargetDependency */,
+			);
+			name = "Wolf BeaconTests";
+			productName = "Wolf BeaconTests";
+			productReference = 591C58001CEE1FDE003C245E /* Wolf BeaconTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		591C580A1CEE1FDE003C245E /* Wolf BeaconUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 591C581A1CEE1FDE003C245E /* Build configuration list for PBXNativeTarget "Wolf BeaconUITests" */;
+			buildPhases = (
+				591C58071CEE1FDE003C245E /* Sources */,
+				591C58081CEE1FDE003C245E /* Frameworks */,
+				591C58091CEE1FDE003C245E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				591C580D1CEE1FDE003C245E /* PBXTargetDependency */,
+			);
+			name = "Wolf BeaconUITests";
+			productName = "Wolf BeaconUITests";
+			productReference = 591C580B1CEE1FDE003C245E /* Wolf BeaconUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		591C57E11CEE1FDE003C245E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Open Source Hacking";
+				TargetAttributes = {
+					591C57E81CEE1FDE003C245E = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					591C57FF1CEE1FDE003C245E = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 591C57E81CEE1FDE003C245E;
+					};
+					591C580A1CEE1FDE003C245E = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 591C57E81CEE1FDE003C245E;
+					};
+				};
+			};
+			buildConfigurationList = 591C57E41CEE1FDE003C245E /* Build configuration list for PBXProject "Wolf Beacon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 591C57E01CEE1FDE003C245E;
+			productRefGroup = 591C57EA1CEE1FDE003C245E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				591C57E81CEE1FDE003C245E /* Wolf Beacon */,
+				591C57FF1CEE1FDE003C245E /* Wolf BeaconTests */,
+				591C580A1CEE1FDE003C245E /* Wolf BeaconUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		591C57E71CEE1FDE003C245E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				591C57FA1CEE1FDE003C245E /* LaunchScreen.storyboard in Resources */,
+				591C58281CEE20DF003C245E /* falls.jpg in Resources */,
+				591C57F71CEE1FDE003C245E /* Assets.xcassets in Resources */,
+				591C58271CEE20DF003C245E /* bsg.jpg in Resources */,
+				591C57F21CEE1FDE003C245E /* Main.storyboard in Resources */,
+				591C582A1CEE20DF003C245E /* minions.jpg in Resources */,
+				591C58291CEE20DF003C245E /* me gusta.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		591C57FE1CEE1FDE003C245E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		591C58091CEE1FDE003C245E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		591C57E51CEE1FDE003C245E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				591C58371CEE23F7003C245E /* EventTableViewCell.swift in Sources */,
+				591C58341CEE23D6003C245E /* HomeViewController.swift in Sources */,
+				591C582E1CEE212E003C245E /* PrefixHeader.swift in Sources */,
+				591C57F51CEE1FDE003C245E /* Wolf_Beacon.xcdatamodeld in Sources */,
+				591C58301CEE2145003C245E /* VectorImages.swift in Sources */,
+				591C57ED1CEE1FDE003C245E /* AppDelegate.swift in Sources */,
+				591C58391CEE240B003C245E /* FeaturedCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		591C57FC1CEE1FDE003C245E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				591C58051CEE1FDE003C245E /* Wolf_BeaconTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		591C58071CEE1FDE003C245E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				591C58101CEE1FDE003C245E /* Wolf_BeaconUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		591C58021CEE1FDE003C245E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 591C57E81CEE1FDE003C245E /* Wolf Beacon */;
+			targetProxy = 591C58011CEE1FDE003C245E /* PBXContainerItemProxy */;
+		};
+		591C580D1CEE1FDE003C245E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 591C57E81CEE1FDE003C245E /* Wolf Beacon */;
+			targetProxy = 591C580C1CEE1FDE003C245E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		591C57F01CEE1FDE003C245E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				591C57F11CEE1FDE003C245E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		591C57F81CEE1FDE003C245E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				591C57F91CEE1FDE003C245E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		591C58121CEE1FDE003C245E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		591C58131CEE1FDE003C245E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		591C58151CEE1FDE003C245E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Wolf Beacon/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.osh.Wolf-Beacon";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		591C58161CEE1FDE003C245E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Wolf Beacon/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.osh.Wolf-Beacon";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		591C58181CEE1FDE003C245E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Wolf BeaconTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.osh.Wolf-BeaconTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wolf Beacon.app/Wolf Beacon";
+			};
+			name = Debug;
+		};
+		591C58191CEE1FDE003C245E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Wolf BeaconTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.osh.Wolf-BeaconTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wolf Beacon.app/Wolf Beacon";
+			};
+			name = Release;
+		};
+		591C581B1CEE1FDE003C245E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Wolf BeaconUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.osh.Wolf-BeaconUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Wolf Beacon";
+			};
+			name = Debug;
+		};
+		591C581C1CEE1FDE003C245E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Wolf BeaconUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.osh.Wolf-BeaconUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Wolf Beacon";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		591C57E41CEE1FDE003C245E /* Build configuration list for PBXProject "Wolf Beacon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				591C58121CEE1FDE003C245E /* Debug */,
+				591C58131CEE1FDE003C245E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		591C58141CEE1FDE003C245E /* Build configuration list for PBXNativeTarget "Wolf Beacon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				591C58151CEE1FDE003C245E /* Debug */,
+				591C58161CEE1FDE003C245E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		591C58171CEE1FDE003C245E /* Build configuration list for PBXNativeTarget "Wolf BeaconTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				591C58181CEE1FDE003C245E /* Debug */,
+				591C58191CEE1FDE003C245E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		591C581A1CEE1FDE003C245E /* Build configuration list for PBXNativeTarget "Wolf BeaconUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				591C581B1CEE1FDE003C245E /* Debug */,
+				591C581C1CEE1FDE003C245E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		591C57F31CEE1FDE003C245E /* Wolf_Beacon.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				591C57F41CEE1FDE003C245E /* Wolf_Beacon.xcdatamodel */,
+			);
+			currentVersion = 591C57F41CEE1FDE003C245E /* Wolf_Beacon.xcdatamodel */;
+			path = Wolf_Beacon.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 591C57E11CEE1FDE003C245E /* Project object */;
+}
