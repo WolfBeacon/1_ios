@@ -25,10 +25,10 @@ class CollectionDataSource: NSObject {
 		self.imageName = "\((dict.objectForKey("imageName") as? String)!)"
 	}
 	
-	class func dataSourceFromJSONStructure(jsonData: NSArray) -> NSArray {
+	class func dataSourceFromJSONStructure(jsonData: NSArray) -> NSMutableArray {
 		let array = NSMutableArray()
 		for data in jsonData {
-			let dsitem = CollectionDataSource(dict: data as! NSDictionary)
+			let dsitem = CollectionDataSource(dict: NSDictionary(dictionary: data as! [NSObject : AnyObject]))
 			array.addObject(dsitem)
 		}
 		return array
@@ -37,27 +37,37 @@ class CollectionDataSource: NSObject {
 }
 
 // MARK: -
+
 // Cell class for the collection view
 class DetailCollectionViewCell: UICollectionViewCell {
 	@IBOutlet weak var imageView: UIImageView!
 	@IBOutlet weak var titleLabel: UILabel!
+	override func awakeFromNib() {
+		self.backgroundColor = UIColor.clearColor()
+		self.layer.backgroundColor = UIColor.clearColor().CGColor
+		self.layer.shadowPath = UIBezierPath(rect: self.bounds).CGPath
+		self.layer.shadowColor = UIColor.blackColor().CGColor
+		self.layer.shadowOffset = CGSizeZero
+		self.layer.shadowOpacity = 1.0
+		self.layer.shadowRadius = 2.0
+	}
 }
 
 // MARK: -
 // Handling the cell touches in the cells
 @objc protocol DetailCollectionTableViewCellDelegate {
-	func detailCollectionTableViewCellSelectedItemAtIndex(cell: DetailCollectionTableViewCell, index: Int) -> Void
+	func detailCollectionTableViewCellSelectedItemAtIndex(cell: DetailCollectionTableViewCell, index: Int, tag: Int) -> Void
 }
 
 // MARK: -
-class DetailCollectionTableViewCell: BaseTableViewCell, UICollectionViewDataSource, UICollectionViewDelegate {
+class DetailCollectionTableViewCell: BaseTableViewCell, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 	
 	var delegate: DetailCollectionTableViewCellDelegate?
 	
 	var dataSource: NSMutableArray = NSMutableArray() {
 		didSet {
 			self.collectionView.reloadData()
-			self.pageControl.numberOfPages = min(12, dataSource.count)
+			self.pageControl?.numberOfPages = min(12, dataSource.count)
 			if (dataSource.count > 12) {
 				self.pageControl.hidden = true
 			}
@@ -73,6 +83,8 @@ class DetailCollectionTableViewCell: BaseTableViewCell, UICollectionViewDataSour
 			self.collectionView.reloadData()
 		}
 	}
+	
+	var itemSize: CGSize = CGSizeMake(SWidth/4 - 8, (8*(SWidth/4 - 8))/5)
 	
 	override func awakeFromNib() {
 		self.collectionView.dataSource = self
@@ -95,6 +107,7 @@ class DetailCollectionTableViewCell: BaseTableViewCell, UICollectionViewDataSour
 		cell.titleLabel.text = dsitem.title
 		cell.titleLabel.hidden = !showsLabel
 		cell.imageView.image = UIImage(named: dsitem.imageName)
+		cell.imageView.clipsToBounds = true
 		return cell
 	}
 	
@@ -102,12 +115,26 @@ class DetailCollectionTableViewCell: BaseTableViewCell, UICollectionViewDataSour
 	
 	func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
 		if let delegate = self.delegate {
-			delegate.detailCollectionTableViewCellSelectedItemAtIndex(self, index: indexPath.row)
+			delegate.detailCollectionTableViewCellSelectedItemAtIndex(self, index: indexPath.row, tag: tag)
 		}
 	}
 	
 	func collectionView(collectionView: UICollectionView, willDisplayCell cell: UICollectionViewCell, forItemAtIndexPath indexPath: NSIndexPath) {
-		self.pageControl.currentPage = indexPath.row
+		self.pageControl?.currentPage = indexPath.row
+	}
+	
+	// MARK: - Collection view delegate flow layout
+	
+	func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+		return itemSize
+	}
+	
+	func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAtIndex section: Int) -> CGFloat {
+		return 4
+	}
+	
+	func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAtIndex section: Int) -> CGFloat {
+		return 4
 	}
 
     /*

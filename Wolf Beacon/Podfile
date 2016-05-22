@@ -1,0 +1,27 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '8.0'
+# Uncomment this line if you're using Swift
+
+use_frameworks!
+
+target 'Wolf Beacon' do
+
+pod 'FontAwesomeKit', '~> 2.2.0'
+pod 'SVProgressHUD'
+pod 'DZNEmptyDataSet'
+pod 'TextFieldEffects'
+pod 'PermissionScope'
+pod 'ReachabilitySwift', :git => 'https://github.com/ashleymills/Reachability.swift'
+pod 'IQKeyboardManagerSwift'
+pod 'SDWebImage', '~>3.7'
+
+end
+
+target 'Wolf BeaconTests' do
+
+end
+
+target 'Wolf BeaconUITests' do
+
+end
+

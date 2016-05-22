@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5905B79C1CF1813E00B0D9B1 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5905B7981CF1813E00B0D9B1 /* FontAwesome.otf */; };
+		5905B79D1CF1813E00B0D9B1 /* foundation-icons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5905B7991CF1813E00B0D9B1 /* foundation-icons.ttf */; };
+		5905B79E1CF1813E00B0D9B1 /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5905B79A1CF1813E00B0D9B1 /* ionicons.ttf */; };
+		5905B79F1CF1813E00B0D9B1 /* zocial-regular-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5905B79B1CF1813E00B0D9B1 /* zocial-regular-webfont.ttf */; };
 		591C57ED1CEE1FDE003C245E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591C57EC1CEE1FDE003C245E /* AppDelegate.swift */; };
 		591C57F21CEE1FDE003C245E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 591C57F01CEE1FDE003C245E /* Main.storyboard */; };
 		591C57F51CEE1FDE003C245E /* Wolf_Beacon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 591C57F31CEE1FDE003C245E /* Wolf_Beacon.xcdatamodeld */; };
@@ -27,7 +31,12 @@
 		59C8A47A1CF088C800987CCA /* DetailHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C8A4791CF088C800987CCA /* DetailHeaderTableViewCell.swift */; };
 		59C8A47C1CF08B9C00987CCA /* DetailFacilitiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C8A47B1CF08B9C00987CCA /* DetailFacilitiesTableViewCell.swift */; };
 		59C8A47E1CF08C9000987CCA /* DetailCollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C8A47D1CF08C9000987CCA /* DetailCollectionTableViewCell.swift */; };
-		59C8A4801CF0CEBD00987CCA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C8A47F1CF0CEBD00987CCA /* DetailViewController.swift */; };
+		59C8A4821CF0CEFE00987CCA /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C8A4811CF0CEFE00987CCA /* DetailTableViewController.swift */; };
+		59C8A4871CF0DAA200987CCA /* batman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 59C8A4831CF0DAA200987CCA /* batman.jpg */; };
+		59C8A4881CF0DAA200987CCA /* lantern.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 59C8A4841CF0DAA200987CCA /* lantern.jpg */; };
+		59C8A4891CF0DAA200987CCA /* superman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 59C8A4851CF0DAA200987CCA /* superman.jpg */; };
+		59C8A48A1CF0DAA200987CCA /* wonder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 59C8A4861CF0DAA200987CCA /* wonder.jpg */; };
+		882CFD390FA77FDDF14B0340 /* Pods_Wolf_Beacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0FE0A130696965BD92C254C /* Pods_Wolf_Beacon.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +57,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5905B7981CF1813E00B0D9B1 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
+		5905B7991CF1813E00B0D9B1 /* foundation-icons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "foundation-icons.ttf"; sourceTree = "<group>"; };
+		5905B79A1CF1813E00B0D9B1 /* ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ionicons.ttf; sourceTree = "<group>"; };
+		5905B79B1CF1813E00B0D9B1 /* zocial-regular-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "zocial-regular-webfont.ttf"; sourceTree = "<group>"; };
 		591C57E91CEE1FDE003C245E /* Wolf Beacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wolf Beacon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		591C57EC1CEE1FDE003C245E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		591C57F11CEE1FDE003C245E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -74,7 +87,14 @@
 		59C8A4791CF088C800987CCA /* DetailHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailHeaderTableViewCell.swift; path = Views/Cells/DetailHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		59C8A47B1CF08B9C00987CCA /* DetailFacilitiesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailFacilitiesTableViewCell.swift; path = Views/Cells/DetailFacilitiesTableViewCell.swift; sourceTree = "<group>"; };
 		59C8A47D1CF08C9000987CCA /* DetailCollectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailCollectionTableViewCell.swift; path = Views/Cells/DetailCollectionTableViewCell.swift; sourceTree = "<group>"; };
-		59C8A47F1CF0CEBD00987CCA /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = Controllers/DetailViewController.swift; sourceTree = "<group>"; };
+		59C8A4811CF0CEFE00987CCA /* DetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailTableViewController.swift; path = Controllers/DetailTableViewController.swift; sourceTree = "<group>"; };
+		59C8A4831CF0DAA200987CCA /* batman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = batman.jpg; path = Images/batman.jpg; sourceTree = "<group>"; };
+		59C8A4841CF0DAA200987CCA /* lantern.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = lantern.jpg; path = Images/lantern.jpg; sourceTree = "<group>"; };
+		59C8A4851CF0DAA200987CCA /* superman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = superman.jpg; path = Images/superman.jpg; sourceTree = "<group>"; };
+		59C8A4861CF0DAA200987CCA /* wonder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = wonder.jpg; path = Images/wonder.jpg; sourceTree = "<group>"; };
+		A0FE0A130696965BD92C254C /* Pods_Wolf_Beacon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wolf_Beacon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B90774463C8BB8CEE1C61001 /* Pods-Wolf Beacon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wolf Beacon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wolf Beacon/Pods-Wolf Beacon.release.xcconfig"; sourceTree = "<group>"; };
+		E52656C40C93ABFA7C0DBF24 /* Pods-Wolf Beacon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wolf Beacon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wolf Beacon/Pods-Wolf Beacon.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				882CFD390FA77FDDF14B0340 /* Pods_Wolf_Beacon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +123,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4148E7AD175A56E13860CBC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0FE0A130696965BD92C254C /* Pods_Wolf_Beacon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5905B7971CF1813E00B0D9B1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5905B7981CF1813E00B0D9B1 /* FontAwesome.otf */,
+				5905B7991CF1813E00B0D9B1 /* foundation-icons.ttf */,
+				5905B79A1CF1813E00B0D9B1 /* ionicons.ttf */,
+				5905B79B1CF1813E00B0D9B1 /* zocial-regular-webfont.ttf */,
+			);
+			name = Fonts;
+			path = "Supporting Files/Fonts";
+			sourceTree = "<group>";
+		};
 		591C57E01CEE1FDE003C245E = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +150,8 @@
 				591C58031CEE1FDE003C245E /* Wolf BeaconTests */,
 				591C580E1CEE1FDE003C245E /* Wolf BeaconUITests */,
 				591C57EA1CEE1FDE003C245E /* Products */,
+				97FDEB97B7C5A5847268E4C4 /* Pods */,
+				4148E7AD175A56E13860CBC2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -158,7 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				591C58331CEE23D6003C245E /* HomeViewController.swift */,
-				59C8A47F1CF0CEBD00987CCA /* DetailViewController.swift */,
+				59C8A4811CF0CEFE00987CCA /* DetailTableViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -166,6 +209,7 @@
 		591C581E1CEE200F003C245E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5905B7971CF1813E00B0D9B1 /* Fonts */,
 				591C582D1CEE212E003C245E /* PrefixHeader.swift */,
 				591C58201CEE201D003C245E /* Images */,
 				591C581F1CEE2016003C245E /* Utilities */,
@@ -184,6 +228,10 @@
 		591C58201CEE201D003C245E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				59C8A4831CF0DAA200987CCA /* batman.jpg */,
+				59C8A4841CF0DAA200987CCA /* lantern.jpg */,
+				59C8A4851CF0DAA200987CCA /* superman.jpg */,
+				59C8A4861CF0DAA200987CCA /* wonder.jpg */,
 				591C58231CEE20DF003C245E /* bsg.jpg */,
 				591C58241CEE20DF003C245E /* falls.jpg */,
 				591C58251CEE20DF003C245E /* me gusta.png */,
@@ -239,6 +287,15 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
+		97FDEB97B7C5A5847268E4C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E52656C40C93ABFA7C0DBF24 /* Pods-Wolf Beacon.debug.xcconfig */,
+				B90774463C8BB8CEE1C61001 /* Pods-Wolf Beacon.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -246,9 +303,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 591C58141CEE1FDE003C245E /* Build configuration list for PBXNativeTarget "Wolf Beacon" */;
 			buildPhases = (
+				183F3901FCF8B2A8210A6FA6 /* Check Pods Manifest.lock */,
 				591C57E51CEE1FDE003C245E /* Sources */,
 				591C57E61CEE1FDE003C245E /* Frameworks */,
 				591C57E71CEE1FDE003C245E /* Resources */,
+				54703E0C96F1DFC4AC57CA3A /* Embed Pods Frameworks */,
+				34A3E5623ABF5FC1CD1D2792 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -345,10 +405,18 @@
 			files = (
 				591C57FA1CEE1FDE003C245E /* LaunchScreen.storyboard in Resources */,
 				591C58281CEE20DF003C245E /* falls.jpg in Resources */,
+				5905B79C1CF1813E00B0D9B1 /* FontAwesome.otf in Resources */,
 				591C57F71CEE1FDE003C245E /* Assets.xcassets in Resources */,
+				5905B79E1CF1813E00B0D9B1 /* ionicons.ttf in Resources */,
+				5905B79D1CF1813E00B0D9B1 /* foundation-icons.ttf in Resources */,
 				591C58271CEE20DF003C245E /* bsg.jpg in Resources */,
+				5905B79F1CF1813E00B0D9B1 /* zocial-regular-webfont.ttf in Resources */,
+				59C8A4871CF0DAA200987CCA /* batman.jpg in Resources */,
+				59C8A4881CF0DAA200987CCA /* lantern.jpg in Resources */,
+				59C8A4891CF0DAA200987CCA /* superman.jpg in Resources */,
 				591C57F21CEE1FDE003C245E /* Main.storyboard in Resources */,
 				591C582A1CEE20DF003C245E /* minions.jpg in Resources */,
+				59C8A48A1CF0DAA200987CCA /* wonder.jpg in Resources */,
 				591C58291CEE20DF003C245E /* me gusta.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,15 +437,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		183F3901FCF8B2A8210A6FA6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		34A3E5623ABF5FC1CD1D2792 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wolf Beacon/Pods-Wolf Beacon-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54703E0C96F1DFC4AC57CA3A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wolf Beacon/Pods-Wolf Beacon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		591C57E51CEE1FDE003C245E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59C8A4821CF0CEFE00987CCA /* DetailTableViewController.swift in Sources */,
 				59C8A4781CF0858700987CCA /* BaseTableViewCell.swift in Sources */,
 				59C8A47C1CF08B9C00987CCA /* DetailFacilitiesTableViewCell.swift in Sources */,
 				591C58371CEE23F7003C245E /* EventTableViewCell.swift in Sources */,
-				59C8A4801CF0CEBD00987CCA /* DetailViewController.swift in Sources */,
 				591C58341CEE23D6003C245E /* HomeViewController.swift in Sources */,
 				59C8A47E1CF08C9000987CCA /* DetailCollectionTableViewCell.swift in Sources */,
 				591C582E1CEE212E003C245E /* PrefixHeader.swift in Sources */,
@@ -527,9 +643,11 @@
 		};
 		591C58151CEE1FDE003C245E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E52656C40C93ABFA7C0DBF24 /* Pods-Wolf Beacon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Wolf Beacon/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.osh.Wolf-Beacon";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -538,9 +656,11 @@
 		};
 		591C58161CEE1FDE003C245E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B90774463C8BB8CEE1C61001 /* Pods-Wolf Beacon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Wolf Beacon/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.osh.Wolf-Beacon";
 				PRODUCT_NAME = "$(TARGET_NAME)";

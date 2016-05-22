@@ -1,0 +1,56 @@
+PODS:
+  - DZNEmptyDataSet (1.7.3)
+  - FontAwesomeKit (2.2.0):
+    - FontAwesomeKit/Core (= 2.2.0)
+    - FontAwesomeKit/FontAwesome (= 2.2.0)
+    - FontAwesomeKit/FoundationIcons (= 2.2.0)
+    - FontAwesomeKit/IonIcons (= 2.2.0)
+    - FontAwesomeKit/Zocial (= 2.2.0)
+  - FontAwesomeKit/Core (2.2.0)
+  - FontAwesomeKit/FontAwesome (2.2.0):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/FoundationIcons (2.2.0):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/IonIcons (2.2.0):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/Zocial (2.2.0):
+    - FontAwesomeKit/Core
+  - IQKeyboardManagerSwift (4.0.0)
+  - PermissionScope (1.0.2)
+  - ReachabilitySwift (2.3.3)
+  - SDWebImage (3.7.5):
+    - SDWebImage/Core (= 3.7.5)
+  - SDWebImage/Core (3.7.5)
+  - SVProgressHUD (2.0.2)
+  - TextFieldEffects (1.2.0)
+
+DEPENDENCIES:
+  - DZNEmptyDataSet
+  - FontAwesomeKit (~> 2.2.0)
+  - IQKeyboardManagerSwift
+  - PermissionScope
+  - ReachabilitySwift (from `https://github.com/ashleymills/Reachability.swift`)
+  - SDWebImage (~> 3.7)
+  - SVProgressHUD
+  - TextFieldEffects
+
+EXTERNAL SOURCES:
+  ReachabilitySwift:
+    :git: https://github.com/ashleymills/Reachability.swift
+
+CHECKOUT OPTIONS:
+  ReachabilitySwift:
+    :commit: cecd16a3ef8d77e916a66a5d7422c34a3e6d0e29
+    :git: https://github.com/ashleymills/Reachability.swift
+
+SPEC CHECKSUMS:
+  DZNEmptyDataSet: dd7cca17c1d07dfa78956859b1e70a52505678ef
+  FontAwesomeKit: 025fd4dd1017fe4e3f8d47b03e024deedbb33cd4
+  IQKeyboardManagerSwift: ede2a27b4e1ce053d03073b9c7fa439322f5e405
+  PermissionScope: 860828c5516d349b6f49e5491799cfef33c5ccc7
+  ReachabilitySwift: e0f6b6f280effb47731acfaaa2d5ffe223703793
+  SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
+  SVProgressHUD: e4020e23badbd7cc61bc4a80d3c1da57f166a978
+  TextFieldEffects: bc4fd3bd557321bd61a0762f3f50965477a36f62
+
+COCOAPODS: 0.39.0
