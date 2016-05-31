@@ -17,8 +17,6 @@ class HomeViewController: UIViewController, UISearchBarDelegate, UITableViewDele
 	
 	@IBOutlet weak var tableView: UITableView!
 	
-	@IBOutlet weak var filterControl: UISegmentedControl!
-	
 	@IBOutlet weak var collectionViewHeightConstraint: NSLayoutConstraint!
 	
 	var featuredEvents: NSMutableArray = []
@@ -31,21 +29,32 @@ class HomeViewController: UIViewController, UISearchBarDelegate, UITableViewDele
 		
 		allEvents = [
 			[
-				"title"		: "Cylon-a-thon",
-				"subtitle"	: "Battlestar Galactica",
-				"image"		: "bsg.jpg"
+				"title"		: "U of T Hackathon",
+				"subtitle"	: "University of Toronto St. George Campus",
+				"image"		: "hackathonbg.jpg",
+				"detail"	: "4 years. More than 250 hackathons. More than 72 cities around the globe. We’ve seen it all. And from all of these events, we’ve noticed one thing: Anyone. Can. Code."
 			],
 			[
-				"title"		: "Gravity Falls' Weird-a-thon",
-				"subtitle"	: "Mystery Shack",
-				"image"		: "falls.jpg"
+				"title"		: "MIT Hackathon",
+				"subtitle"	: "Massachusetts Institute of Technology",
+				"image"		: "hackathonbg.jpg",
+				"detail"	: "Let’s face it, prizes just make hackathons more fun. That’s why each year, we team up with our sponsors to bring you an awesome set of prizes."
 			],
 			[
-				"title"		: "Minions' Steal-a-thon",
-				"subtitle"	: "Gru's Top Secret Lair",
-				"image"		: "minions.jpg"
+				"title"		: "Glasgow Hackathon",
+				"subtitle"	: "University of Glasgow",
+				"image"		: "hackathonbg.jpg",
+				"detail"	: "Software Hackers and Hardware Makers, It's time to heat things Up!"
+			],
+			[
+				"title"		: "Braunschweig Hackathon",
+				"subtitle"	: "Braunschweig University of Technology",
+				"image"		: "hackathonbg.jpg",
+				"detail"	: "For 2016, we’re excited for even bigger and better things! We’ll be hosting a Friday night kickoff to hear from our speaker panel, brainstorm possible tech solutions, pitch ideas, form teams, and figure out a game plan for your team. On Saturday, you’ll have 12 hours to build your prototype, receive feedback from mentors, present to our judges, and celebrate the 2016 winner!"
 			]
 		]
+		
+		tableView.registerNib(UINib.init(nibName: "EventTableViewCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "eventCell")
 		
 		featuredEvents = NSMutableArray(array: allEvents)
 		
@@ -53,7 +62,9 @@ class HomeViewController: UIViewController, UISearchBarDelegate, UITableViewDele
 		pageControl.numberOfPages = min(12, featuredEvents.count)
 		
 		setupNavigationItems()
-		setupSegmentedControl()
+		
+		self.navigationController?.navigationBar.translucent = false
+		
     }
 
     override func didReceiveMemoryWarning() {
@@ -65,25 +76,6 @@ class HomeViewController: UIViewController, UISearchBarDelegate, UITableViewDele
 	
 	func setupNavigationItems() -> Void {
 		self.navigationItem.titleView = self.searchBar
-	}
-	
-	func setupSegmentedControl() -> Void {
-		let height = self.filterControl.bounds.size.height
-		let separatorImage = blankImageWithSize(CGSizeMake(4.0, height))
-		let selectedImage = underlinedImageWithSize(CGSizeMake(height, height), tintColor: filterControl.tintColor, thickness: 2.0, fill: 0.8)
-		
-		filterControl.setDividerImage(separatorImage, forLeftSegmentState: .Normal, rightSegmentState: .Normal, barMetrics: .Default)
-		filterControl.setDividerImage(separatorImage, forLeftSegmentState: .Selected, rightSegmentState: .Normal, barMetrics: .Default)
-		filterControl.setDividerImage(separatorImage, forLeftSegmentState: .Normal, rightSegmentState: .Selected, barMetrics: .Default)
-		filterControl.setBackgroundImage(separatorImage, forState: .Normal, barMetrics: .Default)
-		filterControl.setBackgroundImage(selectedImage, forState: .Selected, barMetrics: .Default)
-		
-		let bgView = self.filterControl.superview as UIView!
-		bgView.layer.shadowPath = UIBezierPath(rect :CGRectMake(0, bgView.bounds.size.height - 1, bgView.bounds.size.width, 1)).CGPath
-		bgView.layer.masksToBounds = false;
-		bgView.layer.shadowOffset = CGSizeMake(0, 0);
-		bgView.layer.shadowRadius = 2.0;
-		bgView.layer.shadowOpacity = 1.0;
 	}
 	
 	// MARK: - Table view data source
@@ -98,11 +90,12 @@ class HomeViewController: UIViewController, UISearchBarDelegate, UITableViewDele
 	
 	func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 		if (indexPath.row < allEvents.count) {
-			let cell: EventTableViewCell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! EventTableViewCell
+			let cell: EventTableViewCell = tableView.dequeueReusableCellWithIdentifier("eventCell", forIndexPath: indexPath) as! EventTableViewCell
 			let dict = allEvents[indexPath.row] as! NSDictionary
 			cell.titleLabel.text = dict.objectForKey("title") as? String
 			cell.subtitleLabel.text = dict.objectForKey("subtitle") as? String
-			cell.iconImageView.image = UIImage(named: "me gusta.png")
+			cell.detailLabel.text = dict.objectForKey("detail") as? String
+			cell.iconImageView.image = UIImage(named: "logo\(indexPath.row)")
 			return cell
 		}
 		else {
@@ -127,6 +120,22 @@ class HomeViewController: UIViewController, UISearchBarDelegate, UITableViewDele
 		}
 		// Select from all events (filtered)
 		tableView.deselectRowAtIndexPath(indexPath, animated: true)
+	}
+	
+	func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+		return UIView()
+	}
+	
+	func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+		return 20
+	}
+	
+	func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+		return UIView()
+	}
+	
+	func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+		return 49
 	}
 	
 	// MARK: - Collection view data source
@@ -158,6 +167,10 @@ class HomeViewController: UIViewController, UISearchBarDelegate, UITableViewDele
 		pageControl.currentPage = indexPath.row
 	}
 	
+	func collectionView(collectionView: UICollectionView, didEndDisplayingCell cell: UICollectionViewCell, forItemAtIndexPath indexPath: NSIndexPath) {
+		print("End displaying \(indexPath.row)")
+	}
+	
 	// MARK: - Collection view delegate flow layout
 	
 	func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
@@ -181,7 +194,7 @@ class HomeViewController: UIViewController, UISearchBarDelegate, UITableViewDele
 	func searchBarCancelButtonClicked(searchBar: UISearchBar) {
 		self.view.layoutIfNeeded()
 		UIView.animateWithDuration(0.3) {
-			self.collectionViewHeightConstraint.constant = 244
+			self.collectionViewHeightConstraint.constant = 180
 			self.view.layoutIfNeeded()
 		}
 		searchBar.showsCancelButton = false
@@ -193,7 +206,7 @@ class HomeViewController: UIViewController, UISearchBarDelegate, UITableViewDele
 		searchBar.showsCancelButton = true
 		self.view.layoutIfNeeded()
 		UIView.animateWithDuration(0.3) { 
-			self.collectionViewHeightConstraint.constant = 64
+			self.collectionViewHeightConstraint.constant = 0
 			self.view.layoutIfNeeded()
 		}
 		return true

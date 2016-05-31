@@ -13,7 +13,8 @@ pod 'TextFieldEffects'
 pod 'PermissionScope'
 pod 'ReachabilitySwift', :git => 'https://github.com/ashleymills/Reachability.swift'
 pod 'IQKeyboardManagerSwift'
-pod 'SDWebImage', '~>3.7'
+pod 'SDWebImage'
+pod 'ChameleonFramework/Swift'
 
 end
 

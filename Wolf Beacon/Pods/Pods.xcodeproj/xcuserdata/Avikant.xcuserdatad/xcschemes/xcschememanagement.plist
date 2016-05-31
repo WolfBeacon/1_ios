@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>ChameleonFramework.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>DZNEmptyDataSet.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -57,17 +62,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2B3D99D02D2AD307155D4190745A3C73</key>
+		<key>4F1215526E4CB34D18271BFB6E0EC352</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>452D53A2E0810DF92EB6EA3F09CBDA5B</key>
+		<key>5172ACAB7FEA22813859DC97CA0AA16F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>59170B485F3A9F1E7DF9E75BD61013DF</key>
+		<key>7FC05E429817A8497A6F51568B8B9F75</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -82,17 +87,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DED6D2334456A88A5DB09A825ACEF542</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>E9B5C577F89B2F2EBCB51E034A136673</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FE40061A9B64D03A2B14D139B9F89DD1</key>
+		<key>EA6AE4F9B09FCC1F03B3C1A84C0483C4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F544D3B97033BC2A633AB81DA4F605BA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FA281D1589A8F7AD42EBA68F495622E6</key>
 		<dict>
 			<key>primary</key>
 			<true/>

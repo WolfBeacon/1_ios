@@ -84,6 +84,7 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-Wolf Beacon/ChameleonFramework.framework"
   install_framework "Pods-Wolf Beacon/DZNEmptyDataSet.framework"
   install_framework "Pods-Wolf Beacon/FontAwesomeKit.framework"
   install_framework "Pods-Wolf Beacon/IQKeyboardManagerSwift.framework"
@@ -94,6 +95,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-Wolf Beacon/TextFieldEffects.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-Wolf Beacon/ChameleonFramework.framework"
   install_framework "Pods-Wolf Beacon/DZNEmptyDataSet.framework"
   install_framework "Pods-Wolf Beacon/FontAwesomeKit.framework"
   install_framework "Pods-Wolf Beacon/IQKeyboardManagerSwift.framework"
