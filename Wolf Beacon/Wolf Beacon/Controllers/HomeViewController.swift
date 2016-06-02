@@ -8,16 +8,11 @@
 
 import UIKit
 
-class HomeViewController: UIViewController, UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UISearchControllerDelegate {
+class HomeViewController: UIViewController, UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource, UISearchControllerDelegate {
 	
 	@IBOutlet var searchBar: UISearchBar!
 	
-	@IBOutlet weak var collectionView: UICollectionView!
-	@IBOutlet weak var pageControl: UIPageControl!
-	
 	@IBOutlet weak var tableView: UITableView!
-	
-	@IBOutlet weak var collectionViewHeightConstraint: NSLayoutConstraint!
 	
 	var featuredEvents: NSMutableArray = []
 	var allEvents: NSMutableArray = []
@@ -57,9 +52,6 @@ class HomeViewController: UIViewController, UISearchBarDelegate, UITableViewDele
 		tableView.registerNib(UINib.init(nibName: "EventTableViewCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "eventCell")
 		
 		featuredEvents = NSMutableArray(array: allEvents)
-		
-		pageControl.hidden = featuredEvents.count > 12
-		pageControl.numberOfPages = min(12, featuredEvents.count)
 		
 		setupNavigationItems()
 		
@@ -120,6 +112,10 @@ class HomeViewController: UIViewController, UISearchBarDelegate, UITableViewDele
 		}
 		// Select from all events (filtered)
 		tableView.deselectRowAtIndexPath(indexPath, animated: true)
+		let navVC = self.storyboard?.instantiateViewControllerWithIdentifier("DetailTableVCNav") as! UINavigationController
+//		let detailVC = navVC.viewControllers.first as! DetailTableViewController
+		// Do stuff with detail
+		self.navigationController?.presentViewController(navVC, animated: true, completion: nil)
 	}
 	
 	func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -138,53 +134,6 @@ class HomeViewController: UIViewController, UISearchBarDelegate, UITableViewDele
 		return 49
 	}
 	
-	// MARK: - Collection view data source
-	
-	func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-		return 1
-	}
-	
-	func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-		return featuredEvents.count
-	}
-	
-	func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-		let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! FeaturedCollectionViewCell
-		let dict = featuredEvents[indexPath.row] as! NSDictionary
-		cell.imageView.image = UIImage(named: (dict.objectForKey("image") as! String))
-		cell.titleLabel.text = dict.objectForKey("title") as? String
-		cell.subtitleLabel.text = dict.objectForKey("subtitle") as? String
-		return cell
-	}
-	
-	// MARK: - Collection view delegate
-	
-	func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-		// Select from featured events
-	}
-	
-	func collectionView(collectionView: UICollectionView, willDisplayCell cell: UICollectionViewCell, forItemAtIndexPath indexPath: NSIndexPath) {
-		pageControl.currentPage = indexPath.row
-	}
-	
-	func collectionView(collectionView: UICollectionView, didEndDisplayingCell cell: UICollectionViewCell, forItemAtIndexPath indexPath: NSIndexPath) {
-		print("End displaying \(indexPath.row)")
-	}
-	
-	// MARK: - Collection view delegate flow layout
-	
-	func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-		return collectionView.frame.size
-	}
-	
-	func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAtIndex section: Int) -> CGFloat {
-		return 0
-	}
-	
-	func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAtIndex section: Int) -> CGFloat {
-		return 0
-	}
-	
 	// MARK: - Search bar delegate
 	
 	func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
@@ -192,11 +141,6 @@ class HomeViewController: UIViewController, UISearchBarDelegate, UITableViewDele
 	}
 	
 	func searchBarCancelButtonClicked(searchBar: UISearchBar) {
-		self.view.layoutIfNeeded()
-		UIView.animateWithDuration(0.3) {
-			self.collectionViewHeightConstraint.constant = 180
-			self.view.layoutIfNeeded()
-		}
 		searchBar.showsCancelButton = false
 		searchBar.text = ""
 		self.searchBarTextDidEndEditing(searchBar)
@@ -204,11 +148,6 @@ class HomeViewController: UIViewController, UISearchBarDelegate, UITableViewDele
 	
 	func searchBarShouldBeginEditing(searchBar: UISearchBar) -> Bool {
 		searchBar.showsCancelButton = true
-		self.view.layoutIfNeeded()
-		UIView.animateWithDuration(0.3) { 
-			self.collectionViewHeightConstraint.constant = 0
-			self.view.layoutIfNeeded()
-		}
 		return true
 	}
 	

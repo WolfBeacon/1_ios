@@ -18,6 +18,7 @@ class DetailTableViewController: UITableViewController, DetailCollectionTableVie
 	var guestsArray = NSMutableArray()
 	var prizesArray = NSMutableArray()
 	var linksArray = NSMutableArray()
+	var photosArray = NSMutableArray()
 	
 	var expandedSections: [Int] = [1, 1, 1, 1, 1, 1, 1, 1, 1]
 	
@@ -25,15 +26,18 @@ class DetailTableViewController: UITableViewController, DetailCollectionTableVie
         super.viewDidLoad()
 
 		// Header image
-		headerImageView.image = UIImage(named: "me gusta")
+		/*
+		headerImageView.image = UIImage(named: "mithackathon.jpg")
 		headerImageView.contentMode = .ScaleAspectFit
 		self.tableView.tableHeaderView = headerImageView
+		*/
 		
 		let footerView = UIView(frame: CGRectMake(0, 0, SWidth, 44))
 //		footerView.backgroundColor = UIColor(red: 45/255, green: 102/255, blue: 13/255, alpha: 1)
 		self.tableView.tableFooterView = footerView
 		
 		// Floating 'Apply' button
+		/*
 		let applyButtonView = UIView(frame: CGRectMake(0, SHeight - 44, SWidth, 44))
 		applyButtonView.backgroundColor = UIColor.whiteColor()
 		applyButtonView.layer.shadowPath = UIBezierPath(rect: CGRectMake(0, 0, SWidth, 1)).CGPath
@@ -46,26 +50,28 @@ class DetailTableViewController: UITableViewController, DetailCollectionTableVie
 		applyButton.addTarget(self, action: #selector(DetailTableViewController.applyAction(_:)), forControlEvents: .TouchUpInside)
 		applyButtonView.addSubview(applyButton)
 		self.navigationController?.view.addSubview(applyButtonView)
+		*/
 		
 		// Nav title
-		self.navigationItem.title = "U of T Hackathon"
+		self.navigationItem.title = "MIT Hackathon"
 		
 		facalitiesArray = NSMutableArray(array: ["Travel reimbruishment", "Bus route supported", "Free pizzas twice a day"])
 		
 		sponsersArray = NSMutableArray(array: CollectionDataSource.dataSourceFromJSONStructure(
 			[
-				["title": "Bruce", "imageName": "batman.jpg"],
-				["title": "Clark", "imageName": "superman.jpg"],
-				["title": "Diana", "imageName": "wonder.jpg"],
-				["title": " Hal ", "imageName": "lantern.jpg"]
+				["title": "Legatum Center for Development & Entrepreneurship", "imageName": "sponser1.jpg"],
+				["title": "Lemelson-MIT Program", "imageName": "sponser2.png"],
+				["title": "Department of C & E", "imageName": "sponser3.png"],
+				["title": "Department of Mechanical Engg", "imageName": "sponser4.jpg"]
 			]
 		))
 
 		guestsArray = NSMutableArray(array: CollectionDataSource.dataSourceFromJSONStructure(
 			[
-				["title": "Diana", "imageName": "wonder.jpg"],
-				["title": "Bruce", "imageName": "batman.jpg"],
-				["title": "Clark", "imageName": "superman.jpg"]
+				["title": "Maurice Moss", "imageName": "moss.jpg"],
+				["title": "Bertram Gilfoyle", "imageName": "gilfoyle.jpg"],
+				["title": "Harvey Specter", "imageName": "harvey.jpg"],
+				["title": "The Doctor", "imageName": "doctor.jpg"],
 			]
 		))
 		
@@ -90,6 +96,22 @@ class DetailTableViewController: UITableViewController, DetailCollectionTableVie
 				["title": "wolfbeacon.com/uofthon", "url": "https://wolfbeacon.com/uofthon", "icon": "fa-rss"]
 			]
 		)
+		
+		photosArray = NSMutableArray(array: CollectionDataSource.dataSourceFromJSONStructure(
+			[
+				["title": "", "imageName": "mitcampus.jpg"],
+				["title": "", "imageName": "hackathon1.jpg"],
+				["title": "", "imageName": "hackathon2.jpg"],
+				["title": "", "imageName": "mitcampus.jpg"],
+			]
+		))
+		
+		tableView.registerNib(UINib(nibName: "DetailHeaderTableViewCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "headerCell")
+		tableView.registerNib(UINib(nibName: "DetailFacilitiesTableViewCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "facilitiesCell")
+		// Move these to NIBs later...
+//		tableView.registerNib(UINib(nibName: "DetailCollectionTableViewCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "collectionCell")
+//		tableView.registerNib(UINib(nibName: "DetailCollectionTableViewCell2", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "photosCell")
+		
 		
     }
 
@@ -135,16 +157,16 @@ class DetailTableViewController: UITableViewController, DetailCollectionTableVie
 		if (indexPath.section == 0) {
 			if (indexPath.row == 0) {
 				let cell = tableView.dequeueReusableCellWithIdentifier("headerCell", forIndexPath: indexPath) as! DetailHeaderTableViewCell
-				cell.titleLabel.text = "U of T"
-				cell.subtitleLabel.text = "hackathon"
-				cell.locationButton.setTitle("University of Toronto, St. George Campus", forState: .Normal)
+				cell.titleLabel.text = "MIT C&E Department Presents"
+				cell.subtitleLabel.text = "MIT Energy Campus Hackathon"
+				cell.locationButton.setTitle("Department of Civil and Environmental Engineering, MIT", forState: .Normal)
 				cell.locationButton.addTarget(self, action: #selector(DetailTableViewController.didPressLocationButton(_:)), forControlEvents: .TouchUpInside)
 				cell.favButton.addTarget(self, action: #selector(DetailTableViewController.favoriteAction(_:)), forControlEvents: .TouchUpInside)
-				cell.fromDate = NSDate(timeIntervalSinceNow: 86400 * 2)
-				cell.toDate = NSDate(timeIntervalSinceNow: 86400 * 3.6)
-				cell.bottomSeparator = false
-				cell.topSeparator = false
-				cell.descriptionLabel.text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."
+				let formatter = NSDateFormatter()
+				formatter.dateFormat = "yyyy-MM-dd hh:mm a"
+				cell.fromDate = formatter.dateFromString("2016-06-24 10:00 AM")!
+				cell.toDate = formatter.dateFromString("2016-06-26 4:00 PM")!
+				cell.descriptionLabel.text = "The MIT Energy Hackathon is a helpful platform to learn real-world challenges, generate ideas, find startup partners, and win cash awards. For companies, it acts as a powerful crowdsourcing platform that generates a breadth of potential solutions for their challenge."
 				return cell
 			}
 			else {
@@ -153,71 +175,62 @@ class DetailTableViewController: UITableViewController, DetailCollectionTableVie
 				return cell
 			}
 		}
+			
+		// Photos
+		else if (indexPath.section == 1) {
+			let cell = tableView.dequeueReusableCellWithIdentifier("photosCell", forIndexPath: indexPath) as! DetailCollectionTableViewCell
+			cell.dataSource = photosArray
+			cell.delegate = self
+			cell.tag = indexPath.section
+			cell.itemSize = CGRectInset(cell.bounds, 0, 0).size
+			cell.itemSpacing = 0.0
+			cell.showsLabel = false
+			return cell
+		}
 		
 		// Sponsers
-		else if (indexPath.section == 1) {
+		else if (indexPath.section == 2) {
 			let cell = tableView.dequeueReusableCellWithIdentifier("collectionCell", forIndexPath: indexPath) as! DetailCollectionTableViewCell
 			cell.dataSource = sponsersArray
 			cell.tag = indexPath.section
 			cell.delegate = self
 			cell.showsLabel = true
-			cell.bottomSeparator = false
-			cell.topSeparator = false
+			cell.itemSpacing = 4.0
 			return cell
 		}
 		
 		// Guest Speakers
-		else if (indexPath.section == 2) {
+		else if (indexPath.section == 3) {
 			let cell = tableView.dequeueReusableCellWithIdentifier("collectionCell", forIndexPath: indexPath) as! DetailCollectionTableViewCell
 			cell.dataSource = guestsArray
 			cell.tag = indexPath.section
 			cell.delegate = self
 			cell.showsLabel = true
-			cell.bottomSeparator = false
-			cell.topSeparator = false
 			return cell
 		}
 		
 		// Prizes
-		else if (indexPath.section == 3) {
+		else if (indexPath.section == 4) {
 			let cell = tableView.dequeueReusableCellWithIdentifier("collectionCell", forIndexPath: indexPath) as! DetailCollectionTableViewCell
 			cell.dataSource = prizesArray
 			cell.tag = indexPath.section
 			cell.delegate = self
 			cell.showsLabel = false
-			cell.bottomSeparator = false
-			cell.topSeparator = false
+			cell.itemSpacing = 4.0
 			return cell
 		}
 		
 		// Hardware?
-		else if (indexPath.section == 4) {
+		else if (indexPath.section == 5) {
 			let cell = tableView.dequeueReusableCellWithIdentifier("textDetailsCell", forIndexPath: indexPath) as! BaseTableViewCell
 			cell.textLabel?.text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
-			cell.bottomSeparator = false
-			cell.topSeparator = false
 			return cell
 		}
 		
 		// Travel?
-		else if (indexPath.section == 5) {
+		else if (indexPath.section == 6) {
 			let cell = tableView.dequeueReusableCellWithIdentifier("textDetailsCell", forIndexPath: indexPath) as! BaseTableViewCell
 			cell.textLabel?.text = "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."
-			cell.bottomSeparator = false
-			cell.topSeparator = false
-			return cell
-		}
-		
-		// Photos
-		else if (indexPath.section == 6) {
-			let cell = tableView.dequeueReusableCellWithIdentifier("photosCell", forIndexPath: indexPath) as! DetailCollectionTableViewCell
-			cell.dataSource = prizesArray
-			cell.delegate = self
-			cell.tag = indexPath.section
-			cell.itemSize = CGRectInset(cell.bounds, 2, 0).size
-			cell.showsLabel = false
-			cell.bottomSeparator = false
-			cell.topSeparator = false
 			return cell
 		}
 		
@@ -232,8 +245,6 @@ class DetailTableViewController: UITableViewController, DetailCollectionTableVie
 		
 		else if (indexPath.section == 8) {
 			let cell = tableView.dequeueReusableCellWithIdentifier("applyCell", forIndexPath: indexPath) as! BaseTableViewCell
-			cell.topSeparator = false
-			cell.bottomSeparator = false
 			return cell
 		}
 		
@@ -247,15 +258,15 @@ class DetailTableViewController: UITableViewController, DetailCollectionTableVie
 	override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
 		switch indexPath.section {
 			case 0:
-				if (indexPath.row == 0) { return 180 }
+				if (indexPath.row == 0) { return 260 }
 				else { return 24 }
-			case 1, 2:
+			case 2, 3:
 				return SWidth/4 * 8/5
-			case 3:
+			case 4:
 				return SWidth/2 * 8/5 - 12
-			case 4, 5:
+			case 5, 6:
 				return 120
-			case 6:
+			case 1:
 				return 240
 			default:
 				return 44
@@ -270,56 +281,43 @@ class DetailTableViewController: UITableViewController, DetailCollectionTableVie
 	}
 	
 	override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-		if (section == 1 || section == 2 || section == 7) {
-			return 40
-		}
-		else if (section == 3 || section == 4 || section == 5) {
-			return 60
-		}
+		if (section >= 2 && section <= 7) { return 40 }
 		return 0
 	}
 	
 	override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-		if (section == 1 || section == 2 || section == 7) {
+		if (section >= 2 && section <= 7) {
 			let headerView = UIView(frame: CGRectMake(0, 0, SWidth, 40))
-			headerView.backgroundColor = UIColor(red: 244/255, green: 244/255, blue: 244/255, alpha: 1)
-			let titleLabel = UILabel(frame: CGRectMake(40, 10, SWidth - 60, 30))
-//			titleLabel.font = UIFont(name: "", size: 18)
-			if (section == 1) { titleLabel.text = "Sponsors" }
-			else if (section == 2) { titleLabel.text = "Guest Speakers" }
-			else {
-				titleLabel.text = "Miscellaneous"
-				headerView.backgroundColor = UIColor.whiteColor()
-			}
-			headerView.addSubview(titleLabel)
-			return headerView
-		}
-		else if (section == 3 || section == 4 || section == 5) {
-			let headerView = UIView(frame: CGRectMake(0, 0, SWidth, 60))
 //			headerView.backgroundColor = UIColor(red: 244/255, green: 244/255, blue: 244/255, alpha: 1)
-			let titleLabel = UILabel(frame: CGRectMake(20, 20, SWidth - 80, 40))
-//			titleLabel.font = UIFont(name: "", size: 18)
-			if (section == 3) { titleLabel.text = "Prizes" }
-			else if (section == 4) { titleLabel.text = "HARDWARE" }
-			else { titleLabel.text = "TRAVEL REIMBURSEMENT" }
+			let titleLabel = UILabel(frame: CGRectMake(20, 10, SWidth - 80, 20))
+			titleLabel.font = UIFont.systemFontOfSize(13)
+			titleLabel.textColor = UIColor.darkGrayColor()
+			if (section == 2) { titleLabel.text = "SPONSERS" }
+			else if (section == 3) { titleLabel.text = "GUEST SPEAKERS" }
+			else if (section == 4) { titleLabel.text = "PRIZES" }
+			else if (section == 5) { titleLabel.text = "HARDWARE" }
+			else if (section == 6) { titleLabel.text = "TRAVEL REIMBURSEMENT" }
+			else if (section == 7) { titleLabel.text = "MISCELLANEOUS" }
 			headerView.addSubview(titleLabel)
-			let collapseButton = UIButton(frame: CGRectMake(SWidth - 60, 20, 40, 40))
-			collapseButton.tag = section
-			if (expandedSections[section] == 0) {
-				collapseButton.setImage(UIImage(named: "Down"), forState: .Normal)
+			if (section >= 4 && section <= 6) {
+				let collapseButton = UIButton(frame: CGRectMake(SWidth - 60, 20, 20, 20))
+				collapseButton.tag = section
+				if (expandedSections[section] == 0) {
+					collapseButton.setImage(UIImage(named: "Down"), forState: .Normal)
+				}
+				else {
+					collapseButton.setImage(UIImage(named: "Up"), forState: .Normal)
+				}
+				collapseButton.addTarget(self, action: #selector(DetailTableViewController.collapseSection(_:)), forControlEvents: .TouchUpInside)
+				headerView.addSubview(collapseButton)
 			}
-			else {
-				collapseButton.setImage(UIImage(named: "Up"), forState: .Normal)
-			}
-			collapseButton.addTarget(self, action: #selector(DetailTableViewController.collapseSection(_:)), forControlEvents: .TouchUpInside)
-			headerView.addSubview(collapseButton)
 			return headerView
 		}
 		return UIView(frame: CGRectZero)
 	}
 	
 	override func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-		return 4
+		return 12
 	}
 	
 	override func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
@@ -337,7 +335,7 @@ class DetailTableViewController: UITableViewController, DetailCollectionTableVie
 	func collapseSection(sender: UIButton) -> Void {
 		let section = sender.tag
 		sender.transform = CGAffineTransformIdentity
-		UIView.animateWithDuration(0.3, animations: { 
+		UIView.animateWithDuration(0.3, delay: 0.3, options: .CurveEaseIn, animations: {
 			sender.transform = CGAffineTransformMakeRotation(CGFloat(M_PI))
 			}) { (done) in
 				if (self.expandedSections[section] == 0) { self.expandedSections[section] = 1 }

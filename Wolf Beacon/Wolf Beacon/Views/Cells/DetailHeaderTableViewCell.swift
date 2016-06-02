@@ -35,7 +35,7 @@ class DetailHeaderTableViewCell: BaseTableViewCell {
 	func updateTimeLabel() -> Void {
 		let formatter = NSDateFormatter()
 		formatter.dateFormat = "EEE, MMM dd, hh:mm a"
-		timeLabel.text = "\(formatter.stringFromDate(fromDate)) to \(formatter.stringFromDate(toDate))"
+		timeLabel.text = "\(formatter.stringFromDate(fromDate)) - \(formatter.stringFromDate(toDate))"
 	}
 
     /*

@@ -42,15 +42,19 @@ class CollectionDataSource: NSObject {
 class DetailCollectionViewCell: UICollectionViewCell {
 	@IBOutlet weak var imageView: UIImageView!
 	@IBOutlet weak var titleLabel: UILabel!
+	/*
 	override func awakeFromNib() {
 		self.backgroundColor = UIColor.clearColor()
 		self.layer.backgroundColor = UIColor.clearColor().CGColor
-		self.layer.shadowPath = UIBezierPath(rect: self.bounds).CGPath
-		self.layer.shadowColor = UIColor.blackColor().CGColor
-		self.layer.shadowOffset = CGSizeZero
-		self.layer.shadowOpacity = 1.0
-		self.layer.shadowRadius = 2.0
+		self.layer.borderColor = UIColor.whiteColor().CGColor
+		self.layer.borderWidth = 4.0
+//		self.layer.shadowPath = UIBezierPath(rect: self.bounds).CGPath
+//		self.layer.shadowColor = UIColor.blackColor().CGColor
+//		self.layer.shadowOffset = CGSizeZero
+//		self.layer.shadowOpacity = 1.0
+//		self.layer.shadowRadius = 2.0
 	}
+	*/
 }
 
 // MARK: -
@@ -85,6 +89,7 @@ class DetailCollectionTableViewCell: BaseTableViewCell, UICollectionViewDataSour
 	}
 	
 	var itemSize: CGSize = CGSizeMake(SWidth/4 - 8, (8*(SWidth/4 - 8))/5)
+	var itemSpacing: CGFloat = 4.0
 	
 	override func awakeFromNib() {
 		self.collectionView.dataSource = self
@@ -130,19 +135,19 @@ class DetailCollectionTableViewCell: BaseTableViewCell, UICollectionViewDataSour
 	}
 	
 	func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAtIndex section: Int) -> CGFloat {
-		return 4
+		return itemSpacing
 	}
 	
 	func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAtIndex section: Int) -> CGFloat {
-		return 4
+		return itemSpacing
 	}
-
-    /*
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func drawRect(rect: CGRect) {
-        // Drawing code
-    }
-    */
-
+	
+	/*
+	// Only override drawRect: if you perform custom drawing.
+	// An empty implementation adversely affects performance during animation.
+	override func drawRect(rect: CGRect) {
+	// Drawing code
+	}
+	*/
+	
 }
