@@ -10,32 +10,57 @@ import UIKit
 
 class DetailHeaderTableViewCell: BaseTableViewCell {
 	
+	@IBOutlet weak var logoImageView: UIImageView!
+	
 	@IBOutlet weak var titleLabel: UILabel!
-	@IBOutlet weak var subtitleLabel: UILabel!
 	
 	@IBOutlet weak var locationButton: UIButton!
 	
-	@IBOutlet weak var timeLabel: UILabel!
+	@IBOutlet weak var timeSlotButton: UIButton!
 	
-	@IBOutlet weak var descriptionLabel: UILabel!
+	@IBOutlet weak var applyButton: UIButton!
 	
-	@IBOutlet weak var favButton: UIButton!
+	override func awakeFromNib() {
+		locationButton.titleLabel?.lineBreakMode = .ByWordWrapping
+		locationButton.titleLabel?.numberOfLines = 0
+		locationButton.titleLabel?.textAlignment = .Left
+		locationButton.contentHorizontalAlignment = .Left
+		locationButton.contentVerticalAlignment = .Top
+		locationButton.titleEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0)
+		
+		timeSlotButton.titleLabel?.lineBreakMode = .ByWordWrapping
+		timeSlotButton.titleLabel?.textAlignment = .Left
+		
+		applyButton.layer.borderWidth = 1.0
+		applyButton.layer.borderColor = applyButton.tintColor.CGColor
+		applyButton.layer.cornerRadius = 4.0
+		applyButton.setTitle("APPLY", forState: .Normal)
+		
+		logoImageView.layer.cornerRadius = 20.0
+		logoImageView.layer.backgroundColor = UIColor.flatWhiteColor().CGColor
+		logoImageView.layer.masksToBounds = true
+	}
+	
+	func setLocationText(locationText: String) -> Void {
+		locationButton.setTitle(locationText, forState: .Normal)
+	}
 	
 	var fromDate: NSDate = NSDate() {
 		didSet {
-			updateTimeLabel()
+			updateTimeButtonTitle()
 		}
 	}
 	var toDate: NSDate = NSDate() {
 		didSet {
-			updateTimeLabel()
+			updateTimeButtonTitle()
 		}
 	}
 	
-	func updateTimeLabel() -> Void {
+	func updateTimeButtonTitle() -> Void {
+		textLabel?.textAlignment
 		let formatter = NSDateFormatter()
 		formatter.dateFormat = "EEE, MMM dd, hh:mm a"
-		timeLabel.text = "\(formatter.stringFromDate(fromDate)) - \(formatter.stringFromDate(toDate))"
+		timeSlotButton.setTitle("\(formatter.stringFromDate(fromDate)) - \(formatter.stringFromDate(toDate)) ❯", forState: .Normal)
 	}
 
     /*

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="o13-Bg-L1M">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="o13-Bg-L1M">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
         <!--More-->
@@ -117,168 +118,8 @@ LOAD MORE.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="collectionCell" rowHeight="144" id="PMt-Y4-nJj" customClass="DetailCollectionTableViewCell" customModule="Wolf_Beacon" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="113.5" width="600" height="144"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PMt-Y4-nJj" id="tJR-xa-XT9">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="144"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="b2N-wA-Yrd">
-                                            <rect key="frame" x="8" y="4" width="584" height="135.5"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="crx-Ua-tzC">
-                                                <size key="itemSize" width="96" height="128"/>
-                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                            </collectionViewFlowLayout>
-                                            <cells>
-                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionCell" id="85V-DA-22U" customClass="DetailCollectionViewCell" customModule="Wolf_Beacon" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="4" width="96" height="128"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                                        <rect key="frame" x="0.0" y="0.0" width="96" height="128"/>
-                                                        <autoresizingMask key="autoresizingMask"/>
-                                                        <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="I53-We-DtW">
-                                                                <rect key="frame" x="0.0" y="0.0" width="96" height="128"/>
-                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                            </imageView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acA-G5-pRZ">
-                                                                <rect key="frame" x="0.0" y="113.5" width="96" height="14.5"/>
-                                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                        </subviews>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                    </view>
-                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="trailingMargin" secondItem="I53-We-DtW" secondAttribute="trailing" constant="-8" id="GKT-zW-PwC"/>
-                                                        <constraint firstItem="I53-We-DtW" firstAttribute="top" secondItem="85V-DA-22U" secondAttribute="topMargin" constant="-8" id="JWi-u2-6dr"/>
-                                                        <constraint firstItem="I53-We-DtW" firstAttribute="leading" secondItem="85V-DA-22U" secondAttribute="leadingMargin" constant="-8" id="OYA-ng-sjc"/>
-                                                        <constraint firstAttribute="bottomMargin" secondItem="acA-G5-pRZ" secondAttribute="bottom" constant="-8" id="WKD-sV-1Uz"/>
-                                                        <constraint firstAttribute="bottomMargin" secondItem="I53-We-DtW" secondAttribute="bottom" constant="-8" id="Zo1-KL-Pke"/>
-                                                        <constraint firstItem="acA-G5-pRZ" firstAttribute="leading" secondItem="85V-DA-22U" secondAttribute="leadingMargin" constant="-8" id="gss-rN-iwf"/>
-                                                        <constraint firstAttribute="trailingMargin" secondItem="acA-G5-pRZ" secondAttribute="trailing" constant="-8" id="nno-6K-KzT"/>
-                                                    </constraints>
-                                                    <connections>
-                                                        <outlet property="imageView" destination="I53-We-DtW" id="q9n-C9-EFY"/>
-                                                        <outlet property="titleLabel" destination="acA-G5-pRZ" id="g6l-54-KGa"/>
-                                                    </connections>
-                                                </collectionViewCell>
-                                            </cells>
-                                        </collectionView>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="leadingMargin" secondItem="b2N-wA-Yrd" secondAttribute="leading" id="07m-BI-PWV"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="b2N-wA-Yrd" secondAttribute="trailing" id="1FS-7T-Skp"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="b2N-wA-Yrd" secondAttribute="bottom" constant="-4" id="qX2-sg-oIr"/>
-                                        <constraint firstItem="b2N-wA-Yrd" firstAttribute="top" secondItem="tJR-xa-XT9" secondAttribute="topMargin" constant="-4" id="vEB-4M-wsY"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <outlet property="collectionView" destination="b2N-wA-Yrd" id="BrZ-nI-fYc"/>
-                                </connections>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="photosCell" rowHeight="200" id="wTT-1E-aJx" customClass="DetailCollectionTableViewCell" customModule="Wolf_Beacon" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="257.5" width="600" height="200"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wTT-1E-aJx" id="qO3-80-nMO">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="rig-jp-IYO">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="199.5"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="244" id="NpI-I9-cXS"/>
-                                            </constraints>
-                                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="FKs-ZR-pKJ">
-                                                <size key="itemSize" width="601" height="180.5"/>
-                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                            </collectionViewFlowLayout>
-                                            <cells>
-                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionCell" id="AJ0-2O-cIO" customClass="DetailCollectionViewCell" customModule="Wolf_Beacon" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="9.5" width="601" height="180.5"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                                        <rect key="frame" x="0.0" y="0.0" width="601" height="180.5"/>
-                                                        <autoresizingMask key="autoresizingMask"/>
-                                                        <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZWF-4H-8ub">
-                                                                <rect key="frame" x="0.0" y="0.0" width="601" height="180.5"/>
-                                                            </imageView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jM6-NQ-XaD">
-                                                                <rect key="frame" x="8" y="127" width="585" height="18"/>
-                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
-                                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                        </subviews>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                    </view>
-                                                    <constraints>
-                                                        <constraint firstAttribute="leadingMargin" secondItem="jM6-NQ-XaD" secondAttribute="leading" id="1dG-ND-3Dv"/>
-                                                        <constraint firstAttribute="bottomMargin" secondItem="ZWF-4H-8ub" secondAttribute="bottom" constant="-8" id="9fw-MB-hJf"/>
-                                                        <constraint firstAttribute="trailingMargin" secondItem="ZWF-4H-8ub" secondAttribute="trailing" constant="-8" id="AVd-Sm-YXv"/>
-                                                        <constraint firstItem="jM6-NQ-XaD" firstAttribute="top" secondItem="AJ0-2O-cIO" secondAttribute="topMargin" constant="119" id="EEP-EB-oJ5"/>
-                                                        <constraint firstAttribute="bottomMargin" secondItem="jM6-NQ-XaD" secondAttribute="bottom" constant="27.5" id="O1b-i1-lOi"/>
-                                                        <constraint firstItem="ZWF-4H-8ub" firstAttribute="top" secondItem="AJ0-2O-cIO" secondAttribute="topMargin" constant="-8" id="bBQ-z7-QKZ"/>
-                                                        <constraint firstItem="ZWF-4H-8ub" firstAttribute="leading" secondItem="AJ0-2O-cIO" secondAttribute="leadingMargin" constant="-8" id="bjv-lC-vaQ"/>
-                                                        <constraint firstItem="jM6-NQ-XaD" firstAttribute="centerX" secondItem="AJ0-2O-cIO" secondAttribute="centerX" id="srx-4T-cQg"/>
-                                                        <constraint firstAttribute="trailingMargin" secondItem="jM6-NQ-XaD" secondAttribute="trailing" id="tsY-03-Xzx"/>
-                                                    </constraints>
-                                                    <variation key="default">
-                                                        <mask key="constraints">
-                                                            <exclude reference="EEP-EB-oJ5"/>
-                                                            <exclude reference="srx-4T-cQg"/>
-                                                        </mask>
-                                                    </variation>
-                                                    <connections>
-                                                        <outlet property="imageView" destination="ZWF-4H-8ub" id="uGa-If-oer"/>
-                                                        <outlet property="titleLabel" destination="jM6-NQ-XaD" id="3Wq-fo-gGk"/>
-                                                    </connections>
-                                                </collectionViewCell>
-                                            </cells>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="NpI-I9-cXS"/>
-                                                </mask>
-                                            </variation>
-                                            <connections>
-                                                <outlet property="dataSource" destination="cxP-kk-bhR" id="vAR-PA-FKn"/>
-                                                <outlet property="delegate" destination="cxP-kk-bhR" id="wn9-Vf-w0R"/>
-                                            </connections>
-                                        </collectionView>
-                                        <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="1" translatesAutoresizingMaskIntoConstraints="NO" id="Lm9-Fx-cnZ">
-                                            <rect key="frame" x="0.0" y="171" width="600" height="37"/>
-                                        </pageControl>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="bottomMargin" secondItem="Lm9-Fx-cnZ" secondAttribute="bottom" constant="-16" id="HPS-hT-9mv"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="rig-jp-IYO" secondAttribute="bottom" constant="-8" id="afs-vZ-Uuy"/>
-                                        <constraint firstItem="rig-jp-IYO" firstAttribute="leading" secondItem="qO3-80-nMO" secondAttribute="leadingMargin" constant="-8" id="d4D-d9-MnY"/>
-                                        <constraint firstItem="rig-jp-IYO" firstAttribute="top" secondItem="qO3-80-nMO" secondAttribute="topMargin" constant="-8" id="hFc-RG-NzH"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="rig-jp-IYO" secondAttribute="trailing" constant="-8" id="krL-HK-ozV"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="Lm9-Fx-cnZ" secondAttribute="trailing" constant="-8" id="rqz-Ud-rGC"/>
-                                        <constraint firstItem="Lm9-Fx-cnZ" firstAttribute="leading" secondItem="qO3-80-nMO" secondAttribute="leadingMargin" constant="-8" id="tZ6-Y0-Zkr"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <outlet property="collectionView" destination="rig-jp-IYO" id="JjQ-Yu-maT"/>
-                                    <outlet property="pageControl" destination="Lm9-Fx-cnZ" id="dv8-W8-VzO"/>
-                                </connections>
-                            </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="miscCell" textLabel="YbO-5g-FIO" imageView="28t-0W-96D" rowHeight="44" style="IBUITableViewCellStyleDefault" id="oVN-in-eVM" customClass="BaseTableViewCell" customModule="Wolf_Beacon" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="457.5" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="113.5" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oVN-in-eVM" id="9DD-ct-aJU">
                                     <rect key="frame" x="0.0" y="0.0" width="567" height="44"/>
@@ -300,7 +141,7 @@ LOAD MORE.</string>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="applyCell" textLabel="iwc-zw-NCF" rowHeight="44" style="IBUITableViewCellStyleDefault" id="Xgn-q7-mWb" customClass="BaseTableViewCell" customModule="Wolf_Beacon" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="501.5" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="157.5" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xgn-q7-mWb" id="rDE-xM-ULs">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
@@ -311,31 +152,6 @@ LOAD MORE.</string>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="textDetailsCell" textLabel="aYG-SS-ams" detailTextLabel="UaD-5A-yuz" rowHeight="80" style="IBUITableViewCellStyleSubtitle" id="bPj-7b-ziK" customClass="BaseTableViewCell" customModule="Wolf_Beacon" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="545.5" width="600" height="80"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bPj-7b-ziK" id="Skh-U7-946">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aYG-SS-ams">
-                                            <rect key="frame" x="15" y="25" width="28" height="17"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UaD-5A-yuz">
-                                            <rect key="frame" x="15" y="42" width="40.5" height="13.5"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -356,12 +172,16 @@ LOAD MORE.</string>
                                 <action selector="doneAction:" destination="e84-MW-WOM" id="Cue-pr-EG4"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Apply" style="done" id="DD4-Da-aGo">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <connections>
-                                <action selector="applyAction:" destination="e84-MW-WOM" id="76H-J8-vXO"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem image="heartEmpty" id="zmz-Uf-5bx">
+                                <inset key="imageInsets" minX="-8" minY="0.0" maxX="8" maxY="0.0"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </barButtonItem>
+                            <barButtonItem image="calendar" id="6jG-5I-gLY">
+                                <inset key="imageInsets" minX="8" minY="0.0" maxX="-8" maxY="0.0"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8dc-gh-JJ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -536,7 +356,9 @@ LOAD MORE.</string>
         <image name="Event" width="32" height="32"/>
         <image name="Favorite" width="32" height="32"/>
         <image name="More" width="32" height="32"/>
+        <image name="calendar" width="24" height="24"/>
         <image name="facebook" width="30" height="30"/>
+        <image name="heartEmpty" width="32" height="32"/>
     </resources>
     <color key="tintColor" red="0.1764705882" green="0.40000000000000002" blue="0.050980392159999999" alpha="1" colorSpace="calibratedRGB"/>
 </document>

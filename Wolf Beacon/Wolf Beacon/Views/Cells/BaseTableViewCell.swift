@@ -16,7 +16,7 @@ class BaseTableViewCell: UITableViewCell {
 		}
 	}
 	
-	var topOffset: CGFloat = 0.0 {
+	var topOffset: CGFloat = 20.0 {
 		didSet {
 			self.setNeedsDisplay()
 		}
@@ -28,7 +28,7 @@ class BaseTableViewCell: UITableViewCell {
 		}
 	}
 	
-	var bottomOffset: CGFloat = 0.0 {
+	var bottomOffset: CGFloat = 20.0 {
 		didSet {
 			self.setNeedsDisplay()
 		}
@@ -41,7 +41,7 @@ class BaseTableViewCell: UITableViewCell {
 		if (topSeparator) {
 			let beizerPath = UIBezierPath()
 			beizerPath.moveToPoint(CGPointMake(topOffset, 0))
-			beizerPath.addLineToPoint(CGPointMake(size.width - topOffset, 0))
+			beizerPath.addLineToPoint(CGPointMake(size.width, 0))
 			beizerPath.lineWidth = 0.5
 			UIColor.lightGrayColor().setStroke()
 			beizerPath.stroke()
@@ -49,7 +49,7 @@ class BaseTableViewCell: UITableViewCell {
 		if (bottomSeparator) {
 			let beizerPath = UIBezierPath()
 			beizerPath.moveToPoint(CGPointMake(topOffset, size.height - 0.5))
-			beizerPath.addLineToPoint(CGPointMake(size.width - topOffset, size.height - 0.5))
+			beizerPath.addLineToPoint(CGPointMake(size.width, size.height - 0.5))
 			beizerPath.lineWidth = 0.5
 			UIColor.lightGrayColor().setStroke()
 			beizerPath.stroke()
