@@ -20,6 +20,10 @@ class DetailHeaderTableViewCell: BaseTableViewCell {
 	
 	@IBOutlet weak var applyButton: UIButton!
 	
+	@IBOutlet weak var remainingProgressView: UIProgressView!
+	
+	@IBOutlet weak var remainingLabel: UILabel!
+	
 	override func awakeFromNib() {
 		locationButton.titleLabel?.lineBreakMode = .ByWordWrapping
 		locationButton.titleLabel?.numberOfLines = 0
@@ -61,6 +65,31 @@ class DetailHeaderTableViewCell: BaseTableViewCell {
 		let formatter = NSDateFormatter()
 		formatter.dateFormat = "EEE, MMM dd, hh:mm a"
 		timeSlotButton.setTitle("\(formatter.stringFromDate(fromDate)) - \(formatter.stringFromDate(toDate)) ❯", forState: .Normal)
+		let rtime = NSDate().timeIntervalSinceDate(toDate)
+		if (rtime > 0) {
+			remainingProgressView.progress = 0
+			remainingLabel.text = "This event has ended"
+		}
+		else {
+			let ttime = toDate.timeIntervalSinceDate(fromDate)
+			let dtime = ttime + rtime
+			let time : hmstime = hmstime(sec: Int(-rtime))
+			remainingLabel.text = "\(time.hour) hours, \(time.min) minutes till the event ends"
+			remainingProgressView.progress = Float(dtime/ttime);
+		}
+	}
+	
+	struct hmstime {
+		var hour: Int
+		var min: Int
+		var sec: Int
+		init (sec: Int) {
+			self.sec = sec
+			self.min = sec / 60
+			self.hour = self.min / 60
+			self.min = self.min - self.hour * 60
+			self.sec = self.sec - self.min * 60 - self.hour * 3600
+		}
 	}
 
     /*
