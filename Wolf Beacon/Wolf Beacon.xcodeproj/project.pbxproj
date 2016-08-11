@@ -38,6 +38,7 @@
 		5969CD2A1CFD5F0500F166EF /* logo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5969CD261CFD5F0500F166EF /* logo1.png */; };
 		5969CD2B1CFD5F0500F166EF /* logo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5969CD271CFD5F0500F166EF /* logo2.png */; };
 		5969CD2C1CFD5F0500F166EF /* logo3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5969CD281CFD5F0500F166EF /* logo3.png */; };
+		5977299A1D5CB2BB00E5688A /* WBEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597729991D5CB2BB00E5688A /* WBEvent.swift */; };
 		5986DD841D15DA210044A409 /* prize1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5986DD7C1D15DA210044A409 /* prize1.jpg */; };
 		5986DD851D15DA210044A409 /* prize2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5986DD7D1D15DA210044A409 /* prize2.jpg */; };
 		5986DD861D15DA210044A409 /* prize3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5986DD7E1D15DA210044A409 /* prize3.jpg */; };
@@ -67,7 +68,9 @@
 		59FC3BEC1D0461F200F79C8F /* DetailFacilitiesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59FC3BEB1D0461F200F79C8F /* DetailFacilitiesTableViewCell.xib */; };
 		59FC3BEF1D04640A00F79C8F /* DetailInformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FC3BED1D04640A00F79C8F /* DetailInformationTableViewCell.swift */; };
 		59FC3BF01D04640A00F79C8F /* DetailInformationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59FC3BEE1D04640A00F79C8F /* DetailInformationTableViewCell.xib */; };
-		882CFD390FA77FDDF14B0340 /* Pods_Wolf_Beacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0FE0A130696965BD92C254C /* Pods_Wolf_Beacon.framework */; };
+		8B50E770258D8AA3E093061D /* Pods_Wolf_BeaconTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C6660468C878B7B88ECD084 /* Pods_Wolf_BeaconTests.framework */; };
+		A8C73496229BC4FBA98B73AF /* Pods_Wolf_Beacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89225198BA0EA141B5179ED3 /* Pods_Wolf_Beacon.framework */; };
+		EC7ACCE9D68715D350B1059C /* Pods_Wolf_BeaconUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E91986398C403FF95661462 /* Pods_Wolf_BeaconUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +91,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E91986398C403FF95661462 /* Pods_Wolf_BeaconUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wolf_BeaconUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5905B7981CF1813E00B0D9B1 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
 		5905B7991CF1813E00B0D9B1 /* foundation-icons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "foundation-icons.ttf"; sourceTree = "<group>"; };
 		5905B79A1CF1813E00B0D9B1 /* ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ionicons.ttf; sourceTree = "<group>"; };
@@ -125,6 +129,7 @@
 		5969CD261CFD5F0500F166EF /* logo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo1.png; path = Images/logo1.png; sourceTree = "<group>"; };
 		5969CD271CFD5F0500F166EF /* logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo2.png; path = Images/logo2.png; sourceTree = "<group>"; };
 		5969CD281CFD5F0500F166EF /* logo3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo3.png; path = Images/logo3.png; sourceTree = "<group>"; };
+		597729991D5CB2BB00E5688A /* WBEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WBEvent.swift; path = Models/WBEvent.swift; sourceTree = "<group>"; };
 		5986DD7C1D15DA210044A409 /* prize1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = prize1.jpg; path = Images/prize1.jpg; sourceTree = "<group>"; };
 		5986DD7D1D15DA210044A409 /* prize2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = prize2.jpg; path = Images/prize2.jpg; sourceTree = "<group>"; };
 		5986DD7E1D15DA210044A409 /* prize3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = prize3.jpg; path = Images/prize3.jpg; sourceTree = "<group>"; };
@@ -154,9 +159,14 @@
 		59FC3BEB1D0461F200F79C8F /* DetailFacilitiesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetailFacilitiesTableViewCell.xib; path = Views/Cells/DetailFacilitiesTableViewCell.xib; sourceTree = "<group>"; };
 		59FC3BED1D04640A00F79C8F /* DetailInformationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailInformationTableViewCell.swift; path = Views/Cells/DetailInformationTableViewCell.swift; sourceTree = "<group>"; };
 		59FC3BEE1D04640A00F79C8F /* DetailInformationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetailInformationTableViewCell.xib; path = Views/Cells/DetailInformationTableViewCell.xib; sourceTree = "<group>"; };
-		A0FE0A130696965BD92C254C /* Pods_Wolf_Beacon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wolf_Beacon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B90774463C8BB8CEE1C61001 /* Pods-Wolf Beacon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wolf Beacon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wolf Beacon/Pods-Wolf Beacon.release.xcconfig"; sourceTree = "<group>"; };
-		E52656C40C93ABFA7C0DBF24 /* Pods-Wolf Beacon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wolf Beacon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wolf Beacon/Pods-Wolf Beacon.debug.xcconfig"; sourceTree = "<group>"; };
+		6B6A43FA01ECF5D8E0DC9456 /* Pods-Wolf Beacon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wolf Beacon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wolf Beacon/Pods-Wolf Beacon.debug.xcconfig"; sourceTree = "<group>"; };
+		89225198BA0EA141B5179ED3 /* Pods_Wolf_Beacon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wolf_Beacon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C6660468C878B7B88ECD084 /* Pods_Wolf_BeaconTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wolf_BeaconTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF615F9456C3F319A834057D /* Pods-Wolf BeaconTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wolf BeaconTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wolf BeaconTests/Pods-Wolf BeaconTests.release.xcconfig"; sourceTree = "<group>"; };
+		CE4C2670C9ECA69ABD801F17 /* Pods-Wolf Beacon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wolf Beacon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wolf Beacon/Pods-Wolf Beacon.release.xcconfig"; sourceTree = "<group>"; };
+		DABE139E0472C55393D8B556 /* Pods-Wolf BeaconTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wolf BeaconTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wolf BeaconTests/Pods-Wolf BeaconTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F3E60560AB09E3A5930230F6 /* Pods-Wolf BeaconUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wolf BeaconUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wolf BeaconUITests/Pods-Wolf BeaconUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F467AE195C0115117799A5A3 /* Pods-Wolf BeaconUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wolf BeaconUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wolf BeaconUITests/Pods-Wolf BeaconUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,7 +174,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				882CFD390FA77FDDF14B0340 /* Pods_Wolf_Beacon.framework in Frameworks */,
+				A8C73496229BC4FBA98B73AF /* Pods_Wolf_Beacon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +182,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B50E770258D8AA3E093061D /* Pods_Wolf_BeaconTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,16 +190,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC7ACCE9D68715D350B1059C /* Pods_Wolf_BeaconUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4148E7AD175A56E13860CBC2 /* Frameworks */ = {
+		0144594826CEBB83E3F22A59 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A0FE0A130696965BD92C254C /* Pods_Wolf_Beacon.framework */,
+				89225198BA0EA141B5179ED3 /* Pods_Wolf_Beacon.framework */,
+				8C6660468C878B7B88ECD084 /* Pods_Wolf_BeaconTests.framework */,
+				0E91986398C403FF95661462 /* Pods_Wolf_BeaconUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -212,8 +226,8 @@
 				591C58031CEE1FDE003C245E /* Wolf BeaconTests */,
 				591C580E1CEE1FDE003C245E /* Wolf BeaconUITests */,
 				591C57EA1CEE1FDE003C245E /* Products */,
-				97FDEB97B7C5A5847268E4C4 /* Pods */,
-				4148E7AD175A56E13860CBC2 /* Frameworks */,
+				B630B986E5AF13A0D7E2411B /* Pods */,
+				0144594826CEBB83E3F22A59 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -340,6 +354,7 @@
 			children = (
 				591C57F31CEE1FDE003C245E /* Wolf_Beacon.xcdatamodeld */,
 				5990AAC01CFE09BF00DFAFF2 /* SettingsManager.swift */,
+				597729991D5CB2BB00E5688A /* WBEvent.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -420,11 +435,15 @@
 			name = Header;
 			sourceTree = "<group>";
 		};
-		97FDEB97B7C5A5847268E4C4 /* Pods */ = {
+		B630B986E5AF13A0D7E2411B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E52656C40C93ABFA7C0DBF24 /* Pods-Wolf Beacon.debug.xcconfig */,
-				B90774463C8BB8CEE1C61001 /* Pods-Wolf Beacon.release.xcconfig */,
+				6B6A43FA01ECF5D8E0DC9456 /* Pods-Wolf Beacon.debug.xcconfig */,
+				CE4C2670C9ECA69ABD801F17 /* Pods-Wolf Beacon.release.xcconfig */,
+				DABE139E0472C55393D8B556 /* Pods-Wolf BeaconTests.debug.xcconfig */,
+				AF615F9456C3F319A834057D /* Pods-Wolf BeaconTests.release.xcconfig */,
+				F467AE195C0115117799A5A3 /* Pods-Wolf BeaconUITests.debug.xcconfig */,
+				F3E60560AB09E3A5930230F6 /* Pods-Wolf BeaconUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -436,12 +455,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 591C58141CEE1FDE003C245E /* Build configuration list for PBXNativeTarget "Wolf Beacon" */;
 			buildPhases = (
-				183F3901FCF8B2A8210A6FA6 /* Check Pods Manifest.lock */,
+				A2AB9732038FC845B417558A /* [CP] Check Pods Manifest.lock */,
 				591C57E51CEE1FDE003C245E /* Sources */,
 				591C57E61CEE1FDE003C245E /* Frameworks */,
 				591C57E71CEE1FDE003C245E /* Resources */,
-				54703E0C96F1DFC4AC57CA3A /* Embed Pods Frameworks */,
-				34A3E5623ABF5FC1CD1D2792 /* Copy Pods Resources */,
+				B449AEEE90902D1A1B634146 /* [CP] Embed Pods Frameworks */,
+				C66DF8A39C0AABFDA47AFA2E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -456,9 +475,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 591C58171CEE1FDE003C245E /* Build configuration list for PBXNativeTarget "Wolf BeaconTests" */;
 			buildPhases = (
+				0982101F7EEAEA507F6F948A /* [CP] Check Pods Manifest.lock */,
 				591C57FC1CEE1FDE003C245E /* Sources */,
 				591C57FD1CEE1FDE003C245E /* Frameworks */,
 				591C57FE1CEE1FDE003C245E /* Resources */,
+				60968820A584A6EFBF83A85B /* [CP] Embed Pods Frameworks */,
+				AA7AF62C0C6DAF70E1E1B9ED /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -474,9 +496,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 591C581A1CEE1FDE003C245E /* Build configuration list for PBXNativeTarget "Wolf BeaconUITests" */;
 			buildPhases = (
+				13E0A20A5FCAFCE8248D77C9 /* [CP] Check Pods Manifest.lock */,
 				591C58071CEE1FDE003C245E /* Sources */,
 				591C58081CEE1FDE003C245E /* Frameworks */,
 				591C58091CEE1FDE003C245E /* Resources */,
+				A76A358041722DBF8B6554FE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -597,14 +621,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		183F3901FCF8B2A8210A6FA6 /* Check Pods Manifest.lock */ = {
+		0982101F7EEAEA507F6F948A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -612,34 +636,109 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		34A3E5623ABF5FC1CD1D2792 /* Copy Pods Resources */ = {
+		13E0A20A5FCAFCE8248D77C9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wolf Beacon/Pods-Wolf Beacon-resources.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		54703E0C96F1DFC4AC57CA3A /* Embed Pods Frameworks */ = {
+		60968820A584A6EFBF83A85B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wolf BeaconTests/Pods-Wolf BeaconTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2AB9732038FC845B417558A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A76A358041722DBF8B6554FE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wolf BeaconUITests/Pods-Wolf BeaconUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA7AF62C0C6DAF70E1E1B9ED /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wolf BeaconTests/Pods-Wolf BeaconTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B449AEEE90902D1A1B634146 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wolf Beacon/Pods-Wolf Beacon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C66DF8A39C0AABFDA47AFA2E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wolf Beacon/Pods-Wolf Beacon-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -666,6 +765,7 @@
 				591C58301CEE2145003C245E /* VectorImages.swift in Sources */,
 				591C57ED1CEE1FDE003C245E /* AppDelegate.swift in Sources */,
 				591C58391CEE240B003C245E /* FeaturedCollectionViewCell.swift in Sources */,
+				5977299A1D5CB2BB00E5688A /* WBEvent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -807,7 +907,7 @@
 		};
 		591C58151CEE1FDE003C245E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E52656C40C93ABFA7C0DBF24 /* Pods-Wolf Beacon.debug.xcconfig */;
+			baseConfigurationReference = 6B6A43FA01ECF5D8E0DC9456 /* Pods-Wolf Beacon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Wolf Beacon/Info.plist";
@@ -820,7 +920,7 @@
 		};
 		591C58161CEE1FDE003C245E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B90774463C8BB8CEE1C61001 /* Pods-Wolf Beacon.release.xcconfig */;
+			baseConfigurationReference = CE4C2670C9ECA69ABD801F17 /* Pods-Wolf Beacon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Wolf Beacon/Info.plist";
@@ -833,6 +933,7 @@
 		};
 		591C58181CEE1FDE003C245E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DABE139E0472C55393D8B556 /* Pods-Wolf BeaconTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "Wolf BeaconTests/Info.plist";
@@ -845,6 +946,7 @@
 		};
 		591C58191CEE1FDE003C245E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF615F9456C3F319A834057D /* Pods-Wolf BeaconTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "Wolf BeaconTests/Info.plist";
@@ -857,6 +959,7 @@
 		};
 		591C581B1CEE1FDE003C245E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F467AE195C0115117799A5A3 /* Pods-Wolf BeaconUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "Wolf BeaconUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -868,6 +971,7 @@
 		};
 		591C581C1CEE1FDE003C245E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3E60560AB09E3A5930230F6 /* Pods-Wolf BeaconUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "Wolf BeaconUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

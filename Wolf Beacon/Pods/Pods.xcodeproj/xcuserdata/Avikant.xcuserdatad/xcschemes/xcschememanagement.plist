@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>ChameleonFramework.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -24,17 +29,27 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>PermissionScope.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-Wolf Beacon.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>ReachabilitySwift.xcscheme</key>
+		<key>Pods-Wolf BeaconTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Wolf BeaconUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Realm.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RealmSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -57,12 +72,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>00AB750A773967C02F770120259811AC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1520003FEBEC114D6C84F832AFEDB994</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>16FB872D0D2D4BA0F378AB34D47CF95F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4F1215526E4CB34D18271BFB6E0EC352</key>
+		<key>1C3436CEA5C3D39764C5F54374794ECB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3191B7AD1C2BD295CC9FCBAC99C83D0F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>369A87E9B4364F934D8C3B38B1737F68</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4646156A9657B29BD5F0A288F3C19E43</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,7 +112,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7FC05E429817A8497A6F51568B8B9F75</key>
+		<key>53ADC31483202A0978E78E46FC73D9EA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -82,27 +122,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C55E46AC6A1E70A6AA25E306AE545375</key>
+		<key>BBB38112590364371B7D603E9D88CEE2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E9B5C577F89B2F2EBCB51E034A136673</key>
+		<key>C37CFF7E60816B2AE053459E1E54CAB8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EA6AE4F9B09FCC1F03B3C1A84C0483C4</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F544D3B97033BC2A633AB81DA4F605BA</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FA281D1589A8F7AD42EBA68F495622E6</key>
+		<key>F59A5C4136C88C4247D63C6CBC01DAEF</key>
 		<dict>
 			<key>primary</key>
 			<true/>

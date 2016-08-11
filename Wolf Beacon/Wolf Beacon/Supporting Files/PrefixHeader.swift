@@ -11,3 +11,9 @@ import UIKit
 
 let SWidth = UIScreen.mainScreen().bounds.size.width
 let SHeight = UIScreen.mainScreen().bounds.size.height
+
+extension NSDate {
+	class func getDateFromMillis(millis: Int) -> NSDate {
+		return NSDate(timeIntervalSince1970: NSTimeInterval(1000))
+	}
+}

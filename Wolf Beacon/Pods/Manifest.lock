@@ -1,8 +1,23 @@
 PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
   - ChameleonFramework/Default (2.1.0)
   - ChameleonFramework/Swift (2.1.0):
     - ChameleonFramework/Default
-  - DZNEmptyDataSet (1.7.3)
+  - DZNEmptyDataSet (1.8.1)
   - FontAwesomeKit (2.2.0):
     - FontAwesomeKit/Core (= 2.2.0)
     - FontAwesomeKit/FontAwesome (= 2.2.0)
@@ -18,44 +33,41 @@ PODS:
     - FontAwesomeKit/Core
   - FontAwesomeKit/Zocial (2.2.0):
     - FontAwesomeKit/Core
-  - IQKeyboardManagerSwift (4.0.0)
-  - PermissionScope (1.0.2)
-  - ReachabilitySwift (2.3.3)
-  - SDWebImage (3.7.5):
-    - SDWebImage/Core (= 3.7.5)
-  - SDWebImage/Core (3.7.5)
-  - SVProgressHUD (2.0.2)
+  - IQKeyboardManagerSwift (4.0.4)
+  - Realm (1.0.2):
+    - Realm/Headers (= 1.0.2)
+  - Realm/Headers (1.0.2)
+  - RealmSwift (1.0.2):
+    - Realm (= 1.0.2)
+  - SDWebImage (3.8.1):
+    - SDWebImage/Core (= 3.8.1)
+  - SDWebImage/Core (3.8.1)
+  - SVProgressHUD (2.0.3)
   - TextFieldEffects (1.2.0)
 
 DEPENDENCIES:
+  - AFNetworking
   - ChameleonFramework/Swift
   - DZNEmptyDataSet
   - FontAwesomeKit (~> 2.2.0)
   - IQKeyboardManagerSwift
-  - PermissionScope
-  - ReachabilitySwift (from `https://github.com/ashleymills/Reachability.swift`)
+  - RealmSwift
   - SDWebImage
   - SVProgressHUD
   - TextFieldEffects
 
-EXTERNAL SOURCES:
-  ReachabilitySwift:
-    :git: https://github.com/ashleymills/Reachability.swift
-
-CHECKOUT OPTIONS:
-  ReachabilitySwift:
-    :commit: cecd16a3ef8d77e916a66a5d7422c34a3e6d0e29
-    :git: https://github.com/ashleymills/Reachability.swift
-
 SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
-  DZNEmptyDataSet: dd7cca17c1d07dfa78956859b1e70a52505678ef
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   FontAwesomeKit: 025fd4dd1017fe4e3f8d47b03e024deedbb33cd4
-  IQKeyboardManagerSwift: ede2a27b4e1ce053d03073b9c7fa439322f5e405
-  PermissionScope: 860828c5516d349b6f49e5491799cfef33c5ccc7
-  ReachabilitySwift: e0f6b6f280effb47731acfaaa2d5ffe223703793
-  SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
-  SVProgressHUD: e4020e23badbd7cc61bc4a80d3c1da57f166a978
+  IQKeyboardManagerSwift: e0964d04d6a29b71016fd346dca13ecb80a2823a
+  Realm: 9d5c46a4d7d27958530a8dfc58f63a99e5c2cba3
+  RealmSwift: 82f3ac5e24530143dddfde2033acc0d308f27d96
+  SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
   TextFieldEffects: bc4fd3bd557321bd61a0762f3f50965477a36f62
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 64877822a0e9d7edad0d8caf568b6e9bba1a1dca
+
+COCOAPODS: 1.0.1

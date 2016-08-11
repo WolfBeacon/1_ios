@@ -16,7 +16,7 @@ install_framework()
     local source="$1"
   fi
 
-  local destination="${CONFIGURATION_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}"
+  local destination="${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}"
 
   if [ -L "${source}" ]; then
       echo "Symlinked..."
@@ -59,8 +59,8 @@ code_sign_if_enabled() {
   if [ -n "${EXPANDED_CODE_SIGN_IDENTITY}" -a "${CODE_SIGNING_REQUIRED}" != "NO" -a "${CODE_SIGNING_ALLOWED}" != "NO" ]; then
     # Use the current code_sign_identitiy
     echo "Code Signing $1 with Identity ${EXPANDED_CODE_SIGN_IDENTITY_NAME}"
-    echo "/usr/bin/codesign --force --sign ${EXPANDED_CODE_SIGN_IDENTITY} --preserve-metadata=identifier,entitlements \"$1\""
-    /usr/bin/codesign --force --sign ${EXPANDED_CODE_SIGN_IDENTITY} --preserve-metadata=identifier,entitlements "$1"
+    echo "/usr/bin/codesign --force --sign ${EXPANDED_CODE_SIGN_IDENTITY} ${OTHER_CODE_SIGN_FLAGS} --preserve-metadata=identifier,entitlements \"$1\""
+    /usr/bin/codesign --force --sign ${EXPANDED_CODE_SIGN_IDENTITY} ${OTHER_CODE_SIGN_FLAGS} --preserve-metadata=identifier,entitlements "$1"
   fi
 }
 
@@ -84,24 +84,26 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-Wolf Beacon/ChameleonFramework.framework"
-  install_framework "Pods-Wolf Beacon/DZNEmptyDataSet.framework"
-  install_framework "Pods-Wolf Beacon/FontAwesomeKit.framework"
-  install_framework "Pods-Wolf Beacon/IQKeyboardManagerSwift.framework"
-  install_framework "Pods-Wolf Beacon/PermissionScope.framework"
-  install_framework "Pods-Wolf Beacon/ReachabilitySwift.framework"
-  install_framework "Pods-Wolf Beacon/SDWebImage.framework"
-  install_framework "Pods-Wolf Beacon/SVProgressHUD.framework"
-  install_framework "Pods-Wolf Beacon/TextFieldEffects.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/AFNetworking/AFNetworking.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ChameleonFramework/ChameleonFramework.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/DZNEmptyDataSet/DZNEmptyDataSet.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/FontAwesomeKit/FontAwesomeKit.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Realm/Realm.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/RealmSwift/RealmSwift.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SDWebImage/SDWebImage.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SVProgressHUD/SVProgressHUD.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/TextFieldEffects/TextFieldEffects.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-Wolf Beacon/ChameleonFramework.framework"
-  install_framework "Pods-Wolf Beacon/DZNEmptyDataSet.framework"
-  install_framework "Pods-Wolf Beacon/FontAwesomeKit.framework"
-  install_framework "Pods-Wolf Beacon/IQKeyboardManagerSwift.framework"
-  install_framework "Pods-Wolf Beacon/PermissionScope.framework"
-  install_framework "Pods-Wolf Beacon/ReachabilitySwift.framework"
-  install_framework "Pods-Wolf Beacon/SDWebImage.framework"
-  install_framework "Pods-Wolf Beacon/SVProgressHUD.framework"
-  install_framework "Pods-Wolf Beacon/TextFieldEffects.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/AFNetworking/AFNetworking.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ChameleonFramework/ChameleonFramework.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/DZNEmptyDataSet/DZNEmptyDataSet.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/FontAwesomeKit/FontAwesomeKit.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Realm/Realm.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/RealmSwift/RealmSwift.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SDWebImage/SDWebImage.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SVProgressHUD/SVProgressHUD.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/TextFieldEffects/TextFieldEffects.framework"
 fi

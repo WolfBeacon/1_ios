@@ -8,13 +8,13 @@ target 'Wolf Beacon' do
 
 pod 'FontAwesomeKit', '~> 2.2.0'
 pod 'SVProgressHUD'
+pod 'AFNetworking'
 pod 'DZNEmptyDataSet'
 pod 'TextFieldEffects'
-pod 'PermissionScope'
-pod 'ReachabilitySwift', :git => 'https://github.com/ashleymills/Reachability.swift'
 pod 'IQKeyboardManagerSwift'
 pod 'SDWebImage'
 pod 'ChameleonFramework/Swift'
+pod 'RealmSwift'
 
 end
 
