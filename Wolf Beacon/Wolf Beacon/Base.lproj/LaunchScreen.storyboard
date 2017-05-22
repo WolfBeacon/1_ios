@@ -1,7 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -13,10 +18,62 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fVA-HS-4mE">
+                                <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Dph-U3-Hgl"/>
+                                </constraints>
+                                <items>
+                                    <tabBarItem image="schedule-icon-2" selectedImage="schedule-icon-2-active" id="l1d-5w-waP">
+                                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                                    </tabBarItem>
+                                    <tabBarItem image="schedule-icon-1" selectedImage="schedule-icon-1-active" id="p32-XX-fxr">
+                                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                                    </tabBarItem>
+                                    <tabBarItem title="" image="my-schedule-icon" selectedImage="my-schedule-icon-active" id="hE6-vI-48n">
+                                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                                    </tabBarItem>
+                                    <tabBarItem image="settings" id="P0X-aL-qyA">
+                                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                                    </tabBarItem>
+                                </items>
+                            </tabBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Er9-MQ-cPT">
+                                <rect key="frame" x="-4" y="0.0" width="383" height="64"/>
+                                <subviews>
+                                    <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gct-Ko-sLH">
+                                        <rect key="frame" x="0.0" y="20" width="383" height="44"/>
+                                        <color key="barTintColor" red="0.1764705882" green="0.40000000000000002" blue="0.050980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <textAttributes key="titleTextAttributes">
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </textAttributes>
+                                        <items>
+                                            <navigationItem title="Wolf Beacon" id="KFT-Pn-jtA"/>
+                                        </items>
+                                    </navigationBar>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1764705882" green="0.40000000000000002" blue="0.050980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Gct-Ko-sLH" firstAttribute="leading" secondItem="Er9-MQ-cPT" secondAttribute="leading" id="Frj-E7-YBk"/>
+                                    <constraint firstAttribute="trailing" secondItem="Gct-Ko-sLH" secondAttribute="trailing" id="cNQ-Y2-Dli"/>
+                                    <constraint firstAttribute="bottom" secondItem="Gct-Ko-sLH" secondAttribute="bottom" id="d3Y-Xp-tLI"/>
+                                    <constraint firstAttribute="height" constant="64" id="tZa-xm-PyO"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fVA-HS-4mE" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-16" id="CrJ-UF-xeS"/>
+                            <constraint firstItem="Er9-MQ-cPT" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="UwX-GE-gK5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fVA-HS-4mE" secondAttribute="trailing" constant="-16" id="YKU-GF-4TB"/>
+                            <constraint firstItem="Er9-MQ-cPT" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="-20" id="fSG-eD-pPT"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="fVA-HS-4mE" secondAttribute="bottom" id="rve-69-XiK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Er9-MQ-cPT" secondAttribute="trailing" constant="-20" id="x36-xd-mZk"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +81,13 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="my-schedule-icon" width="25" height="26"/>
+        <image name="my-schedule-icon-active" width="24" height="25"/>
+        <image name="schedule-icon-1" width="25" height="26"/>
+        <image name="schedule-icon-1-active" width="24" height="25"/>
+        <image name="schedule-icon-2" width="25" height="26"/>
+        <image name="schedule-icon-2-active" width="24" height="25"/>
+        <image name="settings" width="24" height="24"/>
+    </resources>
 </document>

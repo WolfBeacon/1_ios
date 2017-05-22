@@ -1,37 +1,35 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="68" id="KGk-i7-Jjw" customClass="DetailInformationTableViewCell" customModule="Wolf_Beacon" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="68" id="KGk-i7-Jjw" customClass="DetailInformationTableViewCell">
             <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="139.5"/>
+                <frame key="frameInset" width="375" height="139"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0vE-lU-Uhi">
-                        <rect key="frame" x="16" y="12" width="351" height="21"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="21" id="VW2-qy-v8j"/>
+                            <constraint firstAttribute="height" constant="20" id="xQP-Jj-dLu"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yl4-C7-dt4">
-                        <rect key="frame" x="16" y="41" width="351" height="90"/>
                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                        <color key="textColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="textColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnQ-UH-fgu">
-                        <rect key="frame" x="327" y="115" width="40" height="24"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnQ-UH-fgu">
                         <constraints>
                             <constraint firstAttribute="height" constant="24" id="1vQ-ZT-rpU"/>
                         </constraints>
@@ -40,15 +38,15 @@
                     </button>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottomMargin" secondItem="Yl4-C7-dt4" secondAttribute="bottom" id="6wi-WE-Ql2"/>
-                    <constraint firstItem="Yl4-C7-dt4" firstAttribute="top" secondItem="0vE-lU-Uhi" secondAttribute="bottom" constant="8" id="DF6-GM-1zN"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="cnQ-UH-fgu" secondAttribute="bottom" constant="-8" id="Ios-AS-mMJ"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="0vE-lU-Uhi" secondAttribute="trailing" id="MXG-Rm-3Ib"/>
-                    <constraint firstItem="Yl4-C7-dt4" firstAttribute="leading" secondItem="0vE-lU-Uhi" secondAttribute="leading" id="TbE-m3-xJa"/>
-                    <constraint firstItem="Yl4-C7-dt4" firstAttribute="trailing" secondItem="0vE-lU-Uhi" secondAttribute="trailing" id="U3G-Gq-Fmq"/>
-                    <constraint firstItem="0vE-lU-Uhi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="Ua6-jt-jSn"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="cnQ-UH-fgu" secondAttribute="trailing" id="Uh1-ld-rZE"/>
-                    <constraint firstItem="0vE-lU-Uhi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="jwj-gd-oOA"/>
+                    <constraint firstItem="0vE-lU-Uhi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="3Xr-jK-PrR"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="0vE-lU-Uhi" secondAttribute="trailing" constant="8" id="6uL-aP-eko"/>
+                    <constraint firstItem="Yl4-C7-dt4" firstAttribute="top" secondItem="0vE-lU-Uhi" secondAttribute="bottom" constant="10" id="8C3-22-qwj"/>
+                    <constraint firstItem="0vE-lU-Uhi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="AjH-bY-XYk"/>
+                    <constraint firstItem="cnQ-UH-fgu" firstAttribute="trailing" secondItem="Yl4-C7-dt4" secondAttribute="trailing" id="IrU-i1-un5"/>
+                    <constraint firstItem="Yl4-C7-dt4" firstAttribute="leading" secondItem="0vE-lU-Uhi" secondAttribute="leading" id="IwY-vg-m1K"/>
+                    <constraint firstItem="cnQ-UH-fgu" firstAttribute="bottom" secondItem="Yl4-C7-dt4" secondAttribute="bottom" id="PUM-wl-uaa"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Yl4-C7-dt4" secondAttribute="bottom" constant="-1" id="VNf-hB-a3C"/>
+                    <constraint firstItem="Yl4-C7-dt4" firstAttribute="trailing" secondItem="0vE-lU-Uhi" secondAttribute="trailing" id="twm-JY-Jd2"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

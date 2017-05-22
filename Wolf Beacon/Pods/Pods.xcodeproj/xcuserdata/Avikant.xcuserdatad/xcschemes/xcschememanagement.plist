@@ -9,47 +9,52 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>ChameleonFramework.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>DZNEmptyDataSet.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>FontAwesomeKit.xcscheme</key>
+		<key>HTAutocompleteTextField.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>IQKeyboardManagerSwift.xcscheme</key>
+		<key>IQDropDownTextField.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>IQKeyboardManager.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>KWTransition.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Lock-Auth0.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Lock.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Masonry.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PPHelpMe.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-Wolf Beacon.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-Wolf BeaconTests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-Wolf BeaconUITests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Realm.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>RealmSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -64,7 +69,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>TextFieldEffects.xcscheme</key>
+		<key>SimpleKeychain.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>UITextView+Placeholder.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>VLRJVFloatLabeledTextField.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>VLRTextField.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -72,67 +92,87 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>00AB750A773967C02F770120259811AC</key>
+		<key>1D93B23D8EDE07B5BC9B234451737545</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1520003FEBEC114D6C84F832AFEDB994</key>
+		<key>208FD84AC54795FD9E3786E4D855F161</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>16FB872D0D2D4BA0F378AB34D47CF95F</key>
+		<key>3FC40967A27FDD7BB349B6A3E16F22E2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1C3436CEA5C3D39764C5F54374794ECB</key>
+		<key>51DE3B660D5479D025B96514296AC150</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3191B7AD1C2BD295CC9FCBAC99C83D0F</key>
+		<key>5437890023F30CA85DFCA260CA914D48</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>369A87E9B4364F934D8C3B38B1737F68</key>
+		<key>5677E36C37F56C7B1697E5508B17327C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4646156A9657B29BD5F0A288F3C19E43</key>
+		<key>75B09370AC21B8BFF533C4D53FBB8A55</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5172ACAB7FEA22813859DC97CA0AA16F</key>
+		<key>7D0B94C8BB59F9B2027B4156C358DA3C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>53ADC31483202A0978E78E46FC73D9EA</key>
+		<key>8699BBD25DE65606A6AC9A1074E031E1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8BE9D4B6FF6D92923152CB0534F2BB94</key>
+		<key>9322AEAF2C5DA01EF0499DB8CA01CE52</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BBB38112590364371B7D603E9D88CEE2</key>
+		<key>95AC4596D247CD6F9690962AAD90EFB1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C37CFF7E60816B2AE053459E1E54CAB8</key>
+		<key>9650B5ADCE86F1A055FAFC635284BDB5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F59A5C4136C88C4247D63C6CBC01DAEF</key>
+		<key>9E033EDB5EC0819481B0546434FA577B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CC7E4822B1C47231B3978CC80E81B29A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DBADD1BFDE587CF5B8FBA8442207E9BD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E34B0F5D3FB4F278F9E0C053F68122CE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EFB4E6F85020898D6143D1ADFAED9676</key>
 		<dict>
 			<key>primary</key>
 			<true/>

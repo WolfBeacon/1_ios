@@ -7,460 +7,589 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5905B79C1CF1813E00B0D9B1 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5905B7981CF1813E00B0D9B1 /* FontAwesome.otf */; };
-		5905B79D1CF1813E00B0D9B1 /* foundation-icons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5905B7991CF1813E00B0D9B1 /* foundation-icons.ttf */; };
-		5905B79E1CF1813E00B0D9B1 /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5905B79A1CF1813E00B0D9B1 /* ionicons.ttf */; };
-		5905B79F1CF1813E00B0D9B1 /* zocial-regular-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5905B79B1CF1813E00B0D9B1 /* zocial-regular-webfont.ttf */; };
-		591C57ED1CEE1FDE003C245E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591C57EC1CEE1FDE003C245E /* AppDelegate.swift */; };
-		591C57F21CEE1FDE003C245E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 591C57F01CEE1FDE003C245E /* Main.storyboard */; };
-		591C57F51CEE1FDE003C245E /* Wolf_Beacon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 591C57F31CEE1FDE003C245E /* Wolf_Beacon.xcdatamodeld */; };
-		591C57F71CEE1FDE003C245E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 591C57F61CEE1FDE003C245E /* Assets.xcassets */; };
-		591C57FA1CEE1FDE003C245E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 591C57F81CEE1FDE003C245E /* LaunchScreen.storyboard */; };
-		591C58051CEE1FDE003C245E /* Wolf_BeaconTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591C58041CEE1FDE003C245E /* Wolf_BeaconTests.swift */; };
-		591C58101CEE1FDE003C245E /* Wolf_BeaconUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591C580F1CEE1FDE003C245E /* Wolf_BeaconUITests.swift */; };
-		591C582E1CEE212E003C245E /* PrefixHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591C582D1CEE212E003C245E /* PrefixHeader.swift */; };
-		591C58301CEE2145003C245E /* VectorImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591C582F1CEE2145003C245E /* VectorImages.swift */; };
-		591C58341CEE23D6003C245E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591C58331CEE23D6003C245E /* HomeViewController.swift */; };
-		591C58371CEE23F7003C245E /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591C58361CEE23F7003C245E /* EventTableViewCell.swift */; };
-		591C58391CEE240B003C245E /* FeaturedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591C58381CEE240B003C245E /* FeaturedCollectionViewCell.swift */; };
-		5931A0161D000F570027C203 /* mithackathon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5931A0151D000F570027C203 /* mithackathon.jpg */; };
-		5931A01B1D0010C10027C203 /* sponser1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5931A0171D0010C10027C203 /* sponser1.jpg */; };
-		5931A01C1D0010C10027C203 /* sponser2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5931A0181D0010C10027C203 /* sponser2.png */; };
-		5931A01D1D0010C10027C203 /* sponser3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5931A0191D0010C10027C203 /* sponser3.png */; };
-		5931A01E1D0010C10027C203 /* sponser4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5931A01A1D0010C10027C203 /* sponser4.jpg */; };
-		5961DAB01D15104300D490C8 /* DetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5961DAAE1D15104300D490C8 /* DetailCollectionViewCell.swift */; };
-		5961DAB11D15104300D490C8 /* DetailCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5961DAAF1D15104300D490C8 /* DetailCollectionViewCell.xib */; };
-		5961DAB51D152ADE00D490C8 /* map0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5961DAB21D152ADE00D490C8 /* map0.jpg */; };
-		5961DAB61D152ADE00D490C8 /* map1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5961DAB31D152ADE00D490C8 /* map1.jpg */; };
-		5961DAB71D152ADE00D490C8 /* map2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5961DAB41D152ADE00D490C8 /* map2.jpg */; };
-		5969CD231CFD5B0F00F166EF /* hackathonbg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5969CD211CFD5B0F00F166EF /* hackathonbg.jpg */; };
-		5969CD291CFD5F0500F166EF /* logo0.png in Resources */ = {isa = PBXBuildFile; fileRef = 5969CD251CFD5F0500F166EF /* logo0.png */; };
-		5969CD2A1CFD5F0500F166EF /* logo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5969CD261CFD5F0500F166EF /* logo1.png */; };
-		5969CD2B1CFD5F0500F166EF /* logo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5969CD271CFD5F0500F166EF /* logo2.png */; };
-		5969CD2C1CFD5F0500F166EF /* logo3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5969CD281CFD5F0500F166EF /* logo3.png */; };
-		5977299A1D5CB2BB00E5688A /* WBEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597729991D5CB2BB00E5688A /* WBEvent.swift */; };
-		5986DD841D15DA210044A409 /* prize1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5986DD7C1D15DA210044A409 /* prize1.jpg */; };
-		5986DD851D15DA210044A409 /* prize2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5986DD7D1D15DA210044A409 /* prize2.jpg */; };
-		5986DD861D15DA210044A409 /* prize3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5986DD7E1D15DA210044A409 /* prize3.jpg */; };
-		5986DD871D15DA210044A409 /* prize4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5986DD7F1D15DA210044A409 /* prize4.jpg */; };
-		5986DD881D15DA210044A409 /* prize5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5986DD801D15DA210044A409 /* prize5.jpg */; };
-		5986DD891D15DA210044A409 /* prize6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5986DD811D15DA210044A409 /* prize6.jpg */; };
-		5986DD8A1D15DA210044A409 /* prize7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5986DD821D15DA210044A409 /* prize7.jpg */; };
-		5986DD8B1D15DA210044A409 /* prize8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5986DD831D15DA210044A409 /* prize8.jpg */; };
-		5990AABF1CFE050D00DFAFF2 /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5990AABE1CFE050D00DFAFF2 /* EventTableViewCell.xib */; };
-		5990AAC11CFE09BF00DFAFF2 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5990AAC01CFE09BF00DFAFF2 /* SettingsManager.swift */; };
-		5990AAC31CFE0B7600DFAFF2 /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5990AAC21CFE0B7600DFAFF2 /* FavoritesTableViewController.swift */; };
-		5990AAC51CFE0B9700DFAFF2 /* AllEventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5990AAC41CFE0B9700DFAFF2 /* AllEventsTableViewController.swift */; };
-		5990AAC71CFE0BA800DFAFF2 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5990AAC61CFE0BA800DFAFF2 /* MoreViewController.swift */; };
-		59C8A4781CF0858700987CCA /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C8A4771CF0858700987CCA /* BaseTableViewCell.swift */; };
-		59C8A47A1CF088C800987CCA /* DetailHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C8A4791CF088C800987CCA /* DetailHeaderTableViewCell.swift */; };
-		59C8A4821CF0CEFE00987CCA /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C8A4811CF0CEFE00987CCA /* DetailTableViewController.swift */; };
-		59EDAE4F1D00979100A6365C /* DetailHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59EDAE4E1D00979100A6365C /* DetailHeaderTableViewCell.xib */; };
-		59EDAE561D0097DB00A6365C /* DetailCollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EDAE541D0097DB00A6365C /* DetailCollectionTableViewCell.swift */; };
-		59EDAE571D0097DB00A6365C /* DetailCollectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59EDAE551D0097DB00A6365C /* DetailCollectionTableViewCell.xib */; };
-		59EDAE5E1D00A70C00A6365C /* doctor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 59EDAE5A1D00A70C00A6365C /* doctor.jpg */; };
-		59EDAE5F1D00A70C00A6365C /* gilfoyle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 59EDAE5B1D00A70C00A6365C /* gilfoyle.jpg */; };
-		59EDAE601D00A70C00A6365C /* harvey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 59EDAE5C1D00A70C00A6365C /* harvey.jpg */; };
-		59EDAE611D00A70C00A6365C /* moss.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 59EDAE5D1D00A70C00A6365C /* moss.jpg */; };
-		59EDAE651D00ABD400A6365C /* hackathon1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 59EDAE621D00ABD400A6365C /* hackathon1.jpg */; };
-		59EDAE661D00ABD400A6365C /* hackathon2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 59EDAE631D00ABD400A6365C /* hackathon2.jpg */; };
-		59EDAE691D00ACE000A6365C /* mitcampus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 59EDAE681D00ACE000A6365C /* mitcampus.jpg */; };
-		59FC3BEC1D0461F200F79C8F /* DetailFacilitiesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59FC3BEB1D0461F200F79C8F /* DetailFacilitiesTableViewCell.xib */; };
-		59FC3BEF1D04640A00F79C8F /* DetailInformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FC3BED1D04640A00F79C8F /* DetailInformationTableViewCell.swift */; };
-		59FC3BF01D04640A00F79C8F /* DetailInformationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59FC3BEE1D04640A00F79C8F /* DetailInformationTableViewCell.xib */; };
-		8B50E770258D8AA3E093061D /* Pods_Wolf_BeaconTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C6660468C878B7B88ECD084 /* Pods_Wolf_BeaconTests.framework */; };
-		A8C73496229BC4FBA98B73AF /* Pods_Wolf_Beacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89225198BA0EA141B5179ED3 /* Pods_Wolf_Beacon.framework */; };
-		EC7ACCE9D68715D350B1059C /* Pods_Wolf_BeaconUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E91986398C403FF95661462 /* Pods_Wolf_BeaconUITests.framework */; };
+		07956ABCA5388DAFEE66FEAC /* libPods-Wolf Beacon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C88E49EB7E2FE36E2BE8F72E /* libPods-Wolf Beacon.a */; };
+		59038FD31DD4DB3F00361A0D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59038FD21DD4DB3F00361A0D /* HomeViewController.m */; };
+		59038FDE1DD4DFDB00361A0D /* FavoritesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59038FDD1DD4DFDB00361A0D /* FavoritesTableViewController.m */; };
+		59038FE11DD4E2C300361A0D /* AllEventsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59038FE01DD4E2C300361A0D /* AllEventsTableViewController.m */; };
+		59038FE41DD4E95900361A0D /* DetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59038FE31DD4E95900361A0D /* DetailTableViewController.m */; };
+		59038FE71DD4F4EF00361A0D /* DetailCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 59038FE61DD4F4EF00361A0D /* DetailCollectionViewCell.m */; };
+		591088581E5DCEA8004A04C4 /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 591088571E5DCEA8004A04C4 /* CoreDataHelper.m */; };
+		5910889A1E61B6AD004A04C4 /* WBTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 591088991E61B6AD004A04C4 /* WBTabBarController.m */; };
+		591088A11E61BE23004A04C4 /* BBTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5910889E1E61BE23004A04C4 /* BBTableViewController.m */; };
+		591088A21E61BE23004A04C4 /* BBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 591088A01E61BE23004A04C4 /* BBViewController.m */; };
+		592D7F441DFE767E005F05C2 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 592D7F421DFE767E005F05C2 /* Login.storyboard */; };
+		593DF4BD1DDB854E00FB3C01 /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 593DF4BC1DDB854E00FB3C01 /* SettingsTableViewController.m */; };
+		595452C71E35BB4100C83524 /* EventCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 595452C51E35BB4100C83524 /* EventCollectionViewCell.m */; };
+		595452C81E35BB4100C83524 /* EventCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 595452C61E35BB4100C83524 /* EventCollectionViewCell.xib */; };
+		599DD2AC1E0E42FD00449FE9 /* ScheduleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 599DD2AB1E0E42FD00449FE9 /* ScheduleTableViewController.m */; };
+		599DD2AF1E0E43FC00449FE9 /* ScheduleBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 599DD2AE1E0E43FC00449FE9 /* ScheduleBaseViewController.m */; };
+		59A06DDD1ED2DD1A007CF676 /* SignupPersonal2TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A06DDC1ED2DD1A007CF676 /* SignupPersonal2TableViewController.m */; };
+		59A06DE01ED31458007CF676 /* SignupTechnicalTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A06DDF1ED31458007CF676 /* SignupTechnicalTableViewController.m */; };
+		59A06DE31ED348F7007CF676 /* SignupOptionalTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A06DE21ED348F7007CF676 /* SignupOptionalTableViewController.m */; };
+		59A2193A1E3774B2004E4060 /* Apply.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59A219381E3774B2004E4060 /* Apply.storyboard */; };
+		59A219401E377931004E4060 /* DADataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A2193F1E377931004E4060 /* DADataManager.m */; };
+		59A219431E377D1C004E4060 /* RequestsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A219421E377D1C004E4060 /* RequestsManager.m */; };
+		59A219471E378CDE004E4060 /* VLRLoginTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A219461E378CDE004E4060 /* VLRLoginTextField.m */; };
+		59A2194B1E38E0F6004E4060 /* SignupPersonalTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A2194A1E38E0F6004E4060 /* SignupPersonalTableViewController.m */; };
+		59A2194E1E38E17C004E4060 /* SignupSchoolTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A2194D1E38E17C004E4060 /* SignupSchoolTableViewController.m */; };
+		59D2F5951DDDDFD400215AB0 /* ProfileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D2F5941DDDDFD400215AB0 /* ProfileTableViewController.m */; };
+		59E263B01DD59512009FA3D9 /* doctor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 59E263941DD59512009FA3D9 /* doctor.jpg */; };
+		59E263B11DD59512009FA3D9 /* gilfoyle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 59E263951DD59512009FA3D9 /* gilfoyle.jpg */; };
+		59E263B21DD59512009FA3D9 /* hackathon1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 59E263961DD59512009FA3D9 /* hackathon1.jpg */; };
+		59E263B31DD59512009FA3D9 /* hackathon2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 59E263971DD59512009FA3D9 /* hackathon2.jpg */; };
+		59E263B41DD59512009FA3D9 /* hackathonbg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 59E263981DD59512009FA3D9 /* hackathonbg.jpg */; };
+		59E263B51DD59512009FA3D9 /* harvey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 59E263991DD59512009FA3D9 /* harvey.jpg */; };
+		59E263B61DD59512009FA3D9 /* logo0.png in Resources */ = {isa = PBXBuildFile; fileRef = 59E2639A1DD59512009FA3D9 /* logo0.png */; };
+		59E263B71DD59512009FA3D9 /* logo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 59E2639B1DD59512009FA3D9 /* logo1.png */; };
+		59E263B81DD59512009FA3D9 /* logo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 59E2639C1DD59512009FA3D9 /* logo2.png */; };
+		59E263B91DD59512009FA3D9 /* logo3.png in Resources */ = {isa = PBXBuildFile; fileRef = 59E2639D1DD59512009FA3D9 /* logo3.png */; };
+		59E263BA1DD59512009FA3D9 /* map0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 59E2639E1DD59512009FA3D9 /* map0.jpg */; };
+		59E263BB1DD59512009FA3D9 /* map1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 59E2639F1DD59512009FA3D9 /* map1.jpg */; };
+		59E263BC1DD59512009FA3D9 /* map2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 59E263A01DD59512009FA3D9 /* map2.jpg */; };
+		59E263BD1DD59512009FA3D9 /* mitcampus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 59E263A11DD59512009FA3D9 /* mitcampus.jpg */; };
+		59E263BE1DD59512009FA3D9 /* mithackathon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 59E263A21DD59512009FA3D9 /* mithackathon.jpg */; };
+		59E263BF1DD59512009FA3D9 /* moss.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 59E263A31DD59512009FA3D9 /* moss.jpg */; };
+		59E263C01DD59512009FA3D9 /* prize1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 59E263A41DD59512009FA3D9 /* prize1.jpg */; };
+		59E263C11DD59512009FA3D9 /* prize2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 59E263A51DD59512009FA3D9 /* prize2.jpg */; };
+		59E263C21DD59512009FA3D9 /* prize3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 59E263A61DD59512009FA3D9 /* prize3.jpg */; };
+		59E263C31DD59512009FA3D9 /* prize4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 59E263A71DD59512009FA3D9 /* prize4.jpg */; };
+		59E263C41DD59512009FA3D9 /* prize5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 59E263A81DD59512009FA3D9 /* prize5.jpg */; };
+		59E263C51DD59512009FA3D9 /* prize6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 59E263A91DD59512009FA3D9 /* prize6.jpg */; };
+		59E263C61DD59512009FA3D9 /* prize7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 59E263AA1DD59512009FA3D9 /* prize7.jpg */; };
+		59E263C71DD59512009FA3D9 /* prize8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 59E263AB1DD59512009FA3D9 /* prize8.jpg */; };
+		59E263C81DD59512009FA3D9 /* sponser1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 59E263AC1DD59512009FA3D9 /* sponser1.jpg */; };
+		59E263C91DD59512009FA3D9 /* sponser2.png in Resources */ = {isa = PBXBuildFile; fileRef = 59E263AD1DD59512009FA3D9 /* sponser2.png */; };
+		59E263CA1DD59512009FA3D9 /* sponser3.png in Resources */ = {isa = PBXBuildFile; fileRef = 59E263AE1DD59512009FA3D9 /* sponser3.png */; };
+		59E263CB1DD59512009FA3D9 /* sponser4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 59E263AF1DD59512009FA3D9 /* sponser4.jpg */; };
+		59FE45681DC0709600AE5D09 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FE45671DC0709600AE5D09 /* main.m */; };
+		59FE456B1DC0709600AE5D09 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FE456A1DC0709600AE5D09 /* AppDelegate.m */; };
+		59FE45711DC0709600AE5D09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59FE456F1DC0709600AE5D09 /* Main.storyboard */; };
+		59FE45741DC0709600AE5D09 /* Wolf_Beacon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 59FE45721DC0709600AE5D09 /* Wolf_Beacon.xcdatamodeld */; };
+		59FE45761DC0709600AE5D09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59FE45751DC0709600AE5D09 /* Assets.xcassets */; };
+		59FE45791DC0709600AE5D09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59FE45771DC0709600AE5D09 /* LaunchScreen.storyboard */; };
+		59FE458C1DC0737200AE5D09 /* DetailCollectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59FE45861DC0737200AE5D09 /* DetailCollectionTableViewCell.xib */; };
+		59FE458D1DC0737200AE5D09 /* DetailCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59FE45871DC0737200AE5D09 /* DetailCollectionViewCell.xib */; };
+		59FE458E1DC0737200AE5D09 /* DetailFacilitiesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59FE45881DC0737200AE5D09 /* DetailFacilitiesTableViewCell.xib */; };
+		59FE458F1DC0737200AE5D09 /* DetailHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59FE45891DC0737200AE5D09 /* DetailHeaderTableViewCell.xib */; };
+		59FE45901DC0737200AE5D09 /* DetailInformationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59FE458A1DC0737200AE5D09 /* DetailInformationTableViewCell.xib */; };
+		59FE45911DC0737200AE5D09 /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59FE458B1DC0737200AE5D09 /* EventTableViewCell.xib */; };
+		59FE45951DC073BD00AE5D09 /* EventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FE45941DC073BD00AE5D09 /* EventTableViewCell.m */; };
+		59FE45981DC0741400AE5D09 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FE45971DC0741400AE5D09 /* BaseTableViewCell.m */; };
+		59FE459D1DC0752100AE5D09 /* DetailHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FE459C1DC0752100AE5D09 /* DetailHeaderTableViewCell.m */; };
+		59FE45A11DC07B8800AE5D09 /* DetailInformationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FE45A01DC07B8800AE5D09 /* DetailInformationTableViewCell.m */; };
+		59FE45A51DC07F0800AE5D09 /* DetailCollectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FE45A41DC07F0800AE5D09 /* DetailCollectionTableViewCell.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		591C58011CEE1FDE003C245E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 591C57E11CEE1FDE003C245E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 591C57E81CEE1FDE003C245E;
-			remoteInfo = "Wolf Beacon";
-		};
-		591C580C1CEE1FDE003C245E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 591C57E11CEE1FDE003C245E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 591C57E81CEE1FDE003C245E;
-			remoteInfo = "Wolf Beacon";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		0E91986398C403FF95661462 /* Pods_Wolf_BeaconUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wolf_BeaconUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5905B7981CF1813E00B0D9B1 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
-		5905B7991CF1813E00B0D9B1 /* foundation-icons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "foundation-icons.ttf"; sourceTree = "<group>"; };
-		5905B79A1CF1813E00B0D9B1 /* ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ionicons.ttf; sourceTree = "<group>"; };
-		5905B79B1CF1813E00B0D9B1 /* zocial-regular-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "zocial-regular-webfont.ttf"; sourceTree = "<group>"; };
-		591C57E91CEE1FDE003C245E /* Wolf Beacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wolf Beacon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		591C57EC1CEE1FDE003C245E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		591C57F11CEE1FDE003C245E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		591C57F41CEE1FDE003C245E /* Wolf_Beacon.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Wolf_Beacon.xcdatamodel; sourceTree = "<group>"; };
-		591C57F61CEE1FDE003C245E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		591C57F91CEE1FDE003C245E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		591C57FB1CEE1FDE003C245E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		591C58001CEE1FDE003C245E /* Wolf BeaconTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wolf BeaconTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		591C58041CEE1FDE003C245E /* Wolf_BeaconTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wolf_BeaconTests.swift; sourceTree = "<group>"; };
-		591C58061CEE1FDE003C245E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		591C580B1CEE1FDE003C245E /* Wolf BeaconUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wolf BeaconUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		591C580F1CEE1FDE003C245E /* Wolf_BeaconUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wolf_BeaconUITests.swift; sourceTree = "<group>"; };
-		591C58111CEE1FDE003C245E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		591C582D1CEE212E003C245E /* PrefixHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PrefixHeader.swift; path = "Supporting Files/PrefixHeader.swift"; sourceTree = "<group>"; };
-		591C582F1CEE2145003C245E /* VectorImages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VectorImages.swift; path = "Supporting Files/VectorImages.swift"; sourceTree = "<group>"; };
-		591C58331CEE23D6003C245E /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Controllers/HomeViewController.swift; sourceTree = "<group>"; };
-		591C58361CEE23F7003C245E /* EventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventTableViewCell.swift; path = Views/Cells/EventTableViewCell.swift; sourceTree = "<group>"; };
-		591C58381CEE240B003C245E /* FeaturedCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeaturedCollectionViewCell.swift; path = Views/Cells/FeaturedCollectionViewCell.swift; sourceTree = "<group>"; };
-		5931A0151D000F570027C203 /* mithackathon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = mithackathon.jpg; path = Images/mithackathon.jpg; sourceTree = "<group>"; };
-		5931A0171D0010C10027C203 /* sponser1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sponser1.jpg; path = Images/sponser1.jpg; sourceTree = "<group>"; };
-		5931A0181D0010C10027C203 /* sponser2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sponser2.png; path = Images/sponser2.png; sourceTree = "<group>"; };
-		5931A0191D0010C10027C203 /* sponser3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sponser3.png; path = Images/sponser3.png; sourceTree = "<group>"; };
-		5931A01A1D0010C10027C203 /* sponser4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sponser4.jpg; path = Images/sponser4.jpg; sourceTree = "<group>"; };
-		5961DAAE1D15104300D490C8 /* DetailCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailCollectionViewCell.swift; path = Views/Cells/DetailCollectionViewCell.swift; sourceTree = "<group>"; };
-		5961DAAF1D15104300D490C8 /* DetailCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetailCollectionViewCell.xib; path = Views/Cells/DetailCollectionViewCell.xib; sourceTree = "<group>"; };
-		5961DAB21D152ADE00D490C8 /* map0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = map0.jpg; path = Images/map0.jpg; sourceTree = "<group>"; };
-		5961DAB31D152ADE00D490C8 /* map1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = map1.jpg; path = Images/map1.jpg; sourceTree = "<group>"; };
-		5961DAB41D152ADE00D490C8 /* map2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = map2.jpg; path = Images/map2.jpg; sourceTree = "<group>"; };
-		5969CD211CFD5B0F00F166EF /* hackathonbg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hackathonbg.jpg; path = Images/hackathonbg.jpg; sourceTree = "<group>"; };
-		5969CD251CFD5F0500F166EF /* logo0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo0.png; path = Images/logo0.png; sourceTree = "<group>"; };
-		5969CD261CFD5F0500F166EF /* logo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo1.png; path = Images/logo1.png; sourceTree = "<group>"; };
-		5969CD271CFD5F0500F166EF /* logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo2.png; path = Images/logo2.png; sourceTree = "<group>"; };
-		5969CD281CFD5F0500F166EF /* logo3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo3.png; path = Images/logo3.png; sourceTree = "<group>"; };
-		597729991D5CB2BB00E5688A /* WBEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WBEvent.swift; path = Models/WBEvent.swift; sourceTree = "<group>"; };
-		5986DD7C1D15DA210044A409 /* prize1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = prize1.jpg; path = Images/prize1.jpg; sourceTree = "<group>"; };
-		5986DD7D1D15DA210044A409 /* prize2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = prize2.jpg; path = Images/prize2.jpg; sourceTree = "<group>"; };
-		5986DD7E1D15DA210044A409 /* prize3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = prize3.jpg; path = Images/prize3.jpg; sourceTree = "<group>"; };
-		5986DD7F1D15DA210044A409 /* prize4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = prize4.jpg; path = Images/prize4.jpg; sourceTree = "<group>"; };
-		5986DD801D15DA210044A409 /* prize5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = prize5.jpg; path = Images/prize5.jpg; sourceTree = "<group>"; };
-		5986DD811D15DA210044A409 /* prize6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = prize6.jpg; path = Images/prize6.jpg; sourceTree = "<group>"; };
-		5986DD821D15DA210044A409 /* prize7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = prize7.jpg; path = Images/prize7.jpg; sourceTree = "<group>"; };
-		5986DD831D15DA210044A409 /* prize8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = prize8.jpg; path = Images/prize8.jpg; sourceTree = "<group>"; };
-		5990AABE1CFE050D00DFAFF2 /* EventTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EventTableViewCell.xib; path = Views/Cells/EventTableViewCell.xib; sourceTree = "<group>"; };
-		5990AAC01CFE09BF00DFAFF2 /* SettingsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsManager.swift; path = Models/SettingsManager.swift; sourceTree = "<group>"; };
-		5990AAC21CFE0B7600DFAFF2 /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavoritesTableViewController.swift; path = Controllers/FavoritesTableViewController.swift; sourceTree = "<group>"; };
-		5990AAC41CFE0B9700DFAFF2 /* AllEventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AllEventsTableViewController.swift; path = Controllers/AllEventsTableViewController.swift; sourceTree = "<group>"; };
-		5990AAC61CFE0BA800DFAFF2 /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoreViewController.swift; path = Controllers/MoreViewController.swift; sourceTree = "<group>"; };
-		59C8A4771CF0858700987CCA /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseTableViewCell.swift; path = Views/Cells/BaseTableViewCell.swift; sourceTree = "<group>"; };
-		59C8A4791CF088C800987CCA /* DetailHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailHeaderTableViewCell.swift; path = Views/Cells/DetailHeaderTableViewCell.swift; sourceTree = "<group>"; };
-		59C8A4811CF0CEFE00987CCA /* DetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailTableViewController.swift; path = Controllers/DetailTableViewController.swift; sourceTree = "<group>"; };
-		59EDAE4E1D00979100A6365C /* DetailHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetailHeaderTableViewCell.xib; path = Views/Cells/DetailHeaderTableViewCell.xib; sourceTree = "<group>"; };
-		59EDAE541D0097DB00A6365C /* DetailCollectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailCollectionTableViewCell.swift; path = Views/Cells/DetailCollectionTableViewCell.swift; sourceTree = "<group>"; };
-		59EDAE551D0097DB00A6365C /* DetailCollectionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetailCollectionTableViewCell.xib; path = Views/Cells/DetailCollectionTableViewCell.xib; sourceTree = "<group>"; };
-		59EDAE5A1D00A70C00A6365C /* doctor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = doctor.jpg; path = Images/doctor.jpg; sourceTree = "<group>"; };
-		59EDAE5B1D00A70C00A6365C /* gilfoyle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = gilfoyle.jpg; path = Images/gilfoyle.jpg; sourceTree = "<group>"; };
-		59EDAE5C1D00A70C00A6365C /* harvey.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = harvey.jpg; path = Images/harvey.jpg; sourceTree = "<group>"; };
-		59EDAE5D1D00A70C00A6365C /* moss.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = moss.jpg; path = Images/moss.jpg; sourceTree = "<group>"; };
-		59EDAE621D00ABD400A6365C /* hackathon1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hackathon1.jpg; path = Images/hackathon1.jpg; sourceTree = "<group>"; };
-		59EDAE631D00ABD400A6365C /* hackathon2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hackathon2.jpg; path = Images/hackathon2.jpg; sourceTree = "<group>"; };
-		59EDAE681D00ACE000A6365C /* mitcampus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = mitcampus.jpg; path = Images/mitcampus.jpg; sourceTree = "<group>"; };
-		59FC3BEB1D0461F200F79C8F /* DetailFacilitiesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetailFacilitiesTableViewCell.xib; path = Views/Cells/DetailFacilitiesTableViewCell.xib; sourceTree = "<group>"; };
-		59FC3BED1D04640A00F79C8F /* DetailInformationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailInformationTableViewCell.swift; path = Views/Cells/DetailInformationTableViewCell.swift; sourceTree = "<group>"; };
-		59FC3BEE1D04640A00F79C8F /* DetailInformationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetailInformationTableViewCell.xib; path = Views/Cells/DetailInformationTableViewCell.xib; sourceTree = "<group>"; };
-		6B6A43FA01ECF5D8E0DC9456 /* Pods-Wolf Beacon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wolf Beacon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wolf Beacon/Pods-Wolf Beacon.debug.xcconfig"; sourceTree = "<group>"; };
-		89225198BA0EA141B5179ED3 /* Pods_Wolf_Beacon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wolf_Beacon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8C6660468C878B7B88ECD084 /* Pods_Wolf_BeaconTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wolf_BeaconTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF615F9456C3F319A834057D /* Pods-Wolf BeaconTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wolf BeaconTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wolf BeaconTests/Pods-Wolf BeaconTests.release.xcconfig"; sourceTree = "<group>"; };
-		CE4C2670C9ECA69ABD801F17 /* Pods-Wolf Beacon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wolf Beacon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wolf Beacon/Pods-Wolf Beacon.release.xcconfig"; sourceTree = "<group>"; };
-		DABE139E0472C55393D8B556 /* Pods-Wolf BeaconTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wolf BeaconTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wolf BeaconTests/Pods-Wolf BeaconTests.debug.xcconfig"; sourceTree = "<group>"; };
-		F3E60560AB09E3A5930230F6 /* Pods-Wolf BeaconUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wolf BeaconUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wolf BeaconUITests/Pods-Wolf BeaconUITests.release.xcconfig"; sourceTree = "<group>"; };
-		F467AE195C0115117799A5A3 /* Pods-Wolf BeaconUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wolf BeaconUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wolf BeaconUITests/Pods-Wolf BeaconUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		05BC864AF80B7A0CFD793F45 /* Pods-Wolf Beacon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wolf Beacon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wolf Beacon/Pods-Wolf Beacon.release.xcconfig"; sourceTree = "<group>"; };
+		59038FD11DD4DB3F00361A0D /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = Controllers/Home/HomeViewController.h; sourceTree = "<group>"; };
+		59038FD21DD4DB3F00361A0D /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = Controllers/Home/HomeViewController.m; sourceTree = "<group>"; };
+		59038FDC1DD4DFDB00361A0D /* FavoritesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FavoritesTableViewController.h; path = Controllers/Favorites/FavoritesTableViewController.h; sourceTree = "<group>"; };
+		59038FDD1DD4DFDB00361A0D /* FavoritesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FavoritesTableViewController.m; path = Controllers/Favorites/FavoritesTableViewController.m; sourceTree = "<group>"; };
+		59038FDF1DD4E2C300361A0D /* AllEventsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AllEventsTableViewController.h; path = Controllers/AllEvents/AllEventsTableViewController.h; sourceTree = "<group>"; };
+		59038FE01DD4E2C300361A0D /* AllEventsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AllEventsTableViewController.m; path = Controllers/AllEvents/AllEventsTableViewController.m; sourceTree = "<group>"; };
+		59038FE21DD4E95900361A0D /* DetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailTableViewController.h; path = Controllers/Detail/DetailTableViewController.h; sourceTree = "<group>"; };
+		59038FE31DD4E95900361A0D /* DetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailTableViewController.m; path = Controllers/Detail/DetailTableViewController.m; sourceTree = "<group>"; };
+		59038FE51DD4F4EF00361A0D /* DetailCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailCollectionViewCell.h; path = Views/Cells/DetailCollectionViewCell.h; sourceTree = "<group>"; };
+		59038FE61DD4F4EF00361A0D /* DetailCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailCollectionViewCell.m; path = Views/Cells/DetailCollectionViewCell.m; sourceTree = "<group>"; };
+		59038FE81DD4F71200361A0D /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = ../PrefixHeader.pch; sourceTree = "<group>"; };
+		591088561E5DCEA8004A04C4 /* CoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreDataHelper.h; path = Models/Hackathon/CoreDataHelper.h; sourceTree = "<group>"; };
+		591088571E5DCEA8004A04C4 /* CoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoreDataHelper.m; path = Models/Hackathon/CoreDataHelper.m; sourceTree = "<group>"; };
+		591088981E61B6AD004A04C4 /* WBTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WBTabBarController.h; path = "Controllers/Tab Bar/WBTabBarController.h"; sourceTree = "<group>"; };
+		591088991E61B6AD004A04C4 /* WBTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WBTabBarController.m; path = "Controllers/Tab Bar/WBTabBarController.m"; sourceTree = "<group>"; };
+		5910889D1E61BE23004A04C4 /* BBTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBTableViewController.h; sourceTree = "<group>"; };
+		5910889E1E61BE23004A04C4 /* BBTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBTableViewController.m; sourceTree = "<group>"; };
+		5910889F1E61BE23004A04C4 /* BBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBViewController.h; sourceTree = "<group>"; };
+		591088A01E61BE23004A04C4 /* BBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBViewController.m; sourceTree = "<group>"; };
+		592D7F431DFE767E005F05C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
+		593DF4BB1DDB854E00FB3C01 /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsTableViewController.h; path = Controllers/Settings/SettingsTableViewController.h; sourceTree = "<group>"; };
+		593DF4BC1DDB854E00FB3C01 /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsTableViewController.m; path = Controllers/Settings/SettingsTableViewController.m; sourceTree = "<group>"; };
+		595452C41E35BB4100C83524 /* EventCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventCollectionViewCell.h; path = Views/Cells/EventCollectionViewCell.h; sourceTree = "<group>"; };
+		595452C51E35BB4100C83524 /* EventCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventCollectionViewCell.m; path = Views/Cells/EventCollectionViewCell.m; sourceTree = "<group>"; };
+		595452C61E35BB4100C83524 /* EventCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EventCollectionViewCell.xib; path = Views/Cells/EventCollectionViewCell.xib; sourceTree = "<group>"; };
+		599DD2AA1E0E42FD00449FE9 /* ScheduleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScheduleTableViewController.h; path = Controllers/Schedule/ScheduleTableViewController.h; sourceTree = "<group>"; };
+		599DD2AB1E0E42FD00449FE9 /* ScheduleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScheduleTableViewController.m; path = Controllers/Schedule/ScheduleTableViewController.m; sourceTree = "<group>"; };
+		599DD2AD1E0E43FC00449FE9 /* ScheduleBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScheduleBaseViewController.h; path = Controllers/Schedule/ScheduleBaseViewController.h; sourceTree = "<group>"; };
+		599DD2AE1E0E43FC00449FE9 /* ScheduleBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScheduleBaseViewController.m; path = Controllers/Schedule/ScheduleBaseViewController.m; sourceTree = "<group>"; };
+		59A06DDB1ED2DD1A007CF676 /* SignupPersonal2TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SignupPersonal2TableViewController.h; path = "Controllers/Sign Up/SignupPersonal2TableViewController.h"; sourceTree = "<group>"; };
+		59A06DDC1ED2DD1A007CF676 /* SignupPersonal2TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SignupPersonal2TableViewController.m; path = "Controllers/Sign Up/SignupPersonal2TableViewController.m"; sourceTree = "<group>"; };
+		59A06DDE1ED31458007CF676 /* SignupTechnicalTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SignupTechnicalTableViewController.h; path = "Controllers/Sign Up/SignupTechnicalTableViewController.h"; sourceTree = "<group>"; };
+		59A06DDF1ED31458007CF676 /* SignupTechnicalTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SignupTechnicalTableViewController.m; path = "Controllers/Sign Up/SignupTechnicalTableViewController.m"; sourceTree = "<group>"; };
+		59A06DE11ED348F7007CF676 /* SignupOptionalTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SignupOptionalTableViewController.h; path = "Controllers/Sign Up/SignupOptionalTableViewController.h"; sourceTree = "<group>"; };
+		59A06DE21ED348F7007CF676 /* SignupOptionalTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SignupOptionalTableViewController.m; path = "Controllers/Sign Up/SignupOptionalTableViewController.m"; sourceTree = "<group>"; };
+		59A219391E3774B2004E4060 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Apply.storyboard; sourceTree = "<group>"; };
+		59A2193C1E377931004E4060 /* ColorsHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorsHeader.h; sourceTree = "<group>"; };
+		59A2193E1E377931004E4060 /* DADataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DADataManager.h; sourceTree = "<group>"; };
+		59A2193F1E377931004E4060 /* DADataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DADataManager.m; sourceTree = "<group>"; };
+		59A219411E377D1C004E4060 /* RequestsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RequestsManager.h; path = Models/Network/RequestsManager.h; sourceTree = "<group>"; };
+		59A219421E377D1C004E4060 /* RequestsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RequestsManager.m; path = Models/Network/RequestsManager.m; sourceTree = "<group>"; };
+		59A219451E378CDE004E4060 /* VLRLoginTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VLRLoginTextField.h; sourceTree = "<group>"; };
+		59A219461E378CDE004E4060 /* VLRLoginTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VLRLoginTextField.m; sourceTree = "<group>"; };
+		59A219491E38E0F6004E4060 /* SignupPersonalTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SignupPersonalTableViewController.h; path = "Controllers/Sign Up/SignupPersonalTableViewController.h"; sourceTree = "<group>"; };
+		59A2194A1E38E0F6004E4060 /* SignupPersonalTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SignupPersonalTableViewController.m; path = "Controllers/Sign Up/SignupPersonalTableViewController.m"; sourceTree = "<group>"; };
+		59A2194C1E38E17C004E4060 /* SignupSchoolTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SignupSchoolTableViewController.h; path = "Controllers/Sign Up/SignupSchoolTableViewController.h"; sourceTree = "<group>"; };
+		59A2194D1E38E17C004E4060 /* SignupSchoolTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SignupSchoolTableViewController.m; path = "Controllers/Sign Up/SignupSchoolTableViewController.m"; sourceTree = "<group>"; };
+		59D2F5931DDDDFD400215AB0 /* ProfileTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileTableViewController.h; path = Controllers/Settings/ProfileTableViewController.h; sourceTree = "<group>"; };
+		59D2F5941DDDDFD400215AB0 /* ProfileTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileTableViewController.m; path = Controllers/Settings/ProfileTableViewController.m; sourceTree = "<group>"; };
+		59E263941DD59512009FA3D9 /* doctor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = doctor.jpg; sourceTree = "<group>"; };
+		59E263951DD59512009FA3D9 /* gilfoyle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gilfoyle.jpg; sourceTree = "<group>"; };
+		59E263961DD59512009FA3D9 /* hackathon1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hackathon1.jpg; sourceTree = "<group>"; };
+		59E263971DD59512009FA3D9 /* hackathon2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hackathon2.jpg; sourceTree = "<group>"; };
+		59E263981DD59512009FA3D9 /* hackathonbg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hackathonbg.jpg; sourceTree = "<group>"; };
+		59E263991DD59512009FA3D9 /* harvey.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = harvey.jpg; sourceTree = "<group>"; };
+		59E2639A1DD59512009FA3D9 /* logo0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo0.png; sourceTree = "<group>"; };
+		59E2639B1DD59512009FA3D9 /* logo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo1.png; sourceTree = "<group>"; };
+		59E2639C1DD59512009FA3D9 /* logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo2.png; sourceTree = "<group>"; };
+		59E2639D1DD59512009FA3D9 /* logo3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo3.png; sourceTree = "<group>"; };
+		59E2639E1DD59512009FA3D9 /* map0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = map0.jpg; sourceTree = "<group>"; };
+		59E2639F1DD59512009FA3D9 /* map1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = map1.jpg; sourceTree = "<group>"; };
+		59E263A01DD59512009FA3D9 /* map2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = map2.jpg; sourceTree = "<group>"; };
+		59E263A11DD59512009FA3D9 /* mitcampus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mitcampus.jpg; sourceTree = "<group>"; };
+		59E263A21DD59512009FA3D9 /* mithackathon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mithackathon.jpg; sourceTree = "<group>"; };
+		59E263A31DD59512009FA3D9 /* moss.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = moss.jpg; sourceTree = "<group>"; };
+		59E263A41DD59512009FA3D9 /* prize1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = prize1.jpg; sourceTree = "<group>"; };
+		59E263A51DD59512009FA3D9 /* prize2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = prize2.jpg; sourceTree = "<group>"; };
+		59E263A61DD59512009FA3D9 /* prize3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = prize3.jpg; sourceTree = "<group>"; };
+		59E263A71DD59512009FA3D9 /* prize4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = prize4.jpg; sourceTree = "<group>"; };
+		59E263A81DD59512009FA3D9 /* prize5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = prize5.jpg; sourceTree = "<group>"; };
+		59E263A91DD59512009FA3D9 /* prize6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = prize6.jpg; sourceTree = "<group>"; };
+		59E263AA1DD59512009FA3D9 /* prize7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = prize7.jpg; sourceTree = "<group>"; };
+		59E263AB1DD59512009FA3D9 /* prize8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = prize8.jpg; sourceTree = "<group>"; };
+		59E263AC1DD59512009FA3D9 /* sponser1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sponser1.jpg; sourceTree = "<group>"; };
+		59E263AD1DD59512009FA3D9 /* sponser2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sponser2.png; sourceTree = "<group>"; };
+		59E263AE1DD59512009FA3D9 /* sponser3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sponser3.png; sourceTree = "<group>"; };
+		59E263AF1DD59512009FA3D9 /* sponser4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sponser4.jpg; sourceTree = "<group>"; };
+		59FE45631DC0709600AE5D09 /* Wolf Beacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wolf Beacon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59FE45671DC0709600AE5D09 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		59FE45691DC0709600AE5D09 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		59FE456A1DC0709600AE5D09 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		59FE45701DC0709600AE5D09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		59FE45731DC0709600AE5D09 /* Wolf_Beacon.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Wolf_Beacon.xcdatamodel; sourceTree = "<group>"; };
+		59FE45751DC0709600AE5D09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		59FE45781DC0709600AE5D09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		59FE457A1DC0709600AE5D09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59FE45861DC0737200AE5D09 /* DetailCollectionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetailCollectionTableViewCell.xib; path = Views/Cells/DetailCollectionTableViewCell.xib; sourceTree = "<group>"; };
+		59FE45871DC0737200AE5D09 /* DetailCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetailCollectionViewCell.xib; path = Views/Cells/DetailCollectionViewCell.xib; sourceTree = "<group>"; };
+		59FE45881DC0737200AE5D09 /* DetailFacilitiesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetailFacilitiesTableViewCell.xib; path = Views/Cells/DetailFacilitiesTableViewCell.xib; sourceTree = "<group>"; };
+		59FE45891DC0737200AE5D09 /* DetailHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetailHeaderTableViewCell.xib; path = Views/Cells/DetailHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		59FE458A1DC0737200AE5D09 /* DetailInformationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetailInformationTableViewCell.xib; path = Views/Cells/DetailInformationTableViewCell.xib; sourceTree = "<group>"; };
+		59FE458B1DC0737200AE5D09 /* EventTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EventTableViewCell.xib; path = Views/Cells/EventTableViewCell.xib; sourceTree = "<group>"; };
+		59FE45931DC073BD00AE5D09 /* EventTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventTableViewCell.h; path = Views/Cells/EventTableViewCell.h; sourceTree = "<group>"; };
+		59FE45941DC073BD00AE5D09 /* EventTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventTableViewCell.m; path = Views/Cells/EventTableViewCell.m; sourceTree = "<group>"; };
+		59FE45961DC0741400AE5D09 /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseTableViewCell.h; path = Views/Cells/BaseTableViewCell.h; sourceTree = "<group>"; };
+		59FE45971DC0741400AE5D09 /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseTableViewCell.m; path = Views/Cells/BaseTableViewCell.m; sourceTree = "<group>"; };
+		59FE459B1DC0752100AE5D09 /* DetailHeaderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailHeaderTableViewCell.h; path = Views/Cells/DetailHeaderTableViewCell.h; sourceTree = "<group>"; };
+		59FE459C1DC0752100AE5D09 /* DetailHeaderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailHeaderTableViewCell.m; path = Views/Cells/DetailHeaderTableViewCell.m; sourceTree = "<group>"; };
+		59FE459F1DC07B8800AE5D09 /* DetailInformationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailInformationTableViewCell.h; path = Views/Cells/DetailInformationTableViewCell.h; sourceTree = "<group>"; };
+		59FE45A01DC07B8800AE5D09 /* DetailInformationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailInformationTableViewCell.m; path = Views/Cells/DetailInformationTableViewCell.m; sourceTree = "<group>"; };
+		59FE45A31DC07F0800AE5D09 /* DetailCollectionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailCollectionTableViewCell.h; path = Views/Cells/DetailCollectionTableViewCell.h; sourceTree = "<group>"; };
+		59FE45A41DC07F0800AE5D09 /* DetailCollectionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailCollectionTableViewCell.m; path = Views/Cells/DetailCollectionTableViewCell.m; sourceTree = "<group>"; };
+		A37A8816E6BEB2F3C298C7E5 /* Pods-Wolf Beacon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wolf Beacon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wolf Beacon/Pods-Wolf Beacon.debug.xcconfig"; sourceTree = "<group>"; };
+		C88E49EB7E2FE36E2BE8F72E /* libPods-Wolf Beacon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Wolf Beacon.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		591C57E61CEE1FDE003C245E /* Frameworks */ = {
+		59FE45601DC0709600AE5D09 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8C73496229BC4FBA98B73AF /* Pods_Wolf_Beacon.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		591C57FD1CEE1FDE003C245E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8B50E770258D8AA3E093061D /* Pods_Wolf_BeaconTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		591C58081CEE1FDE003C245E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EC7ACCE9D68715D350B1059C /* Pods_Wolf_BeaconUITests.framework in Frameworks */,
+				07956ABCA5388DAFEE66FEAC /* libPods-Wolf Beacon.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0144594826CEBB83E3F22A59 /* Frameworks */ = {
+		56D70C337FF3357B99EDF038 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				89225198BA0EA141B5179ED3 /* Pods_Wolf_Beacon.framework */,
-				8C6660468C878B7B88ECD084 /* Pods_Wolf_BeaconTests.framework */,
-				0E91986398C403FF95661462 /* Pods_Wolf_BeaconUITests.framework */,
+				A37A8816E6BEB2F3C298C7E5 /* Pods-Wolf Beacon.debug.xcconfig */,
+				05BC864AF80B7A0CFD793F45 /* Pods-Wolf Beacon.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		5905B7971CF1813E00B0D9B1 /* Fonts */ = {
+		59038FD41DD4DB4000361A0D /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				5905B7981CF1813E00B0D9B1 /* FontAwesome.otf */,
-				5905B7991CF1813E00B0D9B1 /* foundation-icons.ttf */,
-				5905B79A1CF1813E00B0D9B1 /* ionicons.ttf */,
-				5905B79B1CF1813E00B0D9B1 /* zocial-regular-webfont.ttf */,
+				59038FD11DD4DB3F00361A0D /* HomeViewController.h */,
+				59038FD21DD4DB3F00361A0D /* HomeViewController.m */,
 			);
-			name = Fonts;
-			path = "Supporting Files/Fonts";
+			name = Home;
 			sourceTree = "<group>";
 		};
-		591C57E01CEE1FDE003C245E = {
+		59038FD61DD4DF8E00361A0D /* Favorites */ = {
 			isa = PBXGroup;
 			children = (
-				591C57EB1CEE1FDE003C245E /* Wolf Beacon */,
-				591C58031CEE1FDE003C245E /* Wolf BeaconTests */,
-				591C580E1CEE1FDE003C245E /* Wolf BeaconUITests */,
-				591C57EA1CEE1FDE003C245E /* Products */,
-				B630B986E5AF13A0D7E2411B /* Pods */,
-				0144594826CEBB83E3F22A59 /* Frameworks */,
+				59038FDC1DD4DFDB00361A0D /* FavoritesTableViewController.h */,
+				59038FDD1DD4DFDB00361A0D /* FavoritesTableViewController.m */,
+			);
+			name = Favorites;
+			sourceTree = "<group>";
+		};
+		59038FD71DD4DF9900361A0D /* All Events */ = {
+			isa = PBXGroup;
+			children = (
+				59038FDF1DD4E2C300361A0D /* AllEventsTableViewController.h */,
+				59038FE01DD4E2C300361A0D /* AllEventsTableViewController.m */,
+			);
+			name = "All Events";
+			sourceTree = "<group>";
+		};
+		59038FD81DD4DF9F00361A0D /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				59038FE21DD4E95900361A0D /* DetailTableViewController.h */,
+				59038FE31DD4E95900361A0D /* DetailTableViewController.m */,
+				599DD2A91E0E42DF00449FE9 /* Schedule */,
+			);
+			name = Detail;
+			sourceTree = "<group>";
+		};
+		591088971E61B664004A04C4 /* Tab Bar */ = {
+			isa = PBXGroup;
+			children = (
+				591088981E61B6AD004A04C4 /* WBTabBarController.h */,
+				591088991E61B6AD004A04C4 /* WBTabBarController.m */,
+			);
+			name = "Tab Bar";
+			sourceTree = "<group>";
+		};
+		5910889C1E61BE23004A04C4 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5910889D1E61BE23004A04C4 /* BBTableViewController.h */,
+				5910889E1E61BE23004A04C4 /* BBTableViewController.m */,
+				5910889F1E61BE23004A04C4 /* BBViewController.h */,
+				591088A01E61BE23004A04C4 /* BBViewController.m */,
+			);
+			name = Base;
+			path = Controllers/Base;
+			sourceTree = "<group>";
+		};
+		592D7F481DFE79A7005F05C2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		593DF4BA1DDB850400FB3C01 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				593DF4BB1DDB854E00FB3C01 /* SettingsTableViewController.h */,
+				593DF4BC1DDB854E00FB3C01 /* SettingsTableViewController.m */,
+				59D2F5931DDDDFD400215AB0 /* ProfileTableViewController.h */,
+				59D2F5941DDDDFD400215AB0 /* ProfileTableViewController.m */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		599DD2A91E0E42DF00449FE9 /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				599DD2AD1E0E43FC00449FE9 /* ScheduleBaseViewController.h */,
+				599DD2AE1E0E43FC00449FE9 /* ScheduleBaseViewController.m */,
+				599DD2AA1E0E42FD00449FE9 /* ScheduleTableViewController.h */,
+				599DD2AB1E0E42FD00449FE9 /* ScheduleTableViewController.m */,
+			);
+			name = Schedule;
+			sourceTree = "<group>";
+		};
+		59A019D71E5B48540097BB29 /* Hackathon */ = {
+			isa = PBXGroup;
+			children = (
+				591088561E5DCEA8004A04C4 /* CoreDataHelper.h */,
+				591088571E5DCEA8004A04C4 /* CoreDataHelper.m */,
+			);
+			name = Hackathon;
+			sourceTree = "<group>";
+		};
+		59A2193B1E377931004E4060 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				59A2193C1E377931004E4060 /* ColorsHeader.h */,
+				59038FE81DD4F71200361A0D /* PrefixHeader.pch */,
+				59A2193D1E377931004E4060 /* DADataManager */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		59A2193D1E377931004E4060 /* DADataManager */ = {
+			isa = PBXGroup;
+			children = (
+				59A2193E1E377931004E4060 /* DADataManager.h */,
+				59A2193F1E377931004E4060 /* DADataManager.m */,
+			);
+			path = DADataManager;
+			sourceTree = "<group>";
+		};
+		59A219441E378CDE004E4060 /* Field */ = {
+			isa = PBXGroup;
+			children = (
+				59A219451E378CDE004E4060 /* VLRLoginTextField.h */,
+				59A219461E378CDE004E4060 /* VLRLoginTextField.m */,
+			);
+			name = Field;
+			path = Views/Field;
+			sourceTree = "<group>";
+		};
+		59A219481E38E0D5004E4060 /* Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+				59A219491E38E0F6004E4060 /* SignupPersonalTableViewController.h */,
+				59A2194A1E38E0F6004E4060 /* SignupPersonalTableViewController.m */,
+				59A06DDB1ED2DD1A007CF676 /* SignupPersonal2TableViewController.h */,
+				59A06DDC1ED2DD1A007CF676 /* SignupPersonal2TableViewController.m */,
+				59A2194C1E38E17C004E4060 /* SignupSchoolTableViewController.h */,
+				59A2194D1E38E17C004E4060 /* SignupSchoolTableViewController.m */,
+				59A06DDE1ED31458007CF676 /* SignupTechnicalTableViewController.h */,
+				59A06DDF1ED31458007CF676 /* SignupTechnicalTableViewController.m */,
+				59A06DE11ED348F7007CF676 /* SignupOptionalTableViewController.h */,
+				59A06DE21ED348F7007CF676 /* SignupOptionalTableViewController.m */,
+			);
+			name = "Sign Up";
+			sourceTree = "<group>";
+		};
+		59D2F5921DDDD8C400215AB0 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		59E263931DD59512009FA3D9 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				59E263941DD59512009FA3D9 /* doctor.jpg */,
+				59E263951DD59512009FA3D9 /* gilfoyle.jpg */,
+				59E263961DD59512009FA3D9 /* hackathon1.jpg */,
+				59E263971DD59512009FA3D9 /* hackathon2.jpg */,
+				59E263981DD59512009FA3D9 /* hackathonbg.jpg */,
+				59E263991DD59512009FA3D9 /* harvey.jpg */,
+				59E2639A1DD59512009FA3D9 /* logo0.png */,
+				59E2639B1DD59512009FA3D9 /* logo1.png */,
+				59E2639C1DD59512009FA3D9 /* logo2.png */,
+				59E2639D1DD59512009FA3D9 /* logo3.png */,
+				59E2639E1DD59512009FA3D9 /* map0.jpg */,
+				59E2639F1DD59512009FA3D9 /* map1.jpg */,
+				59E263A01DD59512009FA3D9 /* map2.jpg */,
+				59E263A11DD59512009FA3D9 /* mitcampus.jpg */,
+				59E263A21DD59512009FA3D9 /* mithackathon.jpg */,
+				59E263A31DD59512009FA3D9 /* moss.jpg */,
+				59E263A41DD59512009FA3D9 /* prize1.jpg */,
+				59E263A51DD59512009FA3D9 /* prize2.jpg */,
+				59E263A61DD59512009FA3D9 /* prize3.jpg */,
+				59E263A71DD59512009FA3D9 /* prize4.jpg */,
+				59E263A81DD59512009FA3D9 /* prize5.jpg */,
+				59E263A91DD59512009FA3D9 /* prize6.jpg */,
+				59E263AA1DD59512009FA3D9 /* prize7.jpg */,
+				59E263AB1DD59512009FA3D9 /* prize8.jpg */,
+				59E263AC1DD59512009FA3D9 /* sponser1.jpg */,
+				59E263AD1DD59512009FA3D9 /* sponser2.png */,
+				59E263AE1DD59512009FA3D9 /* sponser3.png */,
+				59E263AF1DD59512009FA3D9 /* sponser4.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		59FE455A1DC0709600AE5D09 = {
+			isa = PBXGroup;
+			children = (
+				59FE45651DC0709600AE5D09 /* Wolf Beacon */,
+				59FE45641DC0709600AE5D09 /* Products */,
+				56D70C337FF3357B99EDF038 /* Pods */,
+				5B757F54ABBAB8810548E8DE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		591C57EA1CEE1FDE003C245E /* Products */ = {
+		59FE45641DC0709600AE5D09 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				591C57E91CEE1FDE003C245E /* Wolf Beacon.app */,
-				591C58001CEE1FDE003C245E /* Wolf BeaconTests.xctest */,
-				591C580B1CEE1FDE003C245E /* Wolf BeaconUITests.xctest */,
+				59FE45631DC0709600AE5D09 /* Wolf Beacon.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		591C57EB1CEE1FDE003C245E /* Wolf Beacon */ = {
+		59FE45651DC0709600AE5D09 /* Wolf Beacon */ = {
 			isa = PBXGroup;
 			children = (
-				591C57F61CEE1FDE003C245E /* Assets.xcassets */,
-				591C582B1CEE20FA003C245E /* App Delegate */,
-				591C58221CEE20B9003C245E /* Models */,
-				591C58211CEE20B7003C245E /* Views */,
-				591C581D1CEE2004003C245E /* Controllers */,
-				591C581E1CEE200F003C245E /* Supporting Files */,
-				591C57FB1CEE1FDE003C245E /* Info.plist */,
+				59FE45801DC0716500AE5D09 /* App Delegate */,
+				59FE45831DC0717B00AE5D09 /* Models */,
+				59FE45821DC0717600AE5D09 /* Views */,
+				59FE45811DC0717200AE5D09 /* Controllers */,
+				59FE45751DC0709600AE5D09 /* Assets.xcassets */,
+				59FE457A1DC0709600AE5D09 /* Info.plist */,
+				59FE45661DC0709600AE5D09 /* Supporting Files */,
 			);
 			path = "Wolf Beacon";
 			sourceTree = "<group>";
 		};
-		591C58031CEE1FDE003C245E /* Wolf BeaconTests */ = {
+		59FE45661DC0709600AE5D09 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				591C58041CEE1FDE003C245E /* Wolf_BeaconTests.swift */,
-				591C58061CEE1FDE003C245E /* Info.plist */,
-			);
-			path = "Wolf BeaconTests";
-			sourceTree = "<group>";
-		};
-		591C580E1CEE1FDE003C245E /* Wolf BeaconUITests */ = {
-			isa = PBXGroup;
-			children = (
-				591C580F1CEE1FDE003C245E /* Wolf_BeaconUITests.swift */,
-				591C58111CEE1FDE003C245E /* Info.plist */,
-			);
-			path = "Wolf BeaconUITests";
-			sourceTree = "<group>";
-		};
-		591C581D1CEE2004003C245E /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				591C58331CEE23D6003C245E /* HomeViewController.swift */,
-				59C8A4811CF0CEFE00987CCA /* DetailTableViewController.swift */,
-				5990AAC41CFE0B9700DFAFF2 /* AllEventsTableViewController.swift */,
-				5990AAC21CFE0B7600DFAFF2 /* FavoritesTableViewController.swift */,
-				5990AAC61CFE0BA800DFAFF2 /* MoreViewController.swift */,
-			);
-			name = Controllers;
-			sourceTree = "<group>";
-		};
-		591C581E1CEE200F003C245E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				5905B7971CF1813E00B0D9B1 /* Fonts */,
-				591C582D1CEE212E003C245E /* PrefixHeader.swift */,
-				591C58201CEE201D003C245E /* Images */,
-				591C581F1CEE2016003C245E /* Utilities */,
+				59A2193B1E377931004E4060 /* Supporting Files */,
+				59E263931DD59512009FA3D9 /* Images */,
+				59FE45671DC0709600AE5D09 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		591C581F1CEE2016003C245E /* Utilities */ = {
+		59FE45801DC0716500AE5D09 /* App Delegate */ = {
 			isa = PBXGroup;
 			children = (
-				591C582F1CEE2145003C245E /* VectorImages.swift */,
-			);
-			name = Utilities;
-			sourceTree = "<group>";
-		};
-		591C58201CEE201D003C245E /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				5986DD7C1D15DA210044A409 /* prize1.jpg */,
-				5986DD7D1D15DA210044A409 /* prize2.jpg */,
-				5986DD7E1D15DA210044A409 /* prize3.jpg */,
-				5986DD7F1D15DA210044A409 /* prize4.jpg */,
-				5986DD801D15DA210044A409 /* prize5.jpg */,
-				5986DD811D15DA210044A409 /* prize6.jpg */,
-				5986DD821D15DA210044A409 /* prize7.jpg */,
-				5986DD831D15DA210044A409 /* prize8.jpg */,
-				5961DAB21D152ADE00D490C8 /* map0.jpg */,
-				5961DAB31D152ADE00D490C8 /* map1.jpg */,
-				5961DAB41D152ADE00D490C8 /* map2.jpg */,
-				59EDAE681D00ACE000A6365C /* mitcampus.jpg */,
-				5931A0151D000F570027C203 /* mithackathon.jpg */,
-				5969CD211CFD5B0F00F166EF /* hackathonbg.jpg */,
-				59EDAE621D00ABD400A6365C /* hackathon1.jpg */,
-				59EDAE631D00ABD400A6365C /* hackathon2.jpg */,
-				5969CD251CFD5F0500F166EF /* logo0.png */,
-				5969CD261CFD5F0500F166EF /* logo1.png */,
-				5969CD271CFD5F0500F166EF /* logo2.png */,
-				5969CD281CFD5F0500F166EF /* logo3.png */,
-				5931A0171D0010C10027C203 /* sponser1.jpg */,
-				5931A0181D0010C10027C203 /* sponser2.png */,
-				5931A0191D0010C10027C203 /* sponser3.png */,
-				5931A01A1D0010C10027C203 /* sponser4.jpg */,
-				59EDAE5A1D00A70C00A6365C /* doctor.jpg */,
-				59EDAE5B1D00A70C00A6365C /* gilfoyle.jpg */,
-				59EDAE5C1D00A70C00A6365C /* harvey.jpg */,
-				59EDAE5D1D00A70C00A6365C /* moss.jpg */,
-			);
-			name = Images;
-			sourceTree = "<group>";
-		};
-		591C58211CEE20B7003C245E /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				591C58351CEE23E2003C245E /* Cells */,
-				591C582C1CEE210A003C245E /* Launch */,
-				591C57F01CEE1FDE003C245E /* Main.storyboard */,
-			);
-			name = Views;
-			sourceTree = "<group>";
-		};
-		591C58221CEE20B9003C245E /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				591C57F31CEE1FDE003C245E /* Wolf_Beacon.xcdatamodeld */,
-				5990AAC01CFE09BF00DFAFF2 /* SettingsManager.swift */,
-				597729991D5CB2BB00E5688A /* WBEvent.swift */,
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
-		591C582B1CEE20FA003C245E /* App Delegate */ = {
-			isa = PBXGroup;
-			children = (
-				591C57EC1CEE1FDE003C245E /* AppDelegate.swift */,
+				59FE45691DC0709600AE5D09 /* AppDelegate.h */,
+				59FE456A1DC0709600AE5D09 /* AppDelegate.m */,
 			);
 			name = "App Delegate";
 			sourceTree = "<group>";
 		};
-		591C582C1CEE210A003C245E /* Launch */ = {
+		59FE45811DC0717200AE5D09 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				591C57F81CEE1FDE003C245E /* LaunchScreen.storyboard */,
+				5910889C1E61BE23004A04C4 /* Base */,
+				59A219481E38E0D5004E4060 /* Sign Up */,
+				591088971E61B664004A04C4 /* Tab Bar */,
+				59038FD41DD4DB4000361A0D /* Home */,
+				59038FD81DD4DF9F00361A0D /* Detail */,
+				59038FD71DD4DF9900361A0D /* All Events */,
+				59038FD61DD4DF8E00361A0D /* Favorites */,
+				593DF4BA1DDB850400FB3C01 /* Settings */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		59FE45821DC0717600AE5D09 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				59A219441E378CDE004E4060 /* Field */,
+				59FE45851DC0736200AE5D09 /* Cells */,
+				59FE45841DC0720800AE5D09 /* Launch */,
+				59FE456F1DC0709600AE5D09 /* Main.storyboard */,
+				59A219381E3774B2004E4060 /* Apply.storyboard */,
+				592D7F421DFE767E005F05C2 /* Login.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		59FE45831DC0717B00AE5D09 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				59FE45721DC0709600AE5D09 /* Wolf_Beacon.xcdatamodeld */,
+				59A019D71E5B48540097BB29 /* Hackathon */,
+				592D7F481DFE79A7005F05C2 /* Login */,
+				59A219411E377D1C004E4060 /* RequestsManager.h */,
+				59A219421E377D1C004E4060 /* RequestsManager.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		59FE45841DC0720800AE5D09 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				59FE45771DC0709600AE5D09 /* LaunchScreen.storyboard */,
 			);
 			name = Launch;
 			sourceTree = "<group>";
 		};
-		591C58351CEE23E2003C245E /* Cells */ = {
+		59FE45851DC0736200AE5D09 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				591C58361CEE23F7003C245E /* EventTableViewCell.swift */,
-				5990AABE1CFE050D00DFAFF2 /* EventTableViewCell.xib */,
-				591C58381CEE240B003C245E /* FeaturedCollectionViewCell.swift */,
-				5986DD771D15CECA0044A409 /* Detail Cells */,
+				59FE459A1DC0741E00AE5D09 /* Event */,
+				59FE45921DC0737700AE5D09 /* Detail Cells */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
 		};
-		5986DD771D15CECA0044A409 /* Detail Cells */ = {
+		59FE45921DC0737700AE5D09 /* Detail Cells */ = {
 			isa = PBXGroup;
 			children = (
-				59C8A4771CF0858700987CCA /* BaseTableViewCell.swift */,
-				5986DD7B1D15CEF20044A409 /* Header */,
-				5986DD7A1D15CEEC0044A409 /* Information */,
-				5986DD791D15CEE70044A409 /* Collection */,
-				5986DD781D15CEDB0044A409 /* Facilities */,
+				59D2F5921DDDD8C400215AB0 /* New Group */,
+				59FE45991DC0741900AE5D09 /* Base */,
+				59FE459E1DC07AD200AE5D09 /* Detail Header */,
+				59FE45A21DC07B8D00AE5D09 /* Detail Information */,
+				59FE45A61DC07F1600AE5D09 /* Detail Collection */,
+				59FE45881DC0737200AE5D09 /* DetailFacilitiesTableViewCell.xib */,
 			);
 			name = "Detail Cells";
 			sourceTree = "<group>";
 		};
-		5986DD781D15CEDB0044A409 /* Facilities */ = {
+		59FE45991DC0741900AE5D09 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				59FC3BEB1D0461F200F79C8F /* DetailFacilitiesTableViewCell.xib */,
+				59FE45961DC0741400AE5D09 /* BaseTableViewCell.h */,
+				59FE45971DC0741400AE5D09 /* BaseTableViewCell.m */,
 			);
-			name = Facilities;
+			name = Base;
 			sourceTree = "<group>";
 		};
-		5986DD791D15CEE70044A409 /* Collection */ = {
+		59FE459A1DC0741E00AE5D09 /* Event */ = {
 			isa = PBXGroup;
 			children = (
-				59EDAE541D0097DB00A6365C /* DetailCollectionTableViewCell.swift */,
-				59EDAE551D0097DB00A6365C /* DetailCollectionTableViewCell.xib */,
-				5961DAAE1D15104300D490C8 /* DetailCollectionViewCell.swift */,
-				5961DAAF1D15104300D490C8 /* DetailCollectionViewCell.xib */,
+				59FE45931DC073BD00AE5D09 /* EventTableViewCell.h */,
+				59FE45941DC073BD00AE5D09 /* EventTableViewCell.m */,
+				59FE458B1DC0737200AE5D09 /* EventTableViewCell.xib */,
+				595452C41E35BB4100C83524 /* EventCollectionViewCell.h */,
+				595452C51E35BB4100C83524 /* EventCollectionViewCell.m */,
+				595452C61E35BB4100C83524 /* EventCollectionViewCell.xib */,
 			);
-			name = Collection;
+			name = Event;
 			sourceTree = "<group>";
 		};
-		5986DD7A1D15CEEC0044A409 /* Information */ = {
+		59FE459E1DC07AD200AE5D09 /* Detail Header */ = {
 			isa = PBXGroup;
 			children = (
-				59FC3BED1D04640A00F79C8F /* DetailInformationTableViewCell.swift */,
-				59FC3BEE1D04640A00F79C8F /* DetailInformationTableViewCell.xib */,
+				59FE459B1DC0752100AE5D09 /* DetailHeaderTableViewCell.h */,
+				59FE459C1DC0752100AE5D09 /* DetailHeaderTableViewCell.m */,
+				59FE45891DC0737200AE5D09 /* DetailHeaderTableViewCell.xib */,
 			);
-			name = Information;
+			name = "Detail Header";
 			sourceTree = "<group>";
 		};
-		5986DD7B1D15CEF20044A409 /* Header */ = {
+		59FE45A21DC07B8D00AE5D09 /* Detail Information */ = {
 			isa = PBXGroup;
 			children = (
-				59C8A4791CF088C800987CCA /* DetailHeaderTableViewCell.swift */,
-				59EDAE4E1D00979100A6365C /* DetailHeaderTableViewCell.xib */,
+				59FE459F1DC07B8800AE5D09 /* DetailInformationTableViewCell.h */,
+				59FE45A01DC07B8800AE5D09 /* DetailInformationTableViewCell.m */,
+				59FE458A1DC0737200AE5D09 /* DetailInformationTableViewCell.xib */,
 			);
-			name = Header;
+			name = "Detail Information";
 			sourceTree = "<group>";
 		};
-		B630B986E5AF13A0D7E2411B /* Pods */ = {
+		59FE45A61DC07F1600AE5D09 /* Detail Collection */ = {
 			isa = PBXGroup;
 			children = (
-				6B6A43FA01ECF5D8E0DC9456 /* Pods-Wolf Beacon.debug.xcconfig */,
-				CE4C2670C9ECA69ABD801F17 /* Pods-Wolf Beacon.release.xcconfig */,
-				DABE139E0472C55393D8B556 /* Pods-Wolf BeaconTests.debug.xcconfig */,
-				AF615F9456C3F319A834057D /* Pods-Wolf BeaconTests.release.xcconfig */,
-				F467AE195C0115117799A5A3 /* Pods-Wolf BeaconUITests.debug.xcconfig */,
-				F3E60560AB09E3A5930230F6 /* Pods-Wolf BeaconUITests.release.xcconfig */,
+				59FE45A31DC07F0800AE5D09 /* DetailCollectionTableViewCell.h */,
+				59FE45A41DC07F0800AE5D09 /* DetailCollectionTableViewCell.m */,
+				59FE45861DC0737200AE5D09 /* DetailCollectionTableViewCell.xib */,
+				59038FE51DD4F4EF00361A0D /* DetailCollectionViewCell.h */,
+				59038FE61DD4F4EF00361A0D /* DetailCollectionViewCell.m */,
+				59FE45871DC0737200AE5D09 /* DetailCollectionViewCell.xib */,
 			);
-			name = Pods;
+			name = "Detail Collection";
+			sourceTree = "<group>";
+		};
+		5B757F54ABBAB8810548E8DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C88E49EB7E2FE36E2BE8F72E /* libPods-Wolf Beacon.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		591C57E81CEE1FDE003C245E /* Wolf Beacon */ = {
+		59FE45621DC0709600AE5D09 /* Wolf Beacon */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 591C58141CEE1FDE003C245E /* Build configuration list for PBXNativeTarget "Wolf Beacon" */;
+			buildConfigurationList = 59FE457D1DC0709600AE5D09 /* Build configuration list for PBXNativeTarget "Wolf Beacon" */;
 			buildPhases = (
-				A2AB9732038FC845B417558A /* [CP] Check Pods Manifest.lock */,
-				591C57E51CEE1FDE003C245E /* Sources */,
-				591C57E61CEE1FDE003C245E /* Frameworks */,
-				591C57E71CEE1FDE003C245E /* Resources */,
-				B449AEEE90902D1A1B634146 /* [CP] Embed Pods Frameworks */,
-				C66DF8A39C0AABFDA47AFA2E /* [CP] Copy Pods Resources */,
+				D81A43B7AE8C6FFECD090A9D /* [CP] Check Pods Manifest.lock */,
+				59FE455F1DC0709600AE5D09 /* Sources */,
+				59FE45601DC0709600AE5D09 /* Frameworks */,
+				59FE45611DC0709600AE5D09 /* Resources */,
+				ACEDAE717D3AD9961F524DA7 /* [CP] Embed Pods Frameworks */,
+				517534DEC31473598D5211A4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -468,74 +597,26 @@
 			);
 			name = "Wolf Beacon";
 			productName = "Wolf Beacon";
-			productReference = 591C57E91CEE1FDE003C245E /* Wolf Beacon.app */;
+			productReference = 59FE45631DC0709600AE5D09 /* Wolf Beacon.app */;
 			productType = "com.apple.product-type.application";
-		};
-		591C57FF1CEE1FDE003C245E /* Wolf BeaconTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 591C58171CEE1FDE003C245E /* Build configuration list for PBXNativeTarget "Wolf BeaconTests" */;
-			buildPhases = (
-				0982101F7EEAEA507F6F948A /* [CP] Check Pods Manifest.lock */,
-				591C57FC1CEE1FDE003C245E /* Sources */,
-				591C57FD1CEE1FDE003C245E /* Frameworks */,
-				591C57FE1CEE1FDE003C245E /* Resources */,
-				60968820A584A6EFBF83A85B /* [CP] Embed Pods Frameworks */,
-				AA7AF62C0C6DAF70E1E1B9ED /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				591C58021CEE1FDE003C245E /* PBXTargetDependency */,
-			);
-			name = "Wolf BeaconTests";
-			productName = "Wolf BeaconTests";
-			productReference = 591C58001CEE1FDE003C245E /* Wolf BeaconTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		591C580A1CEE1FDE003C245E /* Wolf BeaconUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 591C581A1CEE1FDE003C245E /* Build configuration list for PBXNativeTarget "Wolf BeaconUITests" */;
-			buildPhases = (
-				13E0A20A5FCAFCE8248D77C9 /* [CP] Check Pods Manifest.lock */,
-				591C58071CEE1FDE003C245E /* Sources */,
-				591C58081CEE1FDE003C245E /* Frameworks */,
-				591C58091CEE1FDE003C245E /* Resources */,
-				A76A358041722DBF8B6554FE /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				591C580D1CEE1FDE003C245E /* PBXTargetDependency */,
-			);
-			name = "Wolf BeaconUITests";
-			productName = "Wolf BeaconUITests";
-			productReference = 591C580B1CEE1FDE003C245E /* Wolf BeaconUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		591C57E11CEE1FDE003C245E /* Project object */ = {
+		59FE455B1DC0709600AE5D09 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
-				ORGANIZATIONNAME = "Open Source Hacking";
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Wolf Beacon";
 				TargetAttributes = {
-					591C57E81CEE1FDE003C245E = {
-						CreatedOnToolsVersion = 7.3;
-					};
-					591C57FF1CEE1FDE003C245E = {
-						CreatedOnToolsVersion = 7.3;
-						TestTargetID = 591C57E81CEE1FDE003C245E;
-					};
-					591C580A1CEE1FDE003C245E = {
-						CreatedOnToolsVersion = 7.3;
-						TestTargetID = 591C57E81CEE1FDE003C245E;
+					59FE45621DC0709600AE5D09 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = HN3SCP8A52;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 591C57E41CEE1FDE003C245E /* Build configuration list for PBXProject "Wolf Beacon" */;
+			buildConfigurationList = 59FE455E1DC0709600AE5D09 /* Build configuration list for PBXProject "Wolf Beacon" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -543,190 +624,68 @@
 				en,
 				Base,
 			);
-			mainGroup = 591C57E01CEE1FDE003C245E;
-			productRefGroup = 591C57EA1CEE1FDE003C245E /* Products */;
+			mainGroup = 59FE455A1DC0709600AE5D09;
+			productRefGroup = 59FE45641DC0709600AE5D09 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				591C57E81CEE1FDE003C245E /* Wolf Beacon */,
-				591C57FF1CEE1FDE003C245E /* Wolf BeaconTests */,
-				591C580A1CEE1FDE003C245E /* Wolf BeaconUITests */,
+				59FE45621DC0709600AE5D09 /* Wolf Beacon */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		591C57E71CEE1FDE003C245E /* Resources */ = {
+		59FE45611DC0709600AE5D09 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5931A01B1D0010C10027C203 /* sponser1.jpg in Resources */,
-				591C57FA1CEE1FDE003C245E /* LaunchScreen.storyboard in Resources */,
-				5986DD8A1D15DA210044A409 /* prize7.jpg in Resources */,
-				5931A01D1D0010C10027C203 /* sponser3.png in Resources */,
-				5931A01E1D0010C10027C203 /* sponser4.jpg in Resources */,
-				5986DD881D15DA210044A409 /* prize5.jpg in Resources */,
-				5969CD291CFD5F0500F166EF /* logo0.png in Resources */,
-				5969CD2A1CFD5F0500F166EF /* logo1.png in Resources */,
-				5961DAB61D152ADE00D490C8 /* map1.jpg in Resources */,
-				5986DD851D15DA210044A409 /* prize2.jpg in Resources */,
-				59EDAE5F1D00A70C00A6365C /* gilfoyle.jpg in Resources */,
-				5986DD841D15DA210044A409 /* prize1.jpg in Resources */,
-				59FC3BF01D04640A00F79C8F /* DetailInformationTableViewCell.xib in Resources */,
-				59EDAE601D00A70C00A6365C /* harvey.jpg in Resources */,
-				5961DAB11D15104300D490C8 /* DetailCollectionViewCell.xib in Resources */,
-				5969CD2B1CFD5F0500F166EF /* logo2.png in Resources */,
-				59EDAE5E1D00A70C00A6365C /* doctor.jpg in Resources */,
-				5969CD2C1CFD5F0500F166EF /* logo3.png in Resources */,
-				59FC3BEC1D0461F200F79C8F /* DetailFacilitiesTableViewCell.xib in Resources */,
-				5905B79C1CF1813E00B0D9B1 /* FontAwesome.otf in Resources */,
-				5961DAB71D152ADE00D490C8 /* map2.jpg in Resources */,
-				59EDAE651D00ABD400A6365C /* hackathon1.jpg in Resources */,
-				59EDAE691D00ACE000A6365C /* mitcampus.jpg in Resources */,
-				5986DD891D15DA210044A409 /* prize6.jpg in Resources */,
-				591C57F71CEE1FDE003C245E /* Assets.xcassets in Resources */,
-				5986DD8B1D15DA210044A409 /* prize8.jpg in Resources */,
-				5905B79E1CF1813E00B0D9B1 /* ionicons.ttf in Resources */,
-				5905B79D1CF1813E00B0D9B1 /* foundation-icons.ttf in Resources */,
-				59EDAE661D00ABD400A6365C /* hackathon2.jpg in Resources */,
-				59EDAE611D00A70C00A6365C /* moss.jpg in Resources */,
-				5905B79F1CF1813E00B0D9B1 /* zocial-regular-webfont.ttf in Resources */,
-				5931A01C1D0010C10027C203 /* sponser2.png in Resources */,
-				59EDAE4F1D00979100A6365C /* DetailHeaderTableViewCell.xib in Resources */,
-				5931A0161D000F570027C203 /* mithackathon.jpg in Resources */,
-				591C57F21CEE1FDE003C245E /* Main.storyboard in Resources */,
-				5969CD231CFD5B0F00F166EF /* hackathonbg.jpg in Resources */,
-				59EDAE571D0097DB00A6365C /* DetailCollectionTableViewCell.xib in Resources */,
-				5986DD871D15DA210044A409 /* prize4.jpg in Resources */,
-				5990AABF1CFE050D00DFAFF2 /* EventTableViewCell.xib in Resources */,
-				5986DD861D15DA210044A409 /* prize3.jpg in Resources */,
-				5961DAB51D152ADE00D490C8 /* map0.jpg in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		591C57FE1CEE1FDE003C245E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		591C58091CEE1FDE003C245E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				59E263C51DD59512009FA3D9 /* prize6.jpg in Resources */,
+				59E263C01DD59512009FA3D9 /* prize1.jpg in Resources */,
+				595452C81E35BB4100C83524 /* EventCollectionViewCell.xib in Resources */,
+				59E263C81DD59512009FA3D9 /* sponser1.jpg in Resources */,
+				59E263C71DD59512009FA3D9 /* prize8.jpg in Resources */,
+				59E263CA1DD59512009FA3D9 /* sponser3.png in Resources */,
+				59E263B31DD59512009FA3D9 /* hackathon2.jpg in Resources */,
+				59E263C41DD59512009FA3D9 /* prize5.jpg in Resources */,
+				59E263C11DD59512009FA3D9 /* prize2.jpg in Resources */,
+				59E263BA1DD59512009FA3D9 /* map0.jpg in Resources */,
+				59E263B01DD59512009FA3D9 /* doctor.jpg in Resources */,
+				59E263B51DD59512009FA3D9 /* harvey.jpg in Resources */,
+				59E263C21DD59512009FA3D9 /* prize3.jpg in Resources */,
+				59A2193A1E3774B2004E4060 /* Apply.storyboard in Resources */,
+				59E263B11DD59512009FA3D9 /* gilfoyle.jpg in Resources */,
+				59E263C31DD59512009FA3D9 /* prize4.jpg in Resources */,
+				59E263BC1DD59512009FA3D9 /* map2.jpg in Resources */,
+				59FE458C1DC0737200AE5D09 /* DetailCollectionTableViewCell.xib in Resources */,
+				59E263B21DD59512009FA3D9 /* hackathon1.jpg in Resources */,
+				59E263B91DD59512009FA3D9 /* logo3.png in Resources */,
+				59FE458E1DC0737200AE5D09 /* DetailFacilitiesTableViewCell.xib in Resources */,
+				59E263B41DD59512009FA3D9 /* hackathonbg.jpg in Resources */,
+				592D7F441DFE767E005F05C2 /* Login.storyboard in Resources */,
+				59FE45791DC0709600AE5D09 /* LaunchScreen.storyboard in Resources */,
+				59E263B71DD59512009FA3D9 /* logo1.png in Resources */,
+				59FE45901DC0737200AE5D09 /* DetailInformationTableViewCell.xib in Resources */,
+				59E263BD1DD59512009FA3D9 /* mitcampus.jpg in Resources */,
+				59FE458F1DC0737200AE5D09 /* DetailHeaderTableViewCell.xib in Resources */,
+				59E263BF1DD59512009FA3D9 /* moss.jpg in Resources */,
+				59E263CB1DD59512009FA3D9 /* sponser4.jpg in Resources */,
+				59E263C91DD59512009FA3D9 /* sponser2.png in Resources */,
+				59FE45761DC0709600AE5D09 /* Assets.xcassets in Resources */,
+				59E263B81DD59512009FA3D9 /* logo2.png in Resources */,
+				59E263BE1DD59512009FA3D9 /* mithackathon.jpg in Resources */,
+				59E263C61DD59512009FA3D9 /* prize7.jpg in Resources */,
+				59E263BB1DD59512009FA3D9 /* map1.jpg in Resources */,
+				59FE45911DC0737200AE5D09 /* EventTableViewCell.xib in Resources */,
+				59E263B61DD59512009FA3D9 /* logo0.png in Resources */,
+				59FE45711DC0709600AE5D09 /* Main.storyboard in Resources */,
+				59FE458D1DC0737200AE5D09 /* DetailCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0982101F7EEAEA507F6F948A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		13E0A20A5FCAFCE8248D77C9 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		60968820A584A6EFBF83A85B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wolf BeaconTests/Pods-Wolf BeaconTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A2AB9732038FC845B417558A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		A76A358041722DBF8B6554FE /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wolf BeaconUITests/Pods-Wolf BeaconUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AA7AF62C0C6DAF70E1E1B9ED /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wolf BeaconTests/Pods-Wolf BeaconTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B449AEEE90902D1A1B634146 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wolf Beacon/Pods-Wolf Beacon-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C66DF8A39C0AABFDA47AFA2E /* [CP] Copy Pods Resources */ = {
+		517534DEC31473598D5211A4 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -741,78 +700,107 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wolf Beacon/Pods-Wolf Beacon-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		ACEDAE717D3AD9961F524DA7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wolf Beacon/Pods-Wolf Beacon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D81A43B7AE8C6FFECD090A9D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		591C57E51CEE1FDE003C245E /* Sources */ = {
+		59FE455F1DC0709600AE5D09 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59EDAE561D0097DB00A6365C /* DetailCollectionTableViewCell.swift in Sources */,
-				5990AAC11CFE09BF00DFAFF2 /* SettingsManager.swift in Sources */,
-				59C8A4821CF0CEFE00987CCA /* DetailTableViewController.swift in Sources */,
-				5961DAB01D15104300D490C8 /* DetailCollectionViewCell.swift in Sources */,
-				59C8A4781CF0858700987CCA /* BaseTableViewCell.swift in Sources */,
-				591C58371CEE23F7003C245E /* EventTableViewCell.swift in Sources */,
-				5990AAC71CFE0BA800DFAFF2 /* MoreViewController.swift in Sources */,
-				5990AAC31CFE0B7600DFAFF2 /* FavoritesTableViewController.swift in Sources */,
-				591C58341CEE23D6003C245E /* HomeViewController.swift in Sources */,
-				591C582E1CEE212E003C245E /* PrefixHeader.swift in Sources */,
-				591C57F51CEE1FDE003C245E /* Wolf_Beacon.xcdatamodeld in Sources */,
-				59C8A47A1CF088C800987CCA /* DetailHeaderTableViewCell.swift in Sources */,
-				59FC3BEF1D04640A00F79C8F /* DetailInformationTableViewCell.swift in Sources */,
-				5990AAC51CFE0B9700DFAFF2 /* AllEventsTableViewController.swift in Sources */,
-				591C58301CEE2145003C245E /* VectorImages.swift in Sources */,
-				591C57ED1CEE1FDE003C245E /* AppDelegate.swift in Sources */,
-				591C58391CEE240B003C245E /* FeaturedCollectionViewCell.swift in Sources */,
-				5977299A1D5CB2BB00E5688A /* WBEvent.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		591C57FC1CEE1FDE003C245E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				591C58051CEE1FDE003C245E /* Wolf_BeaconTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		591C58071CEE1FDE003C245E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				591C58101CEE1FDE003C245E /* Wolf_BeaconUITests.swift in Sources */,
+				59A2194E1E38E17C004E4060 /* SignupSchoolTableViewController.m in Sources */,
+				593DF4BD1DDB854E00FB3C01 /* SettingsTableViewController.m in Sources */,
+				59FE45981DC0741400AE5D09 /* BaseTableViewCell.m in Sources */,
+				599DD2AF1E0E43FC00449FE9 /* ScheduleBaseViewController.m in Sources */,
+				59FE45951DC073BD00AE5D09 /* EventTableViewCell.m in Sources */,
+				59D2F5951DDDDFD400215AB0 /* ProfileTableViewController.m in Sources */,
+				591088A21E61BE23004A04C4 /* BBViewController.m in Sources */,
+				591088581E5DCEA8004A04C4 /* CoreDataHelper.m in Sources */,
+				59038FE41DD4E95900361A0D /* DetailTableViewController.m in Sources */,
+				599DD2AC1E0E42FD00449FE9 /* ScheduleTableViewController.m in Sources */,
+				59038FE11DD4E2C300361A0D /* AllEventsTableViewController.m in Sources */,
+				59FE45A11DC07B8800AE5D09 /* DetailInformationTableViewCell.m in Sources */,
+				59A219401E377931004E4060 /* DADataManager.m in Sources */,
+				59A06DE01ED31458007CF676 /* SignupTechnicalTableViewController.m in Sources */,
+				59FE456B1DC0709600AE5D09 /* AppDelegate.m in Sources */,
+				591088A11E61BE23004A04C4 /* BBTableViewController.m in Sources */,
+				59A219431E377D1C004E4060 /* RequestsManager.m in Sources */,
+				59FE45A51DC07F0800AE5D09 /* DetailCollectionTableViewCell.m in Sources */,
+				59038FD31DD4DB3F00361A0D /* HomeViewController.m in Sources */,
+				59A06DDD1ED2DD1A007CF676 /* SignupPersonal2TableViewController.m in Sources */,
+				59FE459D1DC0752100AE5D09 /* DetailHeaderTableViewCell.m in Sources */,
+				59A219471E378CDE004E4060 /* VLRLoginTextField.m in Sources */,
+				59038FE71DD4F4EF00361A0D /* DetailCollectionViewCell.m in Sources */,
+				59A2194B1E38E0F6004E4060 /* SignupPersonalTableViewController.m in Sources */,
+				59FE45681DC0709600AE5D09 /* main.m in Sources */,
+				59FE45741DC0709600AE5D09 /* Wolf_Beacon.xcdatamodeld in Sources */,
+				59A06DE31ED348F7007CF676 /* SignupOptionalTableViewController.m in Sources */,
+				5910889A1E61B6AD004A04C4 /* WBTabBarController.m in Sources */,
+				59038FDE1DD4DFDB00361A0D /* FavoritesTableViewController.m in Sources */,
+				595452C71E35BB4100C83524 /* EventCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		591C58021CEE1FDE003C245E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 591C57E81CEE1FDE003C245E /* Wolf Beacon */;
-			targetProxy = 591C58011CEE1FDE003C245E /* PBXContainerItemProxy */;
-		};
-		591C580D1CEE1FDE003C245E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 591C57E81CEE1FDE003C245E /* Wolf Beacon */;
-			targetProxy = 591C580C1CEE1FDE003C245E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		591C57F01CEE1FDE003C245E /* Main.storyboard */ = {
+		592D7F421DFE767E005F05C2 /* Login.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				591C57F11CEE1FDE003C245E /* Base */,
+				592D7F431DFE767E005F05C2 /* Base */,
+			);
+			name = Login.storyboard;
+			sourceTree = "<group>";
+		};
+		59A219381E3774B2004E4060 /* Apply.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59A219391E3774B2004E4060 /* Base */,
+			);
+			name = Apply.storyboard;
+			sourceTree = "<group>";
+		};
+		59FE456F1DC0709600AE5D09 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59FE45701DC0709600AE5D09 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		591C57F81CEE1FDE003C245E /* LaunchScreen.storyboard */ = {
+		59FE45771DC0709600AE5D09 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				591C57F91CEE1FDE003C245E /* Base */,
+				59FE45781DC0709600AE5D09 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -820,7 +808,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		591C58121CEE1FDE003C245E /* Debug */ = {
+		59FE457B1DC0709600AE5D09 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -832,10 +820,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -857,16 +849,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		591C58131CEE1FDE003C245E /* Release */ = {
+		59FE457C1DC0709600AE5D09 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -878,10 +868,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -897,125 +891,64 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		591C58151CEE1FDE003C245E /* Debug */ = {
+		59FE457E1DC0709600AE5D09 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6B6A43FA01ECF5D8E0DC9456 /* Pods-Wolf Beacon.debug.xcconfig */;
+			baseConfigurationReference = A37A8816E6BEB2F3C298C7E5 /* Pods-Wolf Beacon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HN3SCP8A52;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wolf Beacon/PrefixHeader.pch";
 				INFOPLIST_FILE = "Wolf Beacon/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.osh.Wolf-Beacon";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Wolf-Beacon.Wolf-Beacon";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		591C58161CEE1FDE003C245E /* Release */ = {
+		59FE457F1DC0709600AE5D09 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE4C2670C9ECA69ABD801F17 /* Pods-Wolf Beacon.release.xcconfig */;
+			baseConfigurationReference = 05BC864AF80B7A0CFD793F45 /* Pods-Wolf Beacon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HN3SCP8A52;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wolf Beacon/PrefixHeader.pch";
 				INFOPLIST_FILE = "Wolf Beacon/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.osh.Wolf-Beacon";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Wolf-Beacon.Wolf-Beacon";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		591C58181CEE1FDE003C245E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DABE139E0472C55393D8B556 /* Pods-Wolf BeaconTests.debug.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "Wolf BeaconTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.osh.Wolf-BeaconTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wolf Beacon.app/Wolf Beacon";
-			};
-			name = Debug;
-		};
-		591C58191CEE1FDE003C245E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AF615F9456C3F319A834057D /* Pods-Wolf BeaconTests.release.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "Wolf BeaconTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.osh.Wolf-BeaconTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wolf Beacon.app/Wolf Beacon";
-			};
-			name = Release;
-		};
-		591C581B1CEE1FDE003C245E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F467AE195C0115117799A5A3 /* Pods-Wolf BeaconUITests.debug.xcconfig */;
-			buildSettings = {
-				INFOPLIST_FILE = "Wolf BeaconUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.osh.Wolf-BeaconUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = "Wolf Beacon";
-			};
-			name = Debug;
-		};
-		591C581C1CEE1FDE003C245E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F3E60560AB09E3A5930230F6 /* Pods-Wolf BeaconUITests.release.xcconfig */;
-			buildSettings = {
-				INFOPLIST_FILE = "Wolf BeaconUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.osh.Wolf-BeaconUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = "Wolf Beacon";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		591C57E41CEE1FDE003C245E /* Build configuration list for PBXProject "Wolf Beacon" */ = {
+		59FE455E1DC0709600AE5D09 /* Build configuration list for PBXProject "Wolf Beacon" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				591C58121CEE1FDE003C245E /* Debug */,
-				591C58131CEE1FDE003C245E /* Release */,
+				59FE457B1DC0709600AE5D09 /* Debug */,
+				59FE457C1DC0709600AE5D09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		591C58141CEE1FDE003C245E /* Build configuration list for PBXNativeTarget "Wolf Beacon" */ = {
+		59FE457D1DC0709600AE5D09 /* Build configuration list for PBXNativeTarget "Wolf Beacon" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				591C58151CEE1FDE003C245E /* Debug */,
-				591C58161CEE1FDE003C245E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		591C58171CEE1FDE003C245E /* Build configuration list for PBXNativeTarget "Wolf BeaconTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				591C58181CEE1FDE003C245E /* Debug */,
-				591C58191CEE1FDE003C245E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		591C581A1CEE1FDE003C245E /* Build configuration list for PBXNativeTarget "Wolf BeaconUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				591C581B1CEE1FDE003C245E /* Debug */,
-				591C581C1CEE1FDE003C245E /* Release */,
+				59FE457E1DC0709600AE5D09 /* Debug */,
+				59FE457F1DC0709600AE5D09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1023,17 +956,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		591C57F31CEE1FDE003C245E /* Wolf_Beacon.xcdatamodeld */ = {
+		59FE45721DC0709600AE5D09 /* Wolf_Beacon.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				591C57F41CEE1FDE003C245E /* Wolf_Beacon.xcdatamodel */,
+				59FE45731DC0709600AE5D09 /* Wolf_Beacon.xcdatamodel */,
 			);
-			currentVersion = 591C57F41CEE1FDE003C245E /* Wolf_Beacon.xcdatamodel */;
+			currentVersion = 59FE45731DC0709600AE5D09 /* Wolf_Beacon.xcdatamodel */;
 			path = Wolf_Beacon.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = 591C57E11CEE1FDE003C245E /* Project object */;
+	rootObject = 59FE455B1DC0709600AE5D09 /* Project object */;
 }

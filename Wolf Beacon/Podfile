@@ -1,28 +1,23 @@
-# Uncomment this line to define a global platform for your project
-# platform :ios, '8.0'
-# Uncomment this line if you're using Swift
-
-use_frameworks!
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
 
 target 'Wolf Beacon' do
+	# Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+	# use_frameworks!
 
-pod 'FontAwesomeKit', '~> 2.2.0'
-pod 'SVProgressHUD'
-pod 'AFNetworking'
-pod 'DZNEmptyDataSet'
-pod 'TextFieldEffects'
-pod 'IQKeyboardManagerSwift'
-pod 'SDWebImage'
-pod 'ChameleonFramework/Swift'
-pod 'RealmSwift'
+	pod 'SVProgressHUD'
+	pod 'AFNetworking'
+	pod 'DZNEmptyDataSet'
+	pod 'SDWebImage'
+	pod 'KWTransition'
+	pod 'DZNEmptyDataSet'
+	pod 'Lock', '~> 1.24'
+	pod 'SimpleKeychain'
+	pod 'IQDropDownTextField'
+	pod 'VLRTextField'
+	pod 'IQKeyboardManager'
+	pod 'UITextView+Placeholder'
+
+	# Pods for Wolf Beacon
 
 end
-
-target 'Wolf BeaconTests' do
-
-end
-
-target 'Wolf BeaconUITests' do
-
-end
-

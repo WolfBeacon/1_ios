@@ -1,22 +1,22 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="photosCell" rowHeight="280" id="lX3-IK-VZd" customClass="DetailCollectionTableViewCell" customModule="Wolf_Beacon" customModuleProvider="target">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="photosCell" rowHeight="280" id="lX3-IK-VZd" customClass="DetailCollectionTableViewCell">
             <rect key="frame" x="0.0" y="0.0" width="600" height="280"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lX3-IK-VZd" id="nKx-tM-vyW">
-                <rect key="frame" x="0.0" y="0.0" width="600" height="279.5"/>
+                <frame key="frameInset" width="600" height="279"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="EOS-WH-YY9">
-                        <rect key="frame" x="8" y="41" width="584" height="234"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wLe-w9-yG8">
                             <size key="itemSize" width="96" height="128"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -26,12 +26,11 @@
                         <cells/>
                     </collectionView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Indoor Maps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="38v-xm-knp">
-                        <rect key="frame" x="16" y="12" width="576" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="wFa-sH-2j4"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
@@ -42,7 +41,7 @@
                     <constraint firstItem="EOS-WH-YY9" firstAttribute="top" secondItem="38v-xm-knp" secondAttribute="bottom" constant="8" id="FDA-5r-KNJ"/>
                     <constraint firstAttribute="trailingMargin" secondItem="38v-xm-knp" secondAttribute="trailing" id="SIS-3P-eER"/>
                     <constraint firstAttribute="trailingMargin" secondItem="EOS-WH-YY9" secondAttribute="trailing" id="dht-S7-Sf6"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="EOS-WH-YY9" secondAttribute="bottom" constant="-4" id="gXf-tE-rUH"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="EOS-WH-YY9" secondAttribute="bottom" constant="-8" id="gXf-tE-rUH"/>
                     <constraint firstItem="EOS-WH-YY9" firstAttribute="top" secondItem="nKx-tM-vyW" secondAttribute="topMargin" constant="-4" id="jcW-7g-moB"/>
                 </constraints>
                 <variation key="default">
@@ -52,7 +51,7 @@
                 </variation>
             </tableViewCellContentView>
             <connections>
-                <outlet property="collectionView" destination="EOS-WH-YY9" id="yps-Zf-bko"/>
+                <outlet property="collectionView" destination="EOS-WH-YY9" id="a2s-aR-0o8"/>
                 <outlet property="titleLabel" destination="38v-xm-knp" id="bqp-rY-FHA"/>
             </connections>
         </tableViewCell>

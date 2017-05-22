@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="EventCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="350" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="X4i-QC-HdP">
+                        <rect key="frame" x="0.0" y="0.0" width="350" height="150"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient" translatesAutoresizingMaskIntoConstraints="NO" id="LR5-AA-9Ad">
+                        <rect key="frame" x="0.0" y="0.0" width="350" height="150"/>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="University of Toronto, Canada" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYL-7C-q37">
+                        <rect key="frame" x="8" y="125" width="334" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="U of T Hackathon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j0F-St-Bjt">
+                        <rect key="frame" x="8" y="103" width="334" height="20"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                        <color key="textColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="X4i-QC-HdP" secondAttribute="trailing" id="3ae-gw-fhu"/>
+                <constraint firstItem="ZYL-7C-q37" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="7wW-4a-6Md"/>
+                <constraint firstItem="LR5-AA-9Ad" firstAttribute="trailing" secondItem="X4i-QC-HdP" secondAttribute="trailing" id="C53-5c-rD5"/>
+                <constraint firstAttribute="bottom" secondItem="X4i-QC-HdP" secondAttribute="bottom" id="FvT-yt-xgS"/>
+                <constraint firstItem="X4i-QC-HdP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="GRi-pM-bog"/>
+                <constraint firstItem="LR5-AA-9Ad" firstAttribute="bottom" secondItem="X4i-QC-HdP" secondAttribute="bottom" id="Gfh-Qf-ZZ7"/>
+                <constraint firstItem="LR5-AA-9Ad" firstAttribute="leading" secondItem="X4i-QC-HdP" secondAttribute="leading" id="Giq-ua-280"/>
+                <constraint firstItem="X4i-QC-HdP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="PLO-x5-ubj"/>
+                <constraint firstItem="LR5-AA-9Ad" firstAttribute="top" secondItem="X4i-QC-HdP" secondAttribute="top" id="iWy-dz-J9t"/>
+                <constraint firstItem="j0F-St-Bjt" firstAttribute="leading" secondItem="ZYL-7C-q37" secondAttribute="leading" id="jvD-np-1xj"/>
+                <constraint firstAttribute="bottom" secondItem="ZYL-7C-q37" secondAttribute="bottom" constant="8" id="ozJ-b8-mht"/>
+                <constraint firstAttribute="trailing" secondItem="ZYL-7C-q37" secondAttribute="trailing" constant="8" id="sxN-Ua-b30"/>
+                <constraint firstItem="ZYL-7C-q37" firstAttribute="top" secondItem="j0F-St-Bjt" secondAttribute="bottom" constant="2" id="v4k-ds-xz8"/>
+                <constraint firstItem="j0F-St-Bjt" firstAttribute="trailing" secondItem="ZYL-7C-q37" secondAttribute="trailing" id="wdQ-FM-clh"/>
+            </constraints>
+            <size key="customSize" width="350" height="150"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="4"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="backgroundImageView" destination="X4i-QC-HdP" id="zrY-9Y-a5V"/>
+                <outlet property="locationLabel" destination="ZYL-7C-q37" id="1HI-Tv-FL6"/>
+                <outlet property="titleLabel" destination="j0F-St-Bjt" id="o4j-ac-3Hp"/>
+            </connections>
+            <point key="canvasLocation" x="-25" y="6"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="gradient" width="426" height="240"/>
+    </resources>
+</document>
