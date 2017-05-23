@@ -87,6 +87,43 @@ strip_invalid_archs() {
   fi
 }
 
+
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/AFNetworking/AFNetworking.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Auth0/Auth0.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/DZNEmptyDataSet/DZNEmptyDataSet.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/HTAutocompleteTextField/HTAutocompleteTextField.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/IQDropDownTextField/IQDropDownTextField.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/IQKeyboardManager/IQKeyboardManager.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/KWTransition/KWTransition.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Lock/Lock.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Masonry/Masonry.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/PPHelpMe/PPHelpMe.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SDWebImage/SDWebImage.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SVProgressHUD/SVProgressHUD.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SimpleKeychain/SimpleKeychain.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/UITextView+Placeholder/UITextView_Placeholder.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/VLRJVFloatLabeledTextField/VLRJVFloatLabeledTextField.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/VLRTextField/VLRTextField.framework"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/AFNetworking/AFNetworking.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Auth0/Auth0.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/DZNEmptyDataSet/DZNEmptyDataSet.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/HTAutocompleteTextField/HTAutocompleteTextField.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/IQDropDownTextField/IQDropDownTextField.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/IQKeyboardManager/IQKeyboardManager.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/KWTransition/KWTransition.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Lock/Lock.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Masonry/Masonry.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/PPHelpMe/PPHelpMe.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SDWebImage/SDWebImage.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SVProgressHUD/SVProgressHUD.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SimpleKeychain/SimpleKeychain.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/UITextView+Placeholder/UITextView_Placeholder.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/VLRJVFloatLabeledTextField/VLRJVFloatLabeledTextField.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/VLRTextField/VLRTextField.framework"
+fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
 fi

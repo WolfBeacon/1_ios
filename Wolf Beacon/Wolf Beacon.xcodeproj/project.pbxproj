@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07956ABCA5388DAFEE66FEAC /* libPods-Wolf Beacon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C88E49EB7E2FE36E2BE8F72E /* libPods-Wolf Beacon.a */; };
 		59038FD31DD4DB3F00361A0D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59038FD21DD4DB3F00361A0D /* HomeViewController.m */; };
 		59038FDE1DD4DFDB00361A0D /* FavoritesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59038FDD1DD4DFDB00361A0D /* FavoritesTableViewController.m */; };
 		59038FE11DD4E2C300361A0D /* AllEventsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59038FE01DD4E2C300361A0D /* AllEventsTableViewController.m */; };
@@ -16,6 +15,8 @@
 		590E568B1ED400C900C90120 /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 590E568A1ED400C900C90120 /* Auth0.plist */; };
 		590E568E1ED4085200C90120 /* Initial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 590E568C1ED4085200C90120 /* Initial.storyboard */; };
 		590E56921ED4091400C90120 /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 590E56911ED4091400C90120 /* InitialViewController.m */; };
+		590E56951ED4283E00C90120 /* LoginContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 590E56941ED4283E00C90120 /* LoginContainerView.m */; };
+		590E56981ED42BF800C90120 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 590E56971ED42BF800C90120 /* LoginViewController.m */; };
 		591088581E5DCEA8004A04C4 /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 591088571E5DCEA8004A04C4 /* CoreDataHelper.m */; };
 		5910889A1E61B6AD004A04C4 /* WBTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 591088991E61B6AD004A04C4 /* WBTabBarController.m */; };
 		591088A11E61BE23004A04C4 /* BBTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5910889E1E61BE23004A04C4 /* BBTableViewController.m */; };
@@ -80,6 +81,7 @@
 		59FE459D1DC0752100AE5D09 /* DetailHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FE459C1DC0752100AE5D09 /* DetailHeaderTableViewCell.m */; };
 		59FE45A11DC07B8800AE5D09 /* DetailInformationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FE45A01DC07B8800AE5D09 /* DetailInformationTableViewCell.m */; };
 		59FE45A51DC07F0800AE5D09 /* DetailCollectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FE45A41DC07F0800AE5D09 /* DetailCollectionTableViewCell.m */; };
+		C8F3714736F2BFB44032243D /* Pods_Wolf_Beacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F2EC738CF2C73A9B705D26 /* Pods_Wolf_Beacon.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +101,10 @@
 		590E568D1ED4085200C90120 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Initial.storyboard; sourceTree = "<group>"; };
 		590E56901ED4091400C90120 /* InitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InitialViewController.h; path = Controllers/Initial/InitialViewController.h; sourceTree = "<group>"; };
 		590E56911ED4091400C90120 /* InitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InitialViewController.m; path = Controllers/Initial/InitialViewController.m; sourceTree = "<group>"; };
+		590E56931ED4283E00C90120 /* LoginContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginContainerView.h; path = Views/Login/LoginContainerView.h; sourceTree = "<group>"; };
+		590E56941ED4283E00C90120 /* LoginContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginContainerView.m; path = Views/Login/LoginContainerView.m; sourceTree = "<group>"; };
+		590E56961ED42BF800C90120 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = Controllers/Login/LoginViewController.h; sourceTree = "<group>"; };
+		590E56971ED42BF800C90120 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = Controllers/Login/LoginViewController.m; sourceTree = "<group>"; };
 		591088561E5DCEA8004A04C4 /* CoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreDataHelper.h; path = Models/Hackathon/CoreDataHelper.h; sourceTree = "<group>"; };
 		591088571E5DCEA8004A04C4 /* CoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoreDataHelper.m; path = Models/Hackathon/CoreDataHelper.m; sourceTree = "<group>"; };
 		591088981E61B6AD004A04C4 /* WBTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WBTabBarController.h; path = "Controllers/Tab Bar/WBTabBarController.h"; sourceTree = "<group>"; };
@@ -189,8 +195,8 @@
 		59FE45A01DC07B8800AE5D09 /* DetailInformationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailInformationTableViewCell.m; path = Views/Cells/DetailInformationTableViewCell.m; sourceTree = "<group>"; };
 		59FE45A31DC07F0800AE5D09 /* DetailCollectionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailCollectionTableViewCell.h; path = Views/Cells/DetailCollectionTableViewCell.h; sourceTree = "<group>"; };
 		59FE45A41DC07F0800AE5D09 /* DetailCollectionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailCollectionTableViewCell.m; path = Views/Cells/DetailCollectionTableViewCell.m; sourceTree = "<group>"; };
+		99F2EC738CF2C73A9B705D26 /* Pods_Wolf_Beacon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wolf_Beacon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A37A8816E6BEB2F3C298C7E5 /* Pods-Wolf Beacon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wolf Beacon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wolf Beacon/Pods-Wolf Beacon.debug.xcconfig"; sourceTree = "<group>"; };
-		C88E49EB7E2FE36E2BE8F72E /* libPods-Wolf Beacon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Wolf Beacon.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,7 +204,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07956ABCA5388DAFEE66FEAC /* libPods-Wolf Beacon.a in Frameworks */,
+				C8F3714736F2BFB44032243D /* Pods_Wolf_Beacon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +262,8 @@
 			children = (
 				590E56901ED4091400C90120 /* InitialViewController.h */,
 				590E56911ED4091400C90120 /* InitialViewController.m */,
+				590E56961ED42BF800C90120 /* LoginViewController.h */,
+				590E56971ED42BF800C90120 /* LoginViewController.m */,
 			);
 			name = Initial;
 			sourceTree = "<group>";
@@ -284,6 +292,8 @@
 		592D7F481DFE79A7005F05C2 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				590E56931ED4283E00C90120 /* LoginContainerView.h */,
+				590E56941ED4283E00C90120 /* LoginContainerView.m */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -291,10 +301,10 @@
 		593DF4BA1DDB850400FB3C01 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				593DF4BB1DDB854E00FB3C01 /* SettingsTableViewController.h */,
-				593DF4BC1DDB854E00FB3C01 /* SettingsTableViewController.m */,
 				59D2F5931DDDDFD400215AB0 /* ProfileTableViewController.h */,
 				59D2F5941DDDDFD400215AB0 /* ProfileTableViewController.m */,
+				593DF4BB1DDB854E00FB3C01 /* SettingsTableViewController.h */,
+				593DF4BC1DDB854E00FB3C01 /* SettingsTableViewController.m */,
 			);
 			name = Settings;
 			sourceTree = "<group>";
@@ -428,11 +438,11 @@
 		59FE45651DC0709600AE5D09 /* Wolf Beacon */ = {
 			isa = PBXGroup;
 			children = (
+				59FE45751DC0709600AE5D09 /* Assets.xcassets */,
 				59FE45801DC0716500AE5D09 /* App Delegate */,
 				59FE45831DC0717B00AE5D09 /* Models */,
 				59FE45821DC0717600AE5D09 /* Views */,
 				59FE45811DC0717200AE5D09 /* Controllers */,
-				59FE45751DC0709600AE5D09 /* Assets.xcassets */,
 				590E568A1ED400C900C90120 /* Auth0.plist */,
 				59FE457A1DC0709600AE5D09 /* Info.plist */,
 				59FE45661DC0709600AE5D09 /* Supporting Files */,
@@ -588,7 +598,7 @@
 		5B757F54ABBAB8810548E8DE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C88E49EB7E2FE36E2BE8F72E /* libPods-Wolf Beacon.a */,
+				99F2EC738CF2C73A9B705D26 /* Pods_Wolf_Beacon.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -744,7 +754,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -760,6 +770,7 @@
 				599DD2AF1E0E43FC00449FE9 /* ScheduleBaseViewController.m in Sources */,
 				59FE45951DC073BD00AE5D09 /* EventTableViewCell.m in Sources */,
 				59D2F5951DDDDFD400215AB0 /* ProfileTableViewController.m in Sources */,
+				590E56951ED4283E00C90120 /* LoginContainerView.m in Sources */,
 				591088A21E61BE23004A04C4 /* BBViewController.m in Sources */,
 				591088581E5DCEA8004A04C4 /* CoreDataHelper.m in Sources */,
 				59038FE41DD4E95900361A0D /* DetailTableViewController.m in Sources */,
@@ -773,6 +784,7 @@
 				591088A11E61BE23004A04C4 /* BBTableViewController.m in Sources */,
 				59A219431E377D1C004E4060 /* RequestsManager.m in Sources */,
 				59FE45A51DC07F0800AE5D09 /* DetailCollectionTableViewCell.m in Sources */,
+				590E56981ED42BF800C90120 /* LoginViewController.m in Sources */,
 				59038FD31DD4DB3F00361A0D /* HomeViewController.m in Sources */,
 				59A06DDD1ED2DD1A007CF676 /* SignupPersonal2TableViewController.m in Sources */,
 				59FE459D1DC0752100AE5D09 /* DetailHeaderTableViewCell.m in Sources */,

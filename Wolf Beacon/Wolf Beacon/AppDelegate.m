@@ -6,6 +6,8 @@
 //  Copyright © 2016 Wolf Beacon. All rights reserved.
 //
 
+@import Auth0;
+
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
@@ -70,6 +72,10 @@
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
 	return [self.lock handleURL:url sourceApplication:sourceApplication];
+}
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options{
+	return [A0WebAuth resumeAuthWithURL:url options:options];
 }
 
 #pragma mark - Customizations
