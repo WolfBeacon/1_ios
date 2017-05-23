@@ -41,9 +41,6 @@
 	
 	self.title = @"Sign Up";
 	
-	UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@" " style:UIBarButtonItemStylePlain target:self action:nil];
-	self.navigationItem.backBarButtonItem = backButton;
-	
 }
 
 - (void)viewDidAppear:(BOOL)animated {

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SignupOptionalTableViewController : UITableViewController
+@interface SignupOptionalTableViewController : BBTableViewController
 
 @end

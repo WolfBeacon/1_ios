@@ -13,11 +13,13 @@
 		59038FE11DD4E2C300361A0D /* AllEventsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59038FE01DD4E2C300361A0D /* AllEventsTableViewController.m */; };
 		59038FE41DD4E95900361A0D /* DetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59038FE31DD4E95900361A0D /* DetailTableViewController.m */; };
 		59038FE71DD4F4EF00361A0D /* DetailCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 59038FE61DD4F4EF00361A0D /* DetailCollectionViewCell.m */; };
+		590E568B1ED400C900C90120 /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 590E568A1ED400C900C90120 /* Auth0.plist */; };
+		590E568E1ED4085200C90120 /* Initial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 590E568C1ED4085200C90120 /* Initial.storyboard */; };
+		590E56921ED4091400C90120 /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 590E56911ED4091400C90120 /* InitialViewController.m */; };
 		591088581E5DCEA8004A04C4 /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 591088571E5DCEA8004A04C4 /* CoreDataHelper.m */; };
 		5910889A1E61B6AD004A04C4 /* WBTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 591088991E61B6AD004A04C4 /* WBTabBarController.m */; };
 		591088A11E61BE23004A04C4 /* BBTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5910889E1E61BE23004A04C4 /* BBTableViewController.m */; };
 		591088A21E61BE23004A04C4 /* BBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 591088A01E61BE23004A04C4 /* BBViewController.m */; };
-		592D7F441DFE767E005F05C2 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 592D7F421DFE767E005F05C2 /* Login.storyboard */; };
 		593DF4BD1DDB854E00FB3C01 /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 593DF4BC1DDB854E00FB3C01 /* SettingsTableViewController.m */; };
 		595452C71E35BB4100C83524 /* EventCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 595452C51E35BB4100C83524 /* EventCollectionViewCell.m */; };
 		595452C81E35BB4100C83524 /* EventCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 595452C61E35BB4100C83524 /* EventCollectionViewCell.xib */; };
@@ -93,6 +95,10 @@
 		59038FE51DD4F4EF00361A0D /* DetailCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailCollectionViewCell.h; path = Views/Cells/DetailCollectionViewCell.h; sourceTree = "<group>"; };
 		59038FE61DD4F4EF00361A0D /* DetailCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailCollectionViewCell.m; path = Views/Cells/DetailCollectionViewCell.m; sourceTree = "<group>"; };
 		59038FE81DD4F71200361A0D /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = ../PrefixHeader.pch; sourceTree = "<group>"; };
+		590E568A1ED400C900C90120 /* Auth0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Auth0.plist; sourceTree = "<group>"; };
+		590E568D1ED4085200C90120 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Initial.storyboard; sourceTree = "<group>"; };
+		590E56901ED4091400C90120 /* InitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InitialViewController.h; path = Controllers/Initial/InitialViewController.h; sourceTree = "<group>"; };
+		590E56911ED4091400C90120 /* InitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InitialViewController.m; path = Controllers/Initial/InitialViewController.m; sourceTree = "<group>"; };
 		591088561E5DCEA8004A04C4 /* CoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreDataHelper.h; path = Models/Hackathon/CoreDataHelper.h; sourceTree = "<group>"; };
 		591088571E5DCEA8004A04C4 /* CoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoreDataHelper.m; path = Models/Hackathon/CoreDataHelper.m; sourceTree = "<group>"; };
 		591088981E61B6AD004A04C4 /* WBTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WBTabBarController.h; path = "Controllers/Tab Bar/WBTabBarController.h"; sourceTree = "<group>"; };
@@ -101,7 +107,6 @@
 		5910889E1E61BE23004A04C4 /* BBTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBTableViewController.m; sourceTree = "<group>"; };
 		5910889F1E61BE23004A04C4 /* BBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBViewController.h; sourceTree = "<group>"; };
 		591088A01E61BE23004A04C4 /* BBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBViewController.m; sourceTree = "<group>"; };
-		592D7F431DFE767E005F05C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		593DF4BB1DDB854E00FB3C01 /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsTableViewController.h; path = Controllers/Settings/SettingsTableViewController.h; sourceTree = "<group>"; };
 		593DF4BC1DDB854E00FB3C01 /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsTableViewController.m; path = Controllers/Settings/SettingsTableViewController.m; sourceTree = "<group>"; };
 		595452C41E35BB4100C83524 /* EventCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventCollectionViewCell.h; path = Views/Cells/EventCollectionViewCell.h; sourceTree = "<group>"; };
@@ -244,6 +249,15 @@
 				599DD2A91E0E42DF00449FE9 /* Schedule */,
 			);
 			name = Detail;
+			sourceTree = "<group>";
+		};
+		590E568F1ED4085600C90120 /* Initial */ = {
+			isa = PBXGroup;
+			children = (
+				590E56901ED4091400C90120 /* InitialViewController.h */,
+				590E56911ED4091400C90120 /* InitialViewController.m */,
+			);
+			name = Initial;
 			sourceTree = "<group>";
 		};
 		591088971E61B664004A04C4 /* Tab Bar */ = {
@@ -419,6 +433,7 @@
 				59FE45821DC0717600AE5D09 /* Views */,
 				59FE45811DC0717200AE5D09 /* Controllers */,
 				59FE45751DC0709600AE5D09 /* Assets.xcassets */,
+				590E568A1ED400C900C90120 /* Auth0.plist */,
 				59FE457A1DC0709600AE5D09 /* Info.plist */,
 				59FE45661DC0709600AE5D09 /* Supporting Files */,
 			);
@@ -448,6 +463,7 @@
 			isa = PBXGroup;
 			children = (
 				5910889C1E61BE23004A04C4 /* Base */,
+				590E568F1ED4085600C90120 /* Initial */,
 				59A219481E38E0D5004E4060 /* Sign Up */,
 				591088971E61B664004A04C4 /* Tab Bar */,
 				59038FD41DD4DB4000361A0D /* Home */,
@@ -467,7 +483,7 @@
 				59FE45841DC0720800AE5D09 /* Launch */,
 				59FE456F1DC0709600AE5D09 /* Main.storyboard */,
 				59A219381E3774B2004E4060 /* Apply.storyboard */,
-				592D7F421DFE767E005F05C2 /* Login.storyboard */,
+				590E568C1ED4085200C90120 /* Initial.storyboard */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -648,6 +664,7 @@
 				59E263B31DD59512009FA3D9 /* hackathon2.jpg in Resources */,
 				59E263C41DD59512009FA3D9 /* prize5.jpg in Resources */,
 				59E263C11DD59512009FA3D9 /* prize2.jpg in Resources */,
+				590E568B1ED400C900C90120 /* Auth0.plist in Resources */,
 				59E263BA1DD59512009FA3D9 /* map0.jpg in Resources */,
 				59E263B01DD59512009FA3D9 /* doctor.jpg in Resources */,
 				59E263B51DD59512009FA3D9 /* harvey.jpg in Resources */,
@@ -657,11 +674,11 @@
 				59E263C31DD59512009FA3D9 /* prize4.jpg in Resources */,
 				59E263BC1DD59512009FA3D9 /* map2.jpg in Resources */,
 				59FE458C1DC0737200AE5D09 /* DetailCollectionTableViewCell.xib in Resources */,
+				590E568E1ED4085200C90120 /* Initial.storyboard in Resources */,
 				59E263B21DD59512009FA3D9 /* hackathon1.jpg in Resources */,
 				59E263B91DD59512009FA3D9 /* logo3.png in Resources */,
 				59FE458E1DC0737200AE5D09 /* DetailFacilitiesTableViewCell.xib in Resources */,
 				59E263B41DD59512009FA3D9 /* hackathonbg.jpg in Resources */,
-				592D7F441DFE767E005F05C2 /* Login.storyboard in Resources */,
 				59FE45791DC0709600AE5D09 /* LaunchScreen.storyboard in Resources */,
 				59E263B71DD59512009FA3D9 /* logo1.png in Resources */,
 				59FE45901DC0737200AE5D09 /* DetailInformationTableViewCell.xib in Resources */,
@@ -746,6 +763,7 @@
 				591088A21E61BE23004A04C4 /* BBViewController.m in Sources */,
 				591088581E5DCEA8004A04C4 /* CoreDataHelper.m in Sources */,
 				59038FE41DD4E95900361A0D /* DetailTableViewController.m in Sources */,
+				590E56921ED4091400C90120 /* InitialViewController.m in Sources */,
 				599DD2AC1E0E42FD00449FE9 /* ScheduleTableViewController.m in Sources */,
 				59038FE11DD4E2C300361A0D /* AllEventsTableViewController.m in Sources */,
 				59FE45A11DC07B8800AE5D09 /* DetailInformationTableViewCell.m in Sources */,
@@ -773,12 +791,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		592D7F421DFE767E005F05C2 /* Login.storyboard */ = {
+		590E568C1ED4085200C90120 /* Initial.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				592D7F431DFE767E005F05C2 /* Base */,
+				590E568D1ED4085200C90120 /* Base */,
 			);
-			name = Login.storyboard;
+			name = Initial.storyboard;
 			sourceTree = "<group>";
 		};
 		59A219381E3774B2004E4060 /* Apply.storyboard */ = {

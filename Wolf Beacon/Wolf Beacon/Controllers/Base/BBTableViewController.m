@@ -19,7 +19,10 @@
 	[super viewDidLoad];
 	
 	self.transistion = [KWTransition manager];
-	self.transistion.style = KWTransitionStyleFadeBackOver;
+	self.transistion.style = KWTransitionStylePushUp;
+	
+	UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@" " style:UIBarButtonItemStylePlain target:self action:nil];
+	self.navigationItem.backBarButtonItem = backButton;
 	
 }
 

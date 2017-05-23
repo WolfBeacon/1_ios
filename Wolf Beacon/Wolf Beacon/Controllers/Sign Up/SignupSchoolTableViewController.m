@@ -45,9 +45,7 @@
 	self.navigationItem.rightBarButtonItem = nextButton;
 	
 	self.title = @"School Details";
-	
-	UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@" " style:UIBarButtonItemStylePlain target:self action:nil];
-	self.navigationItem.backBarButtonItem = backButton;
+
 	
 }
 

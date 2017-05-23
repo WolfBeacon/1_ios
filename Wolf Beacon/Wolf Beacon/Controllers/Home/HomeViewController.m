@@ -38,35 +38,6 @@
 	
 	SVHUD_SHOW;
 	
-	// Login logic to be moved to another controller
-	A0Lock *lock = [AppDelegate sharedLock];
-	
-	A0SimpleKeychain *keychain = [A0SimpleKeychain keychainWithService:@"Auth0"];
-//	[keychain clearAll]; // When you want to log out.
-	NSString *token = [keychain stringForKey:@"id_token"];
-	if (token == nil) {
-		SVHUD_HIDE;
-		[self presentLoginController];
-		
-	} else {
-		A0APIClient *client = [lock apiClient];
-		[client fetchNewIdTokenWithIdToken:token parameters:nil success:^(A0Token *token) {
-			// Store the new ID token in the Keychain
-			[keychain setString:token.idToken forKey:@"id_token"];
-			[[RequestsManager sharedInstance] setToken:token.idToken];
-			
-			SVHUD_HIDE;
-//			[self loadHackathons];
-			
-			
-		} failure:^(NSError *error) {
-			SVHUD_HIDE;
-			[keychain clearAll]; // Cleaning stored values since they are no longer valid
-			// id_token is no longer valid, Ask the user to login again.
-			[self presentLoginController];
-		}];
-	}
-	
 	self.managedObjectContext = [AppDelegate sharedManagedObjectContext];
 	self.fetchRequest = [Hackathon fetchRequest];
 	
@@ -85,6 +56,8 @@
 	self.collectionView.decelerationRate = UIScrollViewDecelerationRateFast;
 	
 	self.navigationController.navigationBar.translucent = NO;
+	
+	[self loadHackathons];
 	
 }
 
@@ -116,25 +89,6 @@
 		
 	}];
 	[task resume];
-}
-
-- (void)presentLoginController {
-	A0Lock *lock = [AppDelegate sharedLock];
-	A0LockViewController *controller = [lock newLockViewController];
-	controller.onAuthenticationBlock = ^(A0UserProfile *profile, A0Token *token) {
-		
-		NSLog(@"Authentication successful for user %@ %@ %@ %@ %@", profile.nickname, profile.name, profile.email, profile.userId, profile.picture);
-		
-		// Save to A0SimpleKeychain
-		A0SimpleKeychain *keychain = [A0SimpleKeychain keychainWithService:@"Auth0"];
-		[keychain setString:token.idToken forKey:@"id_token"];
-		[keychain setString:token.refreshToken forKey:@"refresh_token"];
-		[keychain setData:[NSKeyedArchiver archivedDataWithRootObject:profile] forKey:@"profile"];
-		
-		// And dismiss the ViewController
-		[self dismissViewControllerAnimated:YES completion:nil];
-	};
-	[self presentViewController:controller animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -35,9 +35,7 @@
 	
 	UIBarButtonItem *nextButton = [[UIBarButtonItem alloc] initWithTitle:@"Next" style:UIBarButtonItemStyleDone target:self action:@selector(nextAction:)];
 	self.navigationItem.rightBarButtonItem = nextButton;
-	
-	UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@" " style:UIBarButtonItemStylePlain target:self action:nil];
-	self.navigationItem.backBarButtonItem = backButton;
+
 }
 
 - (void)didReceiveMemoryWarning {
