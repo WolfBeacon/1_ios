@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		06B3E2F72FFCE5FFCB4E7739 /* Pods_WolfBeaconTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1DDDF85171ABA238A9414B6 /* Pods_WolfBeaconTests.framework */; };
 		592015001FEA81760015A92D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592014FF1FEA81760015A92D /* AppDelegate.swift */; };
-		592015021FEA81760015A92D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592015011FEA81760015A92D /* ViewController.swift */; };
 		592015051FEA81760015A92D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 592015031FEA81760015A92D /* Main.storyboard */; };
 		592015071FEA81760015A92D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 592015061FEA81760015A92D /* Assets.xcassets */; };
 		5920150A1FEA81760015A92D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 592015081FEA81760015A92D /* LaunchScreen.storyboard */; };
 		592015151FEA81760015A92D /* WolfBeaconTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592015141FEA81760015A92D /* WolfBeaconTests.swift */; };
 		592015201FEA81760015A92D /* WolfBeaconUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5920151F1FEA81760015A92D /* WolfBeaconUITests.swift */; };
+		592015301FEB81390015A92D /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5920152F1FEB81390015A92D /* Auth0.plist */; };
+		592015371FEB83D40015A92D /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 592015351FEB83D40015A92D /* Login.storyboard */; };
+		5920153A1FEB85070015A92D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592015391FEB85070015A92D /* LoginViewController.swift */; };
 		C535AF62DB311FC6F92D0D8B /* Pods_WolfBeaconUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B9FACF367D11A139C47ECCA /* Pods_WolfBeaconUITests.framework */; };
 		EF7F784656F970FD7DFCC4A3 /* Pods_WolfBeacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C16CC308D2D836D8256220 /* Pods_WolfBeacon.framework */; };
 /* End PBXBuildFile section */
@@ -41,17 +43,19 @@
 		09E3E8DC0B8089DD08ADB88D /* Pods-WolfBeaconUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WolfBeaconUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WolfBeaconUITests/Pods-WolfBeaconUITests.release.xcconfig"; sourceTree = "<group>"; };
 		592014FC1FEA81760015A92D /* WolfBeacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WolfBeacon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		592014FF1FEA81760015A92D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		592015011FEA81760015A92D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		592015041FEA81760015A92D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		592015061FEA81760015A92D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		592015091FEA81760015A92D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		5920150B1FEA81760015A92D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		592015101FEA81760015A92D /* WolfBeaconTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WolfBeaconTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		592015141FEA81760015A92D /* WolfBeaconTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolfBeaconTests.swift; sourceTree = "<group>"; };
 		592015161FEA81760015A92D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5920151B1FEA81760015A92D /* WolfBeaconUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WolfBeaconUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5920151F1FEA81760015A92D /* WolfBeaconUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolfBeaconUITests.swift; sourceTree = "<group>"; };
 		592015211FEA81760015A92D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5920152D1FEB81350015A92D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5920152F1FEB81390015A92D /* Auth0.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Auth0.plist; sourceTree = "<group>"; };
+		592015361FEB83D40015A92D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
+		592015391FEB85070015A92D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7B9FACF367D11A139C47ECCA /* Pods_WolfBeaconUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WolfBeaconUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97203B33C773841232211AD0 /* Pods-WolfBeaconTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WolfBeaconTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WolfBeaconTests/Pods-WolfBeaconTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CD4637BC9C36431823F9D219 /* Pods-WolfBeacon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WolfBeacon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WolfBeacon/Pods-WolfBeacon.debug.xcconfig"; sourceTree = "<group>"; };
@@ -114,12 +118,11 @@
 		592014FE1FEA81760015A92D /* WolfBeacon */ = {
 			isa = PBXGroup;
 			children = (
-				592014FF1FEA81760015A92D /* AppDelegate.swift */,
-				592015011FEA81760015A92D /* ViewController.swift */,
-				592015031FEA81760015A92D /* Main.storyboard */,
 				592015061FEA81760015A92D /* Assets.xcassets */,
-				592015081FEA81760015A92D /* LaunchScreen.storyboard */,
-				5920150B1FEA81760015A92D /* Info.plist */,
+				592015341FEB83A20015A92D /* Models */,
+				592015331FEB839E0015A92D /* Views */,
+				592015321FEB83990015A92D /* Controllers */,
+				592015311FEB838E0015A92D /* Other */,
 			);
 			path = WolfBeacon;
 			sourceTree = "<group>";
@@ -140,6 +143,49 @@
 				592015211FEA81760015A92D /* Info.plist */,
 			);
 			path = WolfBeaconUITests;
+			sourceTree = "<group>";
+		};
+		592015311FEB838E0015A92D /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				592014FF1FEA81760015A92D /* AppDelegate.swift */,
+				5920152D1FEB81350015A92D /* Info.plist */,
+				5920152F1FEB81390015A92D /* Auth0.plist */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		592015321FEB83990015A92D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				592015381FEB84F30015A92D /* Login */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		592015331FEB839E0015A92D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				592015351FEB83D40015A92D /* Login.storyboard */,
+				592015031FEA81760015A92D /* Main.storyboard */,
+				592015081FEA81760015A92D /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		592015341FEB83A20015A92D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		592015381FEB84F30015A92D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				592015391FEB85070015A92D /* LoginViewController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		69D8856D179B11BCFFA04038 /* Pods */ = {
@@ -281,8 +327,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				592015301FEB81390015A92D /* Auth0.plist in Resources */,
 				5920150A1FEA81760015A92D /* LaunchScreen.storyboard in Resources */,
 				592015071FEA81760015A92D /* Assets.xcassets in Resources */,
+				592015371FEB83D40015A92D /* Login.storyboard in Resources */,
 				592015051FEA81760015A92D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,7 +508,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				592015021FEA81760015A92D /* ViewController.swift in Sources */,
+				5920153A1FEB85070015A92D /* LoginViewController.swift in Sources */,
 				592015001FEA81760015A92D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,6 +559,14 @@
 				592015091FEA81760015A92D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		592015351FEB83D40015A92D /* Login.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				592015361FEB83D40015A92D /* Base */,
+			);
+			name = Login.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -630,12 +686,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HN3SCP8A52;
-				INFOPLIST_FILE = WolfBeacon/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/WolfBeacon/Other/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wolfbeacon.WolfBeacon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -646,12 +703,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HN3SCP8A52;
-				INFOPLIST_FILE = WolfBeacon/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/WolfBeacon/Other/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wolfbeacon.WolfBeacon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

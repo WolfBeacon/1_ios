@@ -7,7 +7,7 @@ target 'WolfBeacon' do
 
   # Pods for WolfBeacon
 
-  pod 'Auth0'  
+  pod 'Auth0'
 
   target 'WolfBeaconTests' do
     inherit! :search_paths
